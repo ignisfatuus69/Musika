@@ -1,0 +1,6 @@
+ - Fix sweeping minigame, 
+ - add map restriction
+ - camera not zooming out on different aspect raiots
+ - watering plant audio
+ - stupid tiling
+ - grab gimp and delete white stuff for some items in mini games
