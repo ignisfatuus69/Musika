@@ -63,15 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Buff\Buff.cs" />
-    <Compile Include="Assets\Scripts\Buff\Buffapplier.cs" />
-    <Compile Include="Assets\Scripts\Buff\BuffManager.cs" />
-    <Compile Include="Assets\Scripts\Buff\PoisonDebuff.cs" />
-    <Compile Include="Assets\Scripts\Buff\StrengthenBuff.cs" />
     <Compile Include="Assets\Scripts\Singleton\sceneloader.cs" />
     <Compile Include="Assets\Scripts\Singleton\SingletonManager.cs" />
-    <Compile Include="Assets\Scripts\Singleton\Test.cs" />
-    <Compile Include="Assets\Scripts\Singleton\Test2.cs" />
+    <Compile Include="Assets\Scripts\Singleton\TimeManagerTester.cs" />
+    <Compile Include="Assets\Scripts\Singleton\TimerManager.cs" />
     <None Include="Assets\Keijiro\link.xml" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>B:/Unity Projects/Musika/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -6,28 +6,28 @@ public class SingletonManager : MonoBehaviour
 {
     public static SingletonManager instance;
     //public static SingletonManager instance;
+    
     public Dictionary<System.Type, MonoBehaviour> instances { get; private set; } = new Dictionary<System.Type, MonoBehaviour>();
+    public List<GameObject> singletonInstances = new List<GameObject>();
 
     private void Awake()
     {
-        if (instance == null) instance = this;
-        else
-        {
-            Destroy(instance);
-            instance = this;
-        }
+        instance = this;
 
         SceneManager.sceneUnloaded += ClearInactiveInstances;
     }
 
     public static void RegisterSingleton<T>(T ComponentClass) where T: MonoBehaviour
     {
-        //Check first if may ganon
+        //Check and delete first if instance already exists
         if(instance.instances.ContainsValue(ComponentClass))
         {
             instance.instances.Remove(ComponentClass.GetType());
         }
+
         instance.instances.Add(ComponentClass.GetType(),ComponentClass);
+        //instance.singletonInstances.Add(ComponentClass.gameObject);
+     
     }
 
     public static void UnregisterSingleton<T>(T ComponentClass) where T:MonoBehaviour
@@ -42,17 +42,28 @@ public class SingletonManager : MonoBehaviour
     {
         if (instance.instances.ContainsKey(typeof(T)))
         {
+            Debug.Log(typeof(T));
             return (T)instance.instances[typeof(T)];
+        }
+        else if (!instance.instances.ContainsKey(typeof(T)))
+        {
+            Debug.LogError("Singleton Instance does not exist");
+            return null;
         }
         else return null;
     }
 
     private void ClearInactiveInstances(Scene scene)
     {
-        foreach (KeyValuePair<System.Type, MonoBehaviour> instance in instance.instances)
-        {
-            if (instance.Value == null || instance.Key == null) instances.Remove(instance.Key);
-        }
+        Debug.Log(instances.Count);
+        //for (int i = 0; i < instance.singletonInstances.Count; i++)
+        //{
+        //    if (instance.singletonInstances[i].activeInHierarchy)
+        //    {
+        //        Destroy(instance.singletonInstances[i]);
+        //        instance.singletonInstances.RemoveAt(i);
+        //    }
+        //}
     }
 
   
