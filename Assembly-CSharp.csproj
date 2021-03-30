@@ -65,6 +65,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Singleton\sceneloader.cs" />
     <Compile Include="Assets\Scripts\Singleton\SingletonManager.cs" />
+    <Compile Include="Assets\Scripts\Singleton\Test.cs" />
+    <Compile Include="Assets\Scripts\Singleton\Test2.cs" />
     <Compile Include="Assets\Scripts\Singleton\TimeManagerTester.cs" />
     <Compile Include="Assets\Scripts\Singleton\TimerManager.cs" />
     <None Include="Assets\Keijiro\link.xml" />
