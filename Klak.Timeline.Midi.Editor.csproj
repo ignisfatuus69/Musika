@@ -81,6 +81,12 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>B:/Unity Projects/Musika/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>B:/Unity Projects/Musika/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>B:/Unity Projects/Musika/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
@@ -272,9 +278,6 @@
     </Reference>
     <Reference Include="DOTweenEditor">
       <HintPath>B:/Unity Projects/Musika/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenUpgradeManager">
-      <HintPath>B:/Unity Projects/Musika/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>B:/Unity Projects/Musika/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>

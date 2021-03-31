@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
+using UnityEngine.UI;
 public class sceneloader : MonoBehaviour
 {
+    public Image preImage;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,5 @@ public class sceneloader : MonoBehaviour
             SceneManager.UnloadSceneAsync(1);
             SceneManager.LoadScene(2, LoadSceneMode.Additive);
         }
-
     }
 }
