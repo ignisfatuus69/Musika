@@ -6,7 +6,9 @@ using Klak.Timeline.Midi;
 public class SongData : ScriptableObject
 {
     [SerializeField] private string songId;
+    [SerializeField] private double offsetBeatTime;
     public string GetSongId => songId;
+    public double GetOffsetBeatTime => offsetBeatTime;
     public List<int> beatNoteIndexes { get; set; }
     public List<double> beatTimeStamps { get; set; }
     public List<MidiNoteFilter> notes { get; set; }

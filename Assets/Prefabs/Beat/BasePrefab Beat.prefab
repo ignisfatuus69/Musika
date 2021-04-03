@@ -170,6 +170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5751058979929643094}
   - component: {fileID: 408367830}
+  - component: {fileID: 605961935627342708}
   m_Layer: 0
   m_Name: BasePrefab Beat
   m_TagString: Untagged
@@ -220,5 +221,22 @@ MonoBehaviour:
   beatTimer: 2
   isInteractable: 0
   beatState: 2
+  index: 0
   finalOuterCircleScale: 5.5
   outerCircle: {fileID: 1814629126}
+--- !u!58 &605961935627342708
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6149645738580966737}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.15

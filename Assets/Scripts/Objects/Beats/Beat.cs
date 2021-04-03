@@ -20,9 +20,7 @@ public class Beat : MonoBehaviour
     public float beatTimer = 0;
     public bool isInteractable = false;
     public BeatState beatState = BeatState.Miss;
-
-
-
+    public int index = 0;
     [SerializeField] private float finalOuterCircleScale;
     [SerializeField]private Transform outerCircle;
 
@@ -31,27 +29,28 @@ public class Beat : MonoBehaviour
     private void Start()
     {
         originalOuterCircleScale = outerCircle.localScale;
-        this.EVT_OnDeactivate.AddListener(Test);
     }
     private void OnEnable()
     {
         StartCoroutine(StartBeatTimer());
     }
 
-    private void Test(GameObject obj)
+
+    private void OnMouseDown()
     {
-        Debug.Log("test");
+        BeatInteraction();
     }
     private void OnDisable()
     {
         outerCircle.localScale = originalOuterCircleScale;
     }
-    public void InteractBeat()
+    public void BeatInteraction()
     {
         StopCoroutine(StartBeatTimer());
         EVT_OnInteracted.Invoke(this);
         EVT_OnDeactivate.Invoke(this.gameObject);
         this.gameObject.SetActive(false);
+        Debug.Log("kulangot");
     }
 
 

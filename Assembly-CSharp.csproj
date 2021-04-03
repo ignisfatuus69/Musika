@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BeatInteractor.cs" />
     <Compile Include="Assets\Scripts\BeatIndexer.cs" />
     <Compile Include="Assets\Scripts\BeatIndexerManager.cs" />
     <Compile Include="Assets\Scripts\Objects\Beats\Beat.cs" />
@@ -79,7 +80,6 @@
     <Compile Include="Assets\Scripts\Systems\Spawners\ObjectPooler.cs" />
     <Compile Include="Assets\Scripts\Systems\Spawners\TongatongBeatSpawner.cs" />
     <Compile Include="Assets\Scripts\TongatongSpawnSetter.cs" />
-    <None Include="Assets\Keijiro\link.xml" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>B:/Unity Projects/Musika/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
