@@ -32,6 +32,7 @@ public class BeatIndexer : MonoBehaviour
     {
         //This solution only works if there's 2
         //Even Numbers
+        Debug.Log("pre");
         if (indexedBeatsCount % 2 == 0)
         {
             Debug.Log("Added Index");

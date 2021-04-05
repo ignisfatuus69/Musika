@@ -309,7 +309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 637904298}
   m_Layer: 0
-  m_Name: SP2
+  m_Name: SP 2
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -377,8 +377,8 @@ MonoBehaviour:
     type: 2}
   spawnPoints:
   - {fileID: 252720075}
-  - {fileID: 637904298}
-  - {fileID: 1909691960}
+  - {fileID: 252720075}
+  - {fileID: 252720075}
 --- !u!4 &747318073
 Transform:
   m_ObjectHideFlags: 0
@@ -503,6 +503,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palm Breeze Director
       objectReference: {fileID: 0}
+    - target: {fileID: 7368384274859788852, guid: 218d3b05a1596d0429cf68213abf447a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368384274859788855, guid: 218d3b05a1596d0429cf68213abf447a,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[0].value
+      value: 
+      objectReference: {fileID: 747318071}
     - target: {fileID: 7368384274859788859, guid: 218d3b05a1596d0429cf68213abf447a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -558,11 +568,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7368384274859788855, guid: 218d3b05a1596d0429cf68213abf447a,
-        type: 3}
-      propertyPath: m_SceneBindings.Array.data[0].value
-      value: 
-      objectReference: {fileID: 747318071}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 218d3b05a1596d0429cf68213abf447a, type: 3}
 --- !u!1 &1560775680

@@ -24,18 +24,40 @@ public class BeatInteractor : MonoBehaviour
         
     }
 
-    protected void EvaluateBeatState(Beat beatToEvaluate)
+    public void EvaluateBeatState(Beat beatToEvaluate)
     {
         EVT_OnBeatInteraction.Invoke(beatToEvaluate);
         beatToEvaluate.BeatInteraction();
+
+        Debug.Log("Interacted");
         // Early State
-        if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 3.25f))
-            && songDirectorObj.time < (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 2.5f)))
+        if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 3.25f))
+            && songDirectorObj.time < (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 2.5f)))
         {
             Debug.Log("Early");
             Debug.Log("Beat Number:" + beatToEvaluate.index);
-            Debug.Log("Time Stamp:"+songDataToPlay.beatTimeStamps[beatToEvaluate.index]);
+            Debug.Log("Time Stamp:"+songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount]);
 
+        }
+        // Okay State
+        if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 2.5f))
+            && songDirectorObj.time < (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 1.5f)))
+        {
+            //
+            Debug.Log("Okay");
+        }
+        // Perfect State
+        if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 1.5f))
+            && songDirectorObj.time < songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + songDataToPlay.GetOffsetBeatTime)
+        {
+            //
+            Debug.Log("Perfect");
+        }
+        // Late/End State
+        // + despawn prolong time later
+        if (songDirectorObj.time > songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + songDataToPlay.GetOffsetBeatTime)
+        {
+            Debug.Log("endbruh");
         }
     }
 }

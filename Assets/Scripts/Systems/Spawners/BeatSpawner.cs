@@ -22,7 +22,17 @@ public class BeatSpawner : ObjectPooler
     protected override void SetPoolingInitializations(GameObject obj)
     {
         Beat beatObj = obj.GetComponent<Beat>();
-        beatObj.EVT_OnDeactivate.AddListener(Pool);
+        beatObj.EVT_OnDeactivate.AddListener(PoolInSeconds);
     }
 
+    private void PoolInSeconds(GameObject obj)
+    {
+        StartCoroutine(DelayedPool(obj));
+    }
+
+    IEnumerator DelayedPool(GameObject obj)
+    {
+        yield return new WaitForSeconds(5f);
+        Pool(obj);
+    }
 }

@@ -23,44 +23,41 @@ public class Beat : MonoBehaviour
     public int index = 0;
     [SerializeField] private float finalOuterCircleScale;
     [SerializeField]private Transform outerCircle;
-
+    public float Timer = 0;
     private Vector3 originalOuterCircleScale = new Vector3(1, 1, 1);
 
-    private void Start()
+    private void Awake()
     {
         originalOuterCircleScale = outerCircle.localScale;
     }
     private void OnEnable()
     {
-        StartCoroutine(StartBeatTimer());
-    }
+        //Reset Values
+        outerCircle.localScale = originalOuterCircleScale;
 
+
+        StartCoroutine(StartBeatTimer());
+        outerCircle.DOScale(finalOuterCircleScale, beatTimer);
+    }
 
     private void OnMouseDown()
     {
-        BeatInteraction();
-    }
-    private void OnDisable()
-    {
-        outerCircle.localScale = originalOuterCircleScale;
+        GameObject.FindObjectOfType<BeatInteractor>().EvaluateBeatState(this);
     }
     public void BeatInteraction()
     {
-        StopCoroutine(StartBeatTimer());
         EVT_OnInteracted.Invoke(this);
         EVT_OnDeactivate.Invoke(this.gameObject);
-        this.gameObject.SetActive(false);
-        Debug.Log("kulangot");
+        gameObject.SetActive(false);
+       
     }
-
-
-
     IEnumerator StartBeatTimer()
     {
-        outerCircle.DOScale(finalOuterCircleScale, beatTimer);
         yield return new WaitForSeconds(beatTimer);
+        gameObject.SetActive(false);
         EVT_OnTimedOut.Invoke(this);
         EVT_OnDeactivate.Invoke(this.gameObject);
-        this.gameObject.SetActive(false);
+
     }
+
 }
