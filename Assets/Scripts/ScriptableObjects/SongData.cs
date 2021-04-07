@@ -24,13 +24,14 @@ public class SongData : ScriptableObject
     {
         // If scriptable object has complete data don't get from JSON anymore
         if (isFilled) return;
-        string songDataString = File.ReadAllText(Application.dataPath + "/" + songId + ".json");
-        if (songDataString == null)
+        
+        if (File.ReadAllText(Application.dataPath + "/" + songId + ".json")==null)
         {
             Debug.LogError("JSON does not exist");
             return;
         }
 
+        string songDataString = File.ReadAllText(Application.dataPath + "/" + songId + ".json");
         SongDataClass newSongDataclass = JsonUtility.FromJson<SongDataClass>(songDataString);
 
         this.beatNoteIndexes = newSongDataclass.beatNoteIndexes;

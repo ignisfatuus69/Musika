@@ -14,7 +14,7 @@ public class BeatSpawner : ObjectPooler
             Spawn();
         }
     }
-    public void SetSpawnPosition()
+    protected override void SetSpawnPosition()
     {
         SpawnPosition = spawnPoints[songDataScriptableObject.beatNoteIndexes[this.totalNumberOfSpawnsCount]].position;
         Debug.Log(spawnPoints[songDataScriptableObject.beatNoteIndexes[this.totalNumberOfSpawnsCount]]);

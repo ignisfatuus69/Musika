@@ -84,6 +84,12 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>B:/Unity Projects/Musika/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>B:/Unity Projects/Musika/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>B:/Unity Projects/Musika/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.ARModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
     </Reference>

@@ -55,12 +55,14 @@ public abstract class ObjectPooler : MonoBehaviour
         }
     }
     protected abstract void SetPoolingInitializations(GameObject obj);
-
+    protected abstract void SetSpawnPosition();
     protected virtual void Pool(GameObject obj)
     {
         obj.gameObject.SetActive(false);
         pooledObjects.Add(obj.gameObject);
         currentSpawnedObjects.Remove(obj.gameObject);
     }
+
+
 
 }
