@@ -37,6 +37,7 @@ public class BeatInteractor : MonoBehaviour
             Debug.Log("Early");
             Debug.Log("Beat Number:" + beatToEvaluate.index);
             Debug.Log("Time Stamp:"+songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount]);
+            beatToEvaluate.beatState = BeatState.Miss;
 
         }
         // Okay State
@@ -45,6 +46,7 @@ public class BeatInteractor : MonoBehaviour
         {
             //
             Debug.Log("Okay");
+            beatToEvaluate.beatState = BeatState.Okay;
         }
         // Perfect State
         if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 1.5f))
@@ -52,12 +54,14 @@ public class BeatInteractor : MonoBehaviour
         {
             //
             Debug.Log("Perfect");
+            beatToEvaluate.beatState = BeatState.Perfect;
         }
         // Late/End State
         // + despawn prolong time later
         if (songDirectorObj.time > songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + songDataToPlay.GetOffsetBeatTime)
         {
             Debug.Log("endbruh");
+            beatToEvaluate.beatState = BeatState.Miss;
         }
     }
 }

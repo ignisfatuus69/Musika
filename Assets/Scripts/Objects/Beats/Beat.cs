@@ -8,14 +8,14 @@ public enum BeatState { Okay, Perfect, Miss };
 [System.Serializable]
 public class OnInteracted : UnityEvent<Beat> { };
 [System.Serializable]
-public class OnTimedOut : UnityEvent<Beat> { };
+public class OnBeatTimedOut : UnityEvent<Beat> { };
 [System.Serializable]
 public class OnDeactivate : UnityEvent<GameObject> { };
 public class Beat : MonoBehaviour
 {
 
     public OnInteracted EVT_OnInteracted;
-    public OnTimedOut EVT_OnTimedOut;
+    public OnBeatTimedOut EVT_OnTimedOut;
     public OnDeactivate EVT_OnDeactivate;
     public float beatTimer = 0;
     public bool isInteractable = false;
