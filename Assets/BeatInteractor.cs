@@ -28,8 +28,13 @@ public class BeatInteractor : MonoBehaviour
     {
         EVT_OnBeatInteraction.Invoke(beatToEvaluate);
         beatToEvaluate.BeatInteraction();
-
+        
         Debug.Log("Interacted");
+        Debug.Log("CURRENT TIME:" + songDirectorObj.time);
+        Debug.Log("BEAT REFERENCE TIME:" + songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount]);
+        Debug.Log("IS GREATER THAN:" + (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 3.25f)));
+        Debug.Log("IS LESS THAN:" + (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 2.5f)));
+
         // Early State
         if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 3.25f))
             && songDirectorObj.time < (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 2.5f)))
@@ -39,29 +44,49 @@ public class BeatInteractor : MonoBehaviour
             Debug.Log("Time Stamp:"+songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount]);
             beatToEvaluate.beatState = BeatState.Miss;
 
+            Debug.Log("CURRENT TIME:" + songDirectorObj.time);
+            Debug.Log("BEAT REFERENCE TIME:" + songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount]);
+            Debug.Log("IS GREATER THAN:" +(songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 3.25f)));
+            Debug.Log("IS LESS THAN:" + (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 2.5f)));
+
         }
         // Okay State
-        if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 2.5f))
+        else if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 2.5f))
             && songDirectorObj.time < (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 1.5f)))
         {
             //
             Debug.Log("Okay");
             beatToEvaluate.beatState = BeatState.Okay;
+
+            Debug.Log("CURRENT TIME:" + songDirectorObj.time);
+            Debug.Log("BEAT REFERENCE TIME:" + songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount]);
+            Debug.Log("IS GREATER THAN:" + (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 3.25f)));
+            Debug.Log("IS LESS THAN:" + (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 2.5f)));
         }
         // Perfect State
-        if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 1.5f))
+        else if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 1.5f))
             && songDirectorObj.time < songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + songDataToPlay.GetOffsetBeatTime)
         {
             //
             Debug.Log("Perfect");
             beatToEvaluate.beatState = BeatState.Perfect;
+
+            Debug.Log("CURRENT TIME:" + songDirectorObj.time);
+            Debug.Log("BEAT REFERENCE TIME:" + songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount]);
+            Debug.Log("IS GREATER THAN:" + (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 3.25f)));
+            Debug.Log("IS LESS THAN:" + (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 2.5f)));
         }
         // Late/End State
         // + despawn prolong time later
-        if (songDirectorObj.time > songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + songDataToPlay.GetOffsetBeatTime)
+        else if (songDirectorObj.time > songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + songDataToPlay.GetOffsetBeatTime)
         {
-            Debug.Log("endbruh");
+            Debug.Log("Timed Out");
             beatToEvaluate.beatState = BeatState.Miss;
+
+            Debug.Log("CURRENT TIME:" + songDirectorObj.time);
+            Debug.Log("BEAT REFERENCE TIME:" + songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount]);
+            Debug.Log("IS GREATER THAN:" + (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 3.25f)));
+            Debug.Log("IS LESS THAN:" + (songDataToPlay.beatTimeStamps[beatSpawnerObj.totalNumberOfSpawnsCount] + (songDataToPlay.GetOffsetBeatTime / 2.5f)));
         }
     }
 }

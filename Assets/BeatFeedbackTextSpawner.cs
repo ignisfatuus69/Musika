@@ -13,7 +13,7 @@ public class BeatFeedbackTextSpawner : ObjectPooler
     [SerializeField] private BeatSpawner beatSpawnerObj;
     private void Start()
     {
-        beatSpawnerObj.EVT_OnBeatPooled.AddListener(SpawnFeedbackText);
+        beatSpawnerObj.EVT_OnObjectPooled.AddListener(SpawnFeedbackText);
     }
     private void SetTextToBeat(Beat beatObj)
     {
@@ -26,16 +26,17 @@ public class BeatFeedbackTextSpawner : ObjectPooler
         beatFbTextObj.EVT_OnDeactivate.AddListener(Pool);
     }
 
-    private void SpawnFeedbackText(Beat beatObj)
+    private void SpawnFeedbackText(GameObject obj)
     {
+        Beat beatObj = obj.GetComponent<Beat>();
         CopyBeatPosition(beatObj);
         Spawn();
-        SetSpawnPosition();
+        SetParent();
         SetTextToBeat(beatObj);
 
     }
 
-    protected override void SetSpawnPosition()
+    private void SetParent()
     {
         currentSpawnedObjects[currentSpawnedObjects.Count - 1].transform.parent = canvasTransform;
     }

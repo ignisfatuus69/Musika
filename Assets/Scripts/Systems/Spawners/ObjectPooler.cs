@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [System.Serializable]
-public class OnObjectPooled : UnityEvent { };
+public class OnObjectPooled : UnityEvent<GameObject> { };
 
 [System.Serializable]
-public class OnObjectSpawned : UnityEvent { };
+public class OnObjectSpawned : UnityEvent<GameObject> { };
 
 public abstract class ObjectPooler : MonoBehaviour
 {
@@ -51,11 +51,11 @@ public abstract class ObjectPooler : MonoBehaviour
             //Set Spawn Position
             obj.transform.position = SpawnPosition;
 
-            EVT_OnObjectSpawned.Invoke();
+            EVT_OnObjectSpawned.Invoke(obj);
         }
     }
     protected abstract void SetPoolingInitializations(GameObject obj);
-    protected abstract void SetSpawnPosition();
+
     protected virtual void Pool(GameObject obj)
     {
         obj.gameObject.SetActive(false);

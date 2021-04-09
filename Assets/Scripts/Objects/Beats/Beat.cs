@@ -33,6 +33,7 @@ public class Beat : MonoBehaviour
     private void OnEnable()
     {
         //Reset Values
+        this.beatState = BeatState.Miss;
         outerCircle.localScale = originalOuterCircleScale;
 
 
@@ -40,6 +41,7 @@ public class Beat : MonoBehaviour
         outerCircle.DOScale(finalOuterCircleScale, beatTimer);
     }
 
+    //TEMPORARY CODE
     private void OnMouseDown()
     {
         GameObject.FindObjectOfType<BeatInteractor>().EvaluateBeatState(this);
