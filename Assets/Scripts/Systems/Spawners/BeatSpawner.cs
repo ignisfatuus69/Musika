@@ -27,8 +27,8 @@ public class BeatSpawner : ObjectPooler
     }
     private void SetSpawnPosition()
     {
-        SpawnPosition = spawnPoints[songDataScriptableObject.beatNoteIndexes[this.totalNumberOfSpawnsCount]].position;
-        Debug.Log(spawnPoints[songDataScriptableObject.beatNoteIndexes[this.totalNumberOfSpawnsCount]]);
+        SpawnPosition = spawnPoints[songDataScriptableObject.beatNoteIndexes[this.totalSpawnsCount]].position;
+        Debug.Log(spawnPoints[songDataScriptableObject.beatNoteIndexes[this.totalSpawnsCount]]);
     }
     protected override void SetPoolingInitializations(GameObject obj)
     {
@@ -38,6 +38,7 @@ public class BeatSpawner : ObjectPooler
     }
     private void PoolInSeconds(GameObject obj)
     {
+        totalPooledCount += 1;
         EVT_OnObjectPooled.Invoke(obj);
         StartCoroutine(DelayedPool(obj));
     }
@@ -45,7 +46,7 @@ public class BeatSpawner : ObjectPooler
     private void SetBeatIndex(GameObject obj)
     {
         Beat beatObj = obj.GetComponent<Beat>();
-        beatObj.index = this.totalNumberOfSpawnsCount-1;
+        beatObj.index = this.totalSpawnsCount-1;
     }
 
     IEnumerator DelayedPool(GameObject obj)

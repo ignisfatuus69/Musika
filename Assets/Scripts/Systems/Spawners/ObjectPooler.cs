@@ -22,8 +22,8 @@ public abstract class ObjectPooler : MonoBehaviour
     protected List<GameObject> pooledObjects = new List<GameObject>();
     [SerializeField]protected Vector3 SpawnPosition;
 
-    public int totalNumberOfSpawnsCount { get; private set; } = 0;
-
+    public int totalSpawnsCount { get; private set; } = 0;
+    public int totalPooledCount { get; protected set; } = 0;
     public void Spawn()
     {
         for (int i = 0; i < SpawnCount; i++)
@@ -47,7 +47,7 @@ public abstract class ObjectPooler : MonoBehaviour
                 SetPoolingInitializations(obj);
             }
 
-            totalNumberOfSpawnsCount += 1;
+            totalSpawnsCount += 1;
             //Set Spawn Position
             obj.transform.position = SpawnPosition;
 

@@ -8,12 +8,9 @@ public class BeatFeedbackText : MonoBehaviour
 {
     public OnDeactivate EVT_OnDeactivate;
     
-    [SerializeField] private TextMeshProUGUI tmProComponent;
+    public TextMeshProUGUI tmProComponent;
     [SerializeField] private float movementSpeed;
     [SerializeField] private int despawnTime;
-
-    [HideInInspector]
-    public BeatState beatStateReference;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +19,6 @@ public class BeatFeedbackText : MonoBehaviour
 
     private void OnEnable()
     {
-        ActivateText();
-    }
-
-    void ActivateText()
-    {
-        tmProComponent.text = beatStateReference.ToString();
         StartCoroutine(FeedbackTextBehavior());
     }
 

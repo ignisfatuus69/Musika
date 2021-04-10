@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using DG.Tweening;
+using UnityEngine.Playables;
+
 public enum BeatState { Okay, Perfect, Miss };
 
 [System.Serializable]
@@ -18,32 +20,50 @@ public class Beat : MonoBehaviour
     public OnBeatTimedOut EVT_OnTimedOut;
     public OnDeactivate EVT_OnDeactivate;
     public float beatTimer = 0;
-    public bool isInteractable = false;
+    public bool isInteractable = true;
     public BeatState beatState = BeatState.Miss;
     public int index = 0;
     [SerializeField] private float finalOuterCircleScale;
-    [SerializeField]private Transform outerCircle;
+    [SerializeField] private Transform outerCircle;
+    [SerializeField] private Collider2D beatCollider;
+
     public float Timer = 0;
     private Vector3 originalOuterCircleScale = new Vector3(1, 1, 1);
 
+    //TEMPORARY
+    private PlayableDirector songDirectorObj;
+    [SerializeField] private SongData songDataToPlay;
+    private BeatSpawner beatSpawnerObj;
     private void Awake()
     {
         originalOuterCircleScale = outerCircle.localScale;
+        songDirectorObj = GameObject.FindObjectOfType<PlayableDirector>();
+        beatSpawnerObj = GameObject.FindObjectOfType<BeatSpawner>();
     }
+
+
     private void OnEnable()
     {
-        //Reset Values
+        //Reset values
+        beatCollider.enabled = false;
         this.beatState = BeatState.Miss;
         outerCircle.localScale = originalOuterCircleScale;
-
 
         StartCoroutine(StartBeatTimer());
         outerCircle.DOScale(finalOuterCircleScale, beatTimer);
     }
 
+    private void OnDisable()
+    {
+        this.beatState = BeatState.Miss;
+        beatCollider.enabled = false;
+    }
+
+
     //TEMPORARY CODE
     private void OnMouseDown()
     {
+
         GameObject.FindObjectOfType<BeatInteractor>().EvaluateBeatState(this);
     }
     public void BeatInteraction()
@@ -51,7 +71,57 @@ public class Beat : MonoBehaviour
         EVT_OnInteracted.Invoke(this);
         EVT_OnDeactivate.Invoke(this.gameObject);
         gameObject.SetActive(false);
-       
+
+    }
+    private void Update()
+    {
+        EnableCollider();
+        SetBeatState();
+    }
+
+
+    private void EnableCollider()
+    {
+        if (this.index == 0)
+        {
+            beatCollider.enabled = true;
+            return;
+        }
+        if (this.index <= beatSpawnerObj.totalPooledCount)
+        {
+            beatCollider.enabled = true;
+        }
+    }
+
+    //TEMPORARY
+    public void SetBeatState()
+    {
+        if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[this.index] + (songDataToPlay.GetOffsetBeatTime / 3.25f))
+            && songDirectorObj.time < (songDataToPlay.beatTimeStamps[this.index] + (songDataToPlay.GetOffsetBeatTime / 2.5f)))
+        {
+            this.beatState = BeatState.Miss;
+
+        }
+        // Okay State
+        else if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[this.index] + (songDataToPlay.GetOffsetBeatTime / 2.5f))
+            && songDirectorObj.time < (songDataToPlay.beatTimeStamps[this.index] + (songDataToPlay.GetOffsetBeatTime / 1.5f)))
+        {
+            this.beatState = BeatState.Okay;
+
+        }
+        // Perfect State
+        else if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[this.index] + (songDataToPlay.GetOffsetBeatTime / 1.5f))
+            && songDirectorObj.time < songDataToPlay.beatTimeStamps[this.index] + songDataToPlay.GetOffsetBeatTime)
+        {
+            this.beatState = BeatState.Perfect;
+
+        }
+
+        else if (songDirectorObj.time > songDataToPlay.beatTimeStamps[this.index] + songDataToPlay.GetOffsetBeatTime+0.25f)
+        {
+            this.beatState = BeatState.Miss;
+        }
+
     }
     IEnumerator StartBeatTimer()
     {

@@ -18,7 +18,7 @@ public class BeatFeedbackTextSpawner : ObjectPooler
     private void SetTextToBeat(Beat beatObj)
     {
         BeatFeedbackText beatFBTextObj = currentSpawnedObjects[currentSpawnedObjects.Count - 1].GetComponent<BeatFeedbackText>();
-        beatFBTextObj.beatStateReference = beatObj.beatState;
+        beatFBTextObj.tmProComponent.text = beatObj.beatState.ToString();
     }
     protected override void SetPoolingInitializations(GameObject obj)
     {
@@ -29,7 +29,6 @@ public class BeatFeedbackTextSpawner : ObjectPooler
     private void SpawnFeedbackText(GameObject obj)
     {
         Beat beatObj = obj.GetComponent<Beat>();
-        Debug.Log(beatObj.beatState);
         CopyBeatPosition(beatObj);
         Spawn();
         SetParent();

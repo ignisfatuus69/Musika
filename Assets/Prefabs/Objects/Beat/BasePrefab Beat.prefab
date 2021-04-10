@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 5751058979929643094}
   - component: {fileID: 408367830}
   - component: {fileID: 605961935627342708}
+  - component: {fileID: 5993464080912394608}
   m_Layer: 0
   m_Name: BasePrefab Beat
   m_TagString: Untagged
@@ -225,8 +226,9 @@ MonoBehaviour:
   index: 0
   finalOuterCircleScale: 0.1427094
   outerCircle: {fileID: 1814629126}
+  beatCollider: {fileID: 605961935627342708}
   Timer: 0
-  tmProUI: {fileID: 0}
+  songDataToPlay: {fileID: 11400000, guid: 4de3cf535a1666243be42ed3018db6ec, type: 2}
 --- !u!58 &605961935627342708
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -237,9 +239,30 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.15
+--- !u!50 &5993464080912394608
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6149645738580966737}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

@@ -17,20 +17,20 @@ public class BeatInteractor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void EvaluateBeatState(Beat beatToEvaluate)
     {
         if (songDirectorObj.time < (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 5))) return;
         EVT_OnBeatInteraction.Invoke(beatToEvaluate);
-        
+
         //Debug.Log("Interacted");
         //Debug.Log("Beat Index:" + beatToEvaluate.index);
         //Debug.Log("CURRENT TIME:" + songDirectorObj.time);
@@ -41,13 +41,8 @@ public class BeatInteractor : MonoBehaviour
         {
             Debug.Log("Early");
             Debug.Log("Beat Number:" + beatToEvaluate.index);
-            Debug.Log("Time Stamp:"+songDataToPlay.beatTimeStamps[beatToEvaluate.index]);
+            Debug.Log("Time Stamp:" + songDataToPlay.beatTimeStamps[beatToEvaluate.index]);
             beatToEvaluate.beatState = BeatState.Miss;
-
-            Debug.Log("CURRENT TIME:" + songDirectorObj.time);
-            Debug.Log("BEAT REFERENCE TIME:" + songDataToPlay.beatTimeStamps[beatToEvaluate.index]);
-            Debug.Log("IS GREATER THAN:" +(songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 3.25f)));
-            Debug.Log("IS LESS THAN:" + (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 2.5f)));
 
         }
         // Okay State
@@ -57,10 +52,6 @@ public class BeatInteractor : MonoBehaviour
             Debug.Log("Okay");
             beatToEvaluate.beatState = BeatState.Okay;
 
-            Debug.Log("CURRENT TIME:" + songDirectorObj.time);
-            Debug.Log("BEAT REFERENCE TIME:" + songDataToPlay.beatTimeStamps[beatToEvaluate.index]);
-            Debug.Log("IS GREATER THAN:" + (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 3.25f)));
-            Debug.Log("IS LESS THAN:" + (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 2.5f)));
         }
         // Perfect State
         else if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 1.5f))
@@ -69,12 +60,7 @@ public class BeatInteractor : MonoBehaviour
             Debug.Log("Perfect");
             beatToEvaluate.beatState = BeatState.Perfect;
 
-            Debug.Log("CURRENT TIME:" + songDirectorObj.time);
-            Debug.Log("BEAT REFERENCE TIME:" + songDataToPlay.beatTimeStamps[beatToEvaluate.index]);
-            Debug.Log("IS GREATER THAN:" + (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 3.25f)));
-            Debug.Log("IS LESS THAN:" + (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 2.5f)));
         }
-        tmProUI.text = beatToEvaluate.beatState.ToString();
         beatToEvaluate.BeatInteraction();
         // Late/End State
         // + despawn prolong time later
