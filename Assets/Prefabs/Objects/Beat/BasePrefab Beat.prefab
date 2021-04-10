@@ -213,7 +213,8 @@ MonoBehaviour:
   EVT_OnTimedOut:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: OnTimedOut, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_TypeName: OnBeatTimedOut, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   EVT_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
@@ -225,6 +226,7 @@ MonoBehaviour:
   finalOuterCircleScale: 0.1427094
   outerCircle: {fileID: 1814629126}
   Timer: 0
+  tmProUI: {fileID: 0}
 --- !u!58 &605961935627342708
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -36,12 +36,6 @@ public class BeatSpawner : ObjectPooler
      //   beatObj.EVT_OnDeactivate.AddListener(InvokePoolBeatEvent);
         beatObj.EVT_OnDeactivate.AddListener(PoolInSeconds);
     }
-
-    //private void InvokePoolBeatEvent(GameObject obj)
-    //{
-    //    Beat beatObj = obj.GetComponent<Beat>();
-    //    EVT_OnBeatPooled.Invoke(beatObj);
-    //}
     private void PoolInSeconds(GameObject obj)
     {
         EVT_OnObjectPooled.Invoke(obj);

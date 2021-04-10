@@ -29,6 +29,7 @@ public class BeatFeedbackTextSpawner : ObjectPooler
     private void SpawnFeedbackText(GameObject obj)
     {
         Beat beatObj = obj.GetComponent<Beat>();
+        Debug.Log(beatObj.beatState);
         CopyBeatPosition(beatObj);
         Spawn();
         SetParent();
