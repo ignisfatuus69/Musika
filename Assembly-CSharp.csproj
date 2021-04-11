@@ -66,6 +66,7 @@
     <Compile Include="Assets\Combo.cs" />
     <Compile Include="Assets\Resource.cs" />
     <Compile Include="Assets\ResourceText.cs" />
+    <Compile Include="Assets\Score.cs" />
     <Compile Include="Assets\Scripts\BeatFeedbackText.cs" />
     <Compile Include="Assets\Scripts\BeatFeedbackTextSpawner.cs" />
     <Compile Include="Assets\Scripts\BeatIndexer.cs" />

@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Combo : Resource
 {
-    public BeatSpawner beatSpawnerObj;
+    [SerializeField] private BeatSpawner beatSpawnerObj;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,18 +14,17 @@ public class Combo : Resource
 
     private void ModifyComboCount(Beat beatObj)
     {
-        Debug.Log("hello");
         if (beatObj.beatState == BeatState.Miss)
         {
             currentValue = 0;
-            EVT_OnValueModified.Invoke();
+            OnValueModified();
             EVT_OnValueReset.Invoke();
             return;
         }
 
         //If it's not a miss then add
         currentValue += 1;
-        EVT_OnValueModified.Invoke();
+        OnValueModified();
         EVT_OnValueAdded.Invoke();
     }
 }
