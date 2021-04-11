@@ -49,7 +49,6 @@ public class SongDataGenerator : MonoBehaviour
         if (songDataScriptableObject.beatTimeStamps.Count > 0) songDataScriptableObject.beatTimeStamps.Clear();
         if (songDataScriptableObject.beatNoteIndexes.Count > 0) songDataScriptableObject.beatNoteIndexes.Clear();
         if (songDataScriptableObject.notes.Count > 0) songDataScriptableObject.notes.Clear();
-        if (songDataScriptableObject.notesDictionary.Count > 0) songDataScriptableObject.notesDictionary.Clear();
     }
 
     private void CreateJSON()

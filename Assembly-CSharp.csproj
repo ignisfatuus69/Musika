@@ -63,11 +63,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BeatFeedbackText.cs" />
-    <Compile Include="Assets\BeatFeedbackTextSpawner.cs" />
-    <Compile Include="Assets\BeatInteractor.cs" />
+    <Compile Include="Assets\Combo.cs" />
+    <Compile Include="Assets\Resource.cs" />
+    <Compile Include="Assets\Scripts\BeatFeedbackText.cs" />
+    <Compile Include="Assets\Scripts\BeatFeedbackTextSpawner.cs" />
     <Compile Include="Assets\Scripts\BeatIndexer.cs" />
     <Compile Include="Assets\Scripts\BeatIndexerManager.cs" />
+    <Compile Include="Assets\Scripts\BeatInteractor.cs" />
     <Compile Include="Assets\Scripts\Objects\Beats\Beat.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\SongData.cs" />
     <Compile Include="Assets\Scripts\SongDataGenerator.cs" />

@@ -37,7 +37,6 @@ public class Beat : MonoBehaviour
     private void Awake()
     {
         originalOuterCircleScale = outerCircle.localScale;
-        songDirectorObj = GameObject.FindObjectOfType<PlayableDirector>();
         beatSpawnerObj = GameObject.FindObjectOfType<BeatSpawner>();
     }
 
@@ -76,7 +75,7 @@ public class Beat : MonoBehaviour
     private void Update()
     {
         EnableCollider();
-        SetBeatState();
+       // SetBeatState();
     }
 
 
@@ -91,37 +90,6 @@ public class Beat : MonoBehaviour
         {
             beatCollider.enabled = true;
         }
-    }
-
-    //TEMPORARY
-    public void SetBeatState()
-    {
-        if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[this.index] + (songDataToPlay.GetOffsetBeatTime / 3.25f))
-            && songDirectorObj.time < (songDataToPlay.beatTimeStamps[this.index] + (songDataToPlay.GetOffsetBeatTime / 2.5f)))
-        {
-            this.beatState = BeatState.Miss;
-
-        }
-        // Okay State
-        else if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[this.index] + (songDataToPlay.GetOffsetBeatTime / 2.5f))
-            && songDirectorObj.time < (songDataToPlay.beatTimeStamps[this.index] + (songDataToPlay.GetOffsetBeatTime / 1.5f)))
-        {
-            this.beatState = BeatState.Okay;
-
-        }
-        // Perfect State
-        else if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[this.index] + (songDataToPlay.GetOffsetBeatTime / 1.5f))
-            && songDirectorObj.time < songDataToPlay.beatTimeStamps[this.index] + songDataToPlay.GetOffsetBeatTime)
-        {
-            this.beatState = BeatState.Perfect;
-
-        }
-
-        else if (songDirectorObj.time > songDataToPlay.beatTimeStamps[this.index] + songDataToPlay.GetOffsetBeatTime+0.25f)
-        {
-            this.beatState = BeatState.Miss;
-        }
-
     }
     IEnumerator StartBeatTimer()
     {

@@ -24,7 +24,7 @@ public abstract class ObjectPooler : MonoBehaviour
 
     public int totalSpawnsCount { get; private set; } = 0;
     public int totalPooledCount { get; protected set; } = 0;
-    public void Spawn()
+    public virtual void Spawn()
     {
         for (int i = 0; i < SpawnCount; i++)
         {

@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-//[System.Serializable]
-//public class OnBeatPooled : UnityEvent<Beat> { };
+[System.Serializable]
+public class OnBeatPooled : UnityEvent<Beat> { };
 
-//[System.Serializable]
+[System.Serializable]
 //public class OnBeatSpawned : UnityEvent<Beat> { };
 public class BeatSpawner : ObjectPooler
 {
-  //  public OnBeatPooled EVT_OnBeatPooled;
+    public OnBeatPooled EVT_OnBeatPooled;
     [SerializeField] private SongData songDataScriptableObject;
     [SerializeField] Transform[] spawnPoints;
 
@@ -18,12 +18,10 @@ public class BeatSpawner : ObjectPooler
     {
         EVT_OnObjectSpawned.AddListener(SetBeatIndex);
     }
-    private void Update()
+
+    public override void Spawn()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Spawn();
-        }
+        base.Spawn();
     }
     private void SetSpawnPosition()
     {
@@ -38,7 +36,9 @@ public class BeatSpawner : ObjectPooler
     }
     private void PoolInSeconds(GameObject obj)
     {
+        Beat beatObj = obj.GetComponent<Beat>();
         totalPooledCount += 1;
+        EVT_OnBeatPooled.Invoke(beatObj);
         EVT_OnObjectPooled.Invoke(obj);
         StartCoroutine(DelayedPool(obj));
     }

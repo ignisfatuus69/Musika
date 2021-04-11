@@ -18,6 +18,7 @@ public class BeatIndexer : MonoBehaviour
 
     public void AddIndex()
     {
+        if (songDataScriptableObject.isFilled) return;
         if (beatIndexes.Length <= 1)
         {
             Debug.Log("Added Index");
@@ -52,6 +53,7 @@ public class BeatIndexer : MonoBehaviour
 
     public void AddNotes()
     {
+        if (songDataScriptableObject.isFilled) return;
         Debug.Log("Added Note");
         songDataScriptableObject.notes.Add(this.notes);
         

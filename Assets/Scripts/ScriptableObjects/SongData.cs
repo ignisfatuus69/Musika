@@ -18,7 +18,6 @@ public class SongData : ScriptableObject
     public List<int> beatNoteIndexes;
     public List<double> beatTimeStamps;
     public List<MidiNoteFilter> notes;
-   public Dictionary<int, MidiNoteFilter> notesDictionary { get; set; } = new Dictionary<int, MidiNoteFilter>();
 
     private void GetDataFromJson()
     {
