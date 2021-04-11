@@ -9,17 +9,23 @@ public class Combo : Resource
     // Start is called before the first frame update
     void Start()
     {
-        beatSpawnerObj.EVT_OnObjectPooled.AddListener(ModifyComboCount);
+        beatSpawnerObj.EVT_OnBeatPooled.AddListener(ModifyComboCount);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ModifyComboCount(Beat beatObj)
     {
-        
-    }
+        Debug.Log("hello");
+        if (beatObj.beatState == BeatState.Miss)
+        {
+            currentValue = 0;
+            EVT_OnValueModified.Invoke();
+            EVT_OnValueReset.Invoke();
+            return;
+        }
 
-    private void ModifyComboCount(GameObject obj)
-    {
-
+        //If it's not a miss then add
+        currentValue += 1;
+        EVT_OnValueModified.Invoke();
+        EVT_OnValueAdded.Invoke();
     }
 }
