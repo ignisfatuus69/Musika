@@ -7,31 +7,38 @@ using UnityEngine.Events;
 public class OnBeatPooled : UnityEvent<Beat> { };
 
 [System.Serializable]
-//public class OnBeatSpawned : UnityEvent<Beat> { };
+public class OnBeatSpawned : UnityEvent<Beat> { };
 public class BeatSpawner : ObjectPooler
 {
+    public OnBeatSpawned EVT_OnBeatSpawned;
     public OnBeatPooled EVT_OnBeatPooled;
     [SerializeField] private SongData songDataScriptableObject;
     [SerializeField] Transform[] spawnPoints;
 
     private void Start()
     {
-        EVT_OnObjectSpawned.AddListener(SetBeatIndex);
+        EVT_OnObjectSpawned.AddListener(InvokeOnBeatSpawned);
+        EVT_OnBeatSpawned.AddListener(SetBeatIndex);
     }
 
     public override void Spawn()
     {
         base.Spawn();
+        
+    }
+
+    private void InvokeOnBeatSpawned(GameObject obj)
+    {
+        Beat beatObj = obj.GetComponent<Beat>();
+        EVT_OnBeatSpawned.Invoke(beatObj);
     }
     private void SetSpawnPosition()
     {
         SpawnPosition = spawnPoints[songDataScriptableObject.beatNoteIndexes[this.totalSpawnsCount]].position;
-        Debug.Log(spawnPoints[songDataScriptableObject.beatNoteIndexes[this.totalSpawnsCount]]);
     }
     protected override void SetPoolingInitializations(GameObject obj)
     {
         Beat beatObj = obj.GetComponent<Beat>();
-     //   beatObj.EVT_OnDeactivate.AddListener(InvokePoolBeatEvent);
         beatObj.EVT_OnDeactivate.AddListener(PoolInSeconds);
     }
     private void PoolInSeconds(GameObject obj)
@@ -43,9 +50,8 @@ public class BeatSpawner : ObjectPooler
         StartCoroutine(DelayedPool(obj));
     }
 
-    private void SetBeatIndex(GameObject obj)
+    private void SetBeatIndex(Beat beatObj)
     {
-        Beat beatObj = obj.GetComponent<Beat>();
         beatObj.index = this.totalSpawnsCount-1;
     }
 
