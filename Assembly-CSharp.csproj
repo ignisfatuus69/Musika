@@ -64,6 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Combo.cs" />
+    <Compile Include="Assets\LessonGradeCalculator.cs" />
+    <Compile Include="Assets\Life.cs" />
     <Compile Include="Assets\Resource.cs" />
     <Compile Include="Assets\ResourceText.cs" />
     <Compile Include="Assets\Score.cs" />
