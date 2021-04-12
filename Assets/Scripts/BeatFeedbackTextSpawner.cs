@@ -36,7 +36,7 @@ public class BeatFeedbackTextSpawner : ObjectPooler
 
     private void SetParent()
     {
-        currentSpawnedObjects[currentSpawnedObjects.Count - 1].transform.parent = canvasTransform;
+        currentSpawnedObjects[currentSpawnedObjects.Count - 1].transform.SetParent(canvasTransform);
     }
 
     private void CopyBeatPosition(Beat beatObj)

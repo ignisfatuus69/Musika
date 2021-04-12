@@ -18,8 +18,8 @@ public abstract class Resource : MonoBehaviour
     public OnValueReset EVT_OnValueReset;
     public OnValueModified EVT_OnValueModified;
 
-    [SerializeField]private float minimumValue=0;
-    [SerializeField]private float maximumValue=0;
+    [SerializeField] protected float minimumValue=0;
+    [SerializeField] protected float maximumValue=0;
 
     public float currentValue { get; set; }
     public bool hasCap = true;
@@ -34,7 +34,8 @@ public abstract class Resource : MonoBehaviour
     private void CapValue()
     {
         if (!hasCap) return;
-        Mathf.Clamp(currentValue, minimumValue, maximumValue);
+        Debug.Log("called");
+        currentValue = Mathf.Clamp(currentValue, minimumValue, maximumValue);
     }
 
     protected void ResetValue()
