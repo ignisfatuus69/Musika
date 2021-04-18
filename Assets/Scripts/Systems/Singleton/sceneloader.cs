@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using UnityEngine.UI;
-public class sceneloader : MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
     public Image preImage;
     // Start is called before the first frame update
@@ -25,5 +25,11 @@ public class sceneloader : MonoBehaviour
             SceneManager.UnloadSceneAsync(1);
             SceneManager.LoadScene(2, LoadSceneMode.Additive);
         }
+    }
+
+    public void LoadSceneAdditive(int sceneIndex)
+    {
+
+        SceneManager.LoadScene(sceneIndex, LoadSceneMode.Additive);
     }
 }

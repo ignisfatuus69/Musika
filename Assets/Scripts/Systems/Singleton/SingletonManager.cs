@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 public class SingletonManager : MonoBehaviour
 {
     public static SingletonManager instance;
-    //public static SingletonManager instance;
-    
     public Dictionary<System.Type, MonoBehaviour> instances { get; private set; } = new Dictionary<System.Type, MonoBehaviour>();
     public List<GameObject> singletonInstances = new List<GameObject>();
 
@@ -26,7 +24,6 @@ public class SingletonManager : MonoBehaviour
         }
 
         instance.instances.Add(ComponentClass.GetType(),ComponentClass);
-        //instance.singletonInstances.Add(ComponentClass.gameObject);
      
     }
 
@@ -56,14 +53,6 @@ public class SingletonManager : MonoBehaviour
     private void ClearInactiveInstances(Scene scene)
     {
         Debug.Log(instances.Count);
-        //for (int i = 0; i < instance.singletonInstances.Count; i++)
-        //{
-        //    if (instance.singletonInstances[i].activeInHierarchy)
-        //    {
-        //        Destroy(instance.singletonInstances[i]);
-        //        instance.singletonInstances.RemoveAt(i);
-        //    }
-        //}
     }
 
   

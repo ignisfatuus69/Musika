@@ -34,7 +34,6 @@ public abstract class Resource : MonoBehaviour
     private void CapValue()
     {
         if (!hasCap) return;
-        Debug.Log("called");
         currentValue = Mathf.Clamp(currentValue, minimumValue, maximumValue);
     }
 

@@ -25,7 +25,7 @@ public class Beat : MonoBehaviour
     public int index = 0;
     [SerializeField] private float finalOuterCircleScale;
     [SerializeField] private Transform outerCircle;
-    [SerializeField] private Collider2D beatCollider;
+    [SerializeField] private Collider beatCollider;
 
     public float Timer = 0;
     private Vector3 originalOuterCircleScale = new Vector3(1, 1, 1);

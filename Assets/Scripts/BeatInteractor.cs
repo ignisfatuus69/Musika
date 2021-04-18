@@ -13,62 +13,37 @@ public class BeatInteractor : MonoBehaviour
     [SerializeField] private SongData songDataToPlay;
     [SerializeField] private PlayableDirector songDirectorObj;
     [SerializeField] private BeatSpawner beatSpawnerObj;
-    public TextMeshProUGUI tmProUI;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public void EvaluateBeatState(Beat beatToEvaluate)
     {
-        
         EVT_OnBeatInteraction.Invoke(beatToEvaluate);
-
         // Early State
-        if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 5))
-            && songDirectorObj.time < (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 2.5f)))
+        if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + 
+            (songDataToPlay.GetOffsetBeatTime / 5))
+            && songDirectorObj.time < (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + 
+            (songDataToPlay.GetOffsetBeatTime / 2.5f)))
         {
-            Debug.Log("Early");
-            Debug.Log("Beat Number:" + beatToEvaluate.index);
-            Debug.Log("Time Stamp:" + songDataToPlay.beatTimeStamps[beatToEvaluate.index]);
             beatToEvaluate.beatState = BeatState.Miss;
 
         }
         // Okay State
-        else if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 2.5f))
-            && songDirectorObj.time < (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 1.5f)))
+        else if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + 
+            (songDataToPlay.GetOffsetBeatTime / 2.5f))
+            && songDirectorObj.time < (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + 
+            (songDataToPlay.GetOffsetBeatTime / 1.5f)))
         {
-            Debug.Log("Okay");
             beatToEvaluate.beatState = BeatState.Okay;
 
         }
         // Perfect State
-        else if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 1.5f))
-            && songDirectorObj.time < songDataToPlay.beatTimeStamps[beatToEvaluate.index] + songDataToPlay.GetOffsetBeatTime)
+        else if (songDirectorObj.time > (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + 
+            (songDataToPlay.GetOffsetBeatTime / 1.5f))
+            && songDirectorObj.time < songDataToPlay.beatTimeStamps[beatToEvaluate.index] + 
+            songDataToPlay.GetOffsetBeatTime)
         {
-            Debug.Log("Perfect");
             beatToEvaluate.beatState = BeatState.Perfect;
 
         }
         beatToEvaluate.BeatInteraction();
-        // Late/End State
-        // + despawn prolong time later
-        //else if (songDirectorObj.time > songDataToPlay.beatTimeStamps[beatToEvaluate.index] + songDataToPlay.GetOffsetBeatTime)
-        //{
-        //    Debug.Log("Timed Out");
-        //    beatToEvaluate.beatState = BeatState.Miss;
-
-        //    Debug.Log("CURRENT TIME:" + songDirectorObj.time);
-        //    Debug.Log("BEAT REFERENCE TIME:" + songDataToPlay.beatTimeStamps[beatToEvaluate.index]);
-        //    Debug.Log("IS GREATER THAN:" + (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 3.25f)));
-        //    Debug.Log("IS LESS THAN:" + (songDataToPlay.beatTimeStamps[beatToEvaluate.index] + (songDataToPlay.GetOffsetBeatTime / 2.5f)));
-        //}
     }
 }
