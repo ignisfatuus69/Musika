@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Klak.Timeline.Midi;
 using System.IO;
-
 [CreateAssetMenu(fileName = "SongData", menuName = "ScriptableObjects/SongData", order = 1)]
 public class SongData : ScriptableObject
 {
