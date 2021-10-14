@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Tongatong : BeatInteractor,IInteractable
 {
-    public KeyCode InputCode;
     public float speed = 5;
     public float displacement = 20;
     private Vector2 InitialPosition;
@@ -43,12 +42,6 @@ public class Tongatong : BeatInteractor,IInteractable
         {
             StartCoroutine(MoveToDisplacement(0));
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void DetectBeats()

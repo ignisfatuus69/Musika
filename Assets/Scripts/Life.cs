@@ -7,6 +7,9 @@ public class Life : Resource
     [SerializeField] private float easyBaseDeductionValue= 20;
     [SerializeField] private float mediumBaseDeductionValue = 75;
     [SerializeField] private float hardBaseDeductionValue = 150;
+    [SerializeField] private float baseRestorationValue = 50;
+
+    [SerializeField] private Combo comboCounterObj;
     [SerializeField] private BeatSpawner beatSpawnerObj;
     [SerializeField] private GameManager gameManagerObj;
 
@@ -18,6 +21,8 @@ public class Life : Resource
         currentValue = maximumValue;
         SetDeductionValueOnDifficulty();
         beatSpawnerObj.EVT_OnBeatPooled.AddListener(ReduceLifeOnMiss);
+        beatSpawnerObj.EVT_OnBeatPooled.AddListener(RestoreLifeOnHit);
+     
     }
 
     private void ReduceLifeOnMiss(Beat beatObj)
@@ -28,6 +33,15 @@ public class Life : Resource
         this.currentValue -= baseDeductionValue;
         OnValueModified();
         EVT_OnValueDeducted.Invoke();
+    }
+
+    private void RestoreLifeOnHit(Beat beatObj)
+    {
+        if (beatObj.beatState == BeatState.Miss) return;
+        if (currentValue >= maximumValue) return;
+
+        this.currentValue += baseRestorationValue + (comboCounterObj.currentValue*10);
+        if (currentValue > maximumValue) currentValue = maximumValue;
     }
 
     private void SetDeductionValueOnDifficulty()
