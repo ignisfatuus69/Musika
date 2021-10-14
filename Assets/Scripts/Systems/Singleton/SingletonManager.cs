@@ -39,7 +39,6 @@ public class SingletonManager : MonoBehaviour
     {
         if (instance.instances.ContainsKey(typeof(T)))
         {
-            Debug.Log(typeof(T));
             return (T)instance.instances[typeof(T)];
         }
         else if (!instance.instances.ContainsKey(typeof(T)))

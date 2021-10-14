@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tongatong : BeatInteractor
+public class Tongatong : BeatInteractor,IInteractable
 {
     public KeyCode InputCode;
     public float speed = 5;
@@ -17,8 +17,9 @@ public class Tongatong : BeatInteractor
         InitialPosition = transform.position;
     }
 
-    private void MoveDown()
+    public void MoveDown()
     {
+        Debug.Log("hey");
         StopAllCoroutines();
         StartCoroutine(MoveToDisplacement(displacement));
     }
@@ -47,22 +48,26 @@ public class Tongatong : BeatInteractor
     // Update is called once per frame
     void Update()
     {
-        //Tongatong PC Controls
-        if (Input.GetKeyDown(InputCode))
-        {
-            MoveDown();
-            Ray ray = new Ray(this.transform.position, Vector3.down);
-            RaycastHit hit;
-            Debug.DrawRay(ray.origin, ray.direction * 10, Color.green);
-            if (Physics.Raycast(ray.origin, ray.direction, out hit, 25))
-            {
-                Debug.Log("hit something");
-                Beat beatHit = hit.transform.gameObject.GetComponent<Beat>();
-                EvaluateBeatState(beatHit);
+        
+    }
 
-            }
+    void DetectBeats()
+    {
+        Ray ray = new Ray(this.transform.position, Vector3.down);
+        RaycastHit hit;
+        Debug.DrawRay(ray.origin, ray.direction * 10, Color.green);
+        if (Physics.Raycast(ray.origin, ray.direction, out hit, 25))
+        {
+            Debug.Log("hit something");
+            Beat beatHit = hit.transform.gameObject.GetComponent<Beat>();
+            EvaluateBeatState(beatHit);
 
         }
     }
 
+    public void Interact()
+    {
+        MoveDown();
+        DetectBeats();
+    }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 public class Test : MonoBehaviour
 {
     private void Awake()
@@ -16,10 +17,14 @@ public class Test : MonoBehaviour
     // Start is called before the first frame update
     public void PrintPare()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            SceneManager.LoadScene(1);
-        }
-        Debug.Log("print mo nga pare");
+        Debug.Log("hoyhotyhoy");
+
     }
+
+    public void Heyman(InputAction.CallbackContext ctx)
+    {
+        SceneManager.LoadScene(1);
+    }
+
+
 }

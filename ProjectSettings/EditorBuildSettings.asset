@@ -14,4 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PalmBreeze Level.unity
     guid: 6944faedbe6f3be4199cb79f324167cf
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: d01931d19f9e44248aba360b05fd4f81,
+      type: 2}

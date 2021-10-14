@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class Test2 : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -13,13 +13,13 @@ public class Test2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("SingletonManager instances:" + SingletonManager.instance.instances.Count);
+      
+        
+    }
 
-        foreach (KeyValuePair<System.Type, MonoBehaviour> instance in SingletonManager.instance.instances)
-        {
-            
-            Debug.Log(instance.Value);
-
-        }
+    public void testtest(InputAction.CallbackContext ctx)
+    {
+        SingletonManager.GetSingleton<Test>().PrintPare();
+     
     }
 }
