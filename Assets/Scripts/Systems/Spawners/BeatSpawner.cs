@@ -57,7 +57,7 @@ public class BeatSpawner : ObjectPooler
 
     IEnumerator DelayedPool(GameObject obj)
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(poolTimer);
         Pool(obj);
     }
 }

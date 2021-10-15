@@ -63,9 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ComboEffect.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Prefabs\Objects\InputManager.cs" />
     <Compile Include="Assets\Prefabs\Objects\TouchControls.cs" />
+    <Compile Include="Assets\ScoreEffect.cs" />
     <Compile Include="Assets\Scripts\Combo.cs" />
     <Compile Include="Assets\Scripts\IInteractable.cs" />
     <Compile Include="Assets\Scripts\LessonGradeCalculator.cs" />

@@ -17,6 +17,7 @@ public abstract class ObjectPooler : MonoBehaviour
     [SerializeField]private GameObject ObjectToSpawn;
     [SerializeField]private int SpawnCount = 1;
 
+    [SerializeField] protected float poolTimer;
 
     protected List<GameObject> currentSpawnedObjects = new List<GameObject>();
     protected List<GameObject> pooledObjects = new List<GameObject>();
