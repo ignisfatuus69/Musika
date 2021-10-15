@@ -27,6 +27,7 @@ public class Life : Resource
 
     private void ReduceLifeOnMiss(Beat beatObj)
     {
+        if (currentValue <= 0) return;
         if (beatObj.beatState != BeatState.Miss) return;
 
         baseDeductionValue *= multiplierNumber;
@@ -40,8 +41,13 @@ public class Life : Resource
         if (beatObj.beatState == BeatState.Miss) return;
         if (currentValue >= maximumValue) return;
 
+        //reset deduction value
+        SetDeductionValueOnDifficulty();
+        //add life
         this.currentValue += baseRestorationValue + (comboCounterObj.currentValue*10);
         if (currentValue > maximumValue) currentValue = maximumValue;
+        OnValueModified();
+        EVT_OnValueAdded.Invoke();
     }
 
     private void SetDeductionValueOnDifficulty()
