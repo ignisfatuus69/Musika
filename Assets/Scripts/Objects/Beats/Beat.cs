@@ -33,11 +33,10 @@ public class Beat : MonoBehaviour
     //TEMPORARY
     private PlayableDirector songDirectorObj;
     [SerializeField] private SongData songDataToPlay;
-    private BeatSpawner beatSpawnerObj;
+    public BeatSpawner beatSpawnerObj;
     private void Awake()
     {
         originalOuterCircleScale = outerCircle.localScale;
-        beatSpawnerObj = GameObject.FindObjectOfType<BeatSpawner>();
     }
 
 
@@ -63,7 +62,7 @@ public class Beat : MonoBehaviour
     private void OnMouseDown()
     {
 
-        GameObject.FindObjectOfType<BeatInteractor>().EvaluateBeatState(this);
+       // GameObject.FindObjectOfType<BeatInteractor>().EvaluateBeatState(this);
     }
     public void BeatInteraction()
     {
@@ -75,7 +74,6 @@ public class Beat : MonoBehaviour
     private void Update()
     {
         EnableCollider();
-       // SetBeatState();
     }
 
 

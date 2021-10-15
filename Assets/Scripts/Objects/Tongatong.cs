@@ -18,7 +18,6 @@ public class Tongatong : BeatInteractor,IInteractable
 
     public void MoveDown()
     {
-        Debug.Log("hey");
         StopAllCoroutines();
         StartCoroutine(MoveToDisplacement(displacement));
     }

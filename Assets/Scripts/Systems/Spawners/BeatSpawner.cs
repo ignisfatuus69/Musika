@@ -30,6 +30,9 @@ public class BeatSpawner : ObjectPooler
     private void InvokeOnBeatSpawned(GameObject obj)
     {
         Beat beatObj = obj.GetComponent<Beat>();
+        beatObj.beatSpawnerObj = this;
+        beatObj.beatTimer = songDataScriptableObject.GetOffsetBeatTime;
+        beatObj.gameObject.SetActive(true);
         EVT_OnBeatSpawned.Invoke(beatObj);
     }
     private void SetSpawnPosition()

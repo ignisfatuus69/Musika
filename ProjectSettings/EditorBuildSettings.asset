@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Persistent.unity
     guid: a30d8d1e62cb0684a9ea7a3b4c95af2d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Notebook Scene.unity
     guid: 8c252d1fd03793240863facba33c8dae
   - enabled: 1

@@ -30,7 +30,6 @@ public class InputManager : MonoBehaviour
 
     private void StartTouch(InputAction.CallbackContext context)
     {
-        Debug.Log(" Touch started" + touchControls.Touch.TouchPosition.ReadValue<Vector2>());
 
         Vector2 touchPosition = touchControls.Touch.TouchPosition.ReadValue<Vector2>();
         Vector3 screenCoordinates = new Vector3(touchPosition.x, touchPosition.y, cameraMain.nearClipPlane);
@@ -42,7 +41,6 @@ public class InputManager : MonoBehaviour
         Debug.DrawRay(ray.origin, ray.direction * 10, Color.green);
         if (Physics.Raycast(ray.origin, ray.direction, out hit, 25))
         {
-            Debug.Log("hit something");
             var interactableObj = hit.transform.gameObject.GetComponent<IInteractable>();
             if (interactableObj == null) return;
             interactableObj.Interact();
@@ -53,6 +51,5 @@ public class InputManager : MonoBehaviour
     }
     private void EndTouch(InputAction.CallbackContext context)
     {
-        Debug.Log(" Touch ended");
     }
 }

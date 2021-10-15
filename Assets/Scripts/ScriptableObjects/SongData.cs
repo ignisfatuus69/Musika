@@ -8,11 +8,11 @@ public class SongData : ScriptableObject
 {
 
     [SerializeField] private string songId;
-    [SerializeField] private double offsetBeatTime;
+    [SerializeField] private float offsetBeatTime;
     [SerializeField] private AudioClip songAudioClip;
     public bool isFilled=false;
     public string GetSongId => songId;
-    public double GetOffsetBeatTime => offsetBeatTime;
+    public float GetOffsetBeatTime => offsetBeatTime;
     public AudioClip GetSongAudioClip => songAudioClip;
     public List<int> beatNoteIndexes;
     public List<double> beatTimeStamps;
