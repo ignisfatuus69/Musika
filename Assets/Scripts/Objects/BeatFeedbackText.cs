@@ -8,9 +8,10 @@ public class BeatFeedbackText : MonoBehaviour
 {
     public OnDeactivate EVT_OnDeactivate;
     
-    public TextMeshProUGUI tmProComponent;
     [SerializeField] private float movementSpeed;
     [SerializeField] private int despawnTime;
+    public SpriteRenderer spriteRendererComponent;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
-
 //[System.Serializable]
 //public class OnFeedbackTextSpawn : UnityEvent<BeatFeedbackText> { };
 public class BeatFeedbackTextSpawner : ObjectPooler
@@ -11,14 +10,21 @@ public class BeatFeedbackTextSpawner : ObjectPooler
 
     [SerializeField] private Transform canvasTransform;
     [SerializeField] private BeatSpawner beatSpawnerObj;
+
+    [SerializeField] private Sprite[] beatStateSprites; // 0 = miss, 1 = okay, 2=perfect
+
     private void Start()
     {
         beatSpawnerObj.EVT_OnBeatPooled.AddListener(SpawnFeedbackText);
     }
-    private void SetTextToBeat(Beat beatObj)
+    private void SetSpriteToBeatState(Beat beatObj)
     {
         BeatFeedbackText beatFBTextObj = currentSpawnedObjects[currentSpawnedObjects.Count - 1].GetComponent<BeatFeedbackText>();
-        beatFBTextObj.tmProComponent.text = beatObj.beatState.ToString();
+
+        if (beatObj.beatState == BeatState.Miss) beatFBTextObj.spriteRendererComponent.sprite = beatStateSprites[0];
+        if (beatObj.beatState == BeatState.Okay) beatFBTextObj.spriteRendererComponent.sprite = beatStateSprites[1];
+        if (beatObj.beatState == BeatState.Perfect) beatFBTextObj.spriteRendererComponent.sprite = beatStateSprites[2];
+
     }
     protected override void SetPoolingInitializations(GameObject obj)
     {
@@ -30,13 +36,7 @@ public class BeatFeedbackTextSpawner : ObjectPooler
     {
         CopyBeatPosition(beatObj);
         Spawn();
-        SetParent();
-        SetTextToBeat(beatObj);
-    }
-
-    private void SetParent()
-    {
-        currentSpawnedObjects[currentSpawnedObjects.Count - 1].transform.SetParent(canvasTransform);
+        SetSpriteToBeatState(beatObj);
     }
 
     private void CopyBeatPosition(Beat beatObj)
