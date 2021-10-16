@@ -31,8 +31,6 @@ public class Beat : MonoBehaviour
     private Vector3 originalOuterCircleScale = new Vector3(1, 1, 1);
 
     //TEMPORARY
-    private PlayableDirector songDirectorObj;
-    [SerializeField] private SongData songDataToPlay;
     public BeatSpawner beatSpawnerObj;
     private void Awake()
     {

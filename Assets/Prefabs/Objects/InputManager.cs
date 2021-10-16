@@ -7,6 +7,7 @@ public class InputManager : MonoBehaviour
     private TouchControls touchControls;
     public Camera cameraMain;
     public GameObject objectToTest;
+    public Gabbang gabbangObj;
     private void Awake()
     {
         touchControls = new TouchControls();
@@ -46,7 +47,8 @@ public class InputManager : MonoBehaviour
             interactableObj.Interact();
 
         }
-        //objectToTest.transform.position = worldCoordinates;
+        gabbangObj.DetectBeats(worldCoordinates);
+
         
     }
     private void EndTouch(InputAction.CallbackContext context)

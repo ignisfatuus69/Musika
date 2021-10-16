@@ -406,7 +406,7 @@ MonoBehaviour:
   outerCircle: {fileID: 1814629126}
   beatCollider: {fileID: 7703053971504063716}
   Timer: 0
-  songDataToPlay: {fileID: 11400000, guid: 4de3cf535a1666243be42ed3018db6ec, type: 2}
+  beatSpawnerObj: {fileID: 0}
 --- !u!135 &7703053971504063716
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -418,5 +418,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.75
   m_Center: {x: 0, y: 0, z: 0}

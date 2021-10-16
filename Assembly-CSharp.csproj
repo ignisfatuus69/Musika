@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Objects\BeatIndexerManager.cs" />
     <Compile Include="Assets\Scripts\Objects\BeatInteractor.cs" />
     <Compile Include="Assets\Scripts\Objects\Beats\Beat.cs" />
+    <Compile Include="Assets\Scripts\Objects\Gabbang.cs" />
     <Compile Include="Assets\Scripts\Objects\SongDataGenerator.cs" />
     <Compile Include="Assets\Scripts\Objects\SpawnPositionSetter.cs" />
     <Compile Include="Assets\Scripts\Objects\Tongatong.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Assets\Scripts\Systems\Spawners\BeatSpawner.cs" />
     <Compile Include="Assets\Scripts\Systems\Spawners\ObjectPooler.cs" />
     <Compile Include="Assets\Scripts\Systems\Spawners\TongatongBeatSpawner.cs" />
+    <Compile Include="Assets\TongatongBeat.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
