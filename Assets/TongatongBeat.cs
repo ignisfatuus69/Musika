@@ -12,6 +12,7 @@ public class TongatongBeat : Beat,IInteractable
 
     void ActivateTongatong()
     {
+
         Ray ray = new Ray(this.transform.position, Vector3.up);
         RaycastHit hit;
         Debug.DrawRay(ray.origin, ray.direction * 10, Color.green);

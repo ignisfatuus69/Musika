@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6003665968159870831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6003665968159870816}
+  - component: {fileID: 6003665968159870817}
+  - component: {fileID: 6003665968159870830}
+  m_Layer: 0
+  m_Name: Chasing The Sunset Director
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6003665968159870816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6003665968159870831}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &6003665968159870817
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6003665968159870831}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 4bb691d1085442f479c837949120d08f, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 5684276336474682788, guid: 4bb691d1085442f479c837949120d08f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2385542620420186983, guid: 4bb691d1085442f479c837949120d08f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 7801689521425808649, guid: 4bb691d1085442f479c837949120d08f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -3598975489834128154, guid: 4bb691d1085442f479c837949120d08f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 8961991278122395874, guid: 4bb691d1085442f479c837949120d08f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4485688459716941722, guid: 4bb691d1085442f479c837949120d08f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 815227973317967327, guid: 4bb691d1085442f479c837949120d08f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 2304589823177999503, guid: 4bb691d1085442f479c837949120d08f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2069950487106971318, guid: 4bb691d1085442f479c837949120d08f, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -8991989752534497165, guid: 4bb691d1085442f479c837949120d08f, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
+--- !u!95 &6003665968159870830
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6003665968159870831}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

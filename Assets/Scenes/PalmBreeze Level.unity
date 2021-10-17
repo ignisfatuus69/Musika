@@ -905,6 +905,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 2492536500186406802, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: beatSpawnerObj
+      value: 
+      objectReference: {fileID: 747318072}
+    - target: {fileID: 1431166195957673880, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: db666fda4cafc924bbe1558aaf46e754,
+        type: 3}
+    - target: {fileID: 1431166195957673880, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431166195957673880, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431166195957673880, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: m_FillOrigin
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431166195957673880, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: m_FillMethod
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004886929899149917, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1004886930859683359, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
         type: 3}
       propertyPath: beatSpawnerObj
@@ -975,16 +1011,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2492536500186406802, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
-        type: 3}
-      propertyPath: beatSpawnerObj
-      value: 
-      objectReference: {fileID: 747318072}
-    - target: {fileID: 1004886929899149917, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2640049676434658184, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
         type: 3}
       propertyPath: textBeforeValue
@@ -1009,32 +1035,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 10.4800005
-      objectReference: {fileID: 0}
-    - target: {fileID: 1431166195957673880, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: db666fda4cafc924bbe1558aaf46e754,
-        type: 3}
-    - target: {fileID: 1431166195957673880, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
-        type: 3}
-      propertyPath: m_Type
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1431166195957673880, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
-        type: 3}
-      propertyPath: m_FillAmount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1431166195957673880, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
-        type: 3}
-      propertyPath: m_FillOrigin
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1431166195957673880, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
-        type: 3}
-      propertyPath: m_FillMethod
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ed263f1f3854f143933b6d1cdf7d6bc, type: 3}
@@ -1144,6 +1144,12 @@ PrefabInstance:
       propertyPath: poolTimer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: ObjectToSpawn
+      value: 
+      objectReference: {fileID: 8912743139464601707, guid: 59582da03e6c42141b7cf843a7c94a45,
+        type: 3}
     - target: {fileID: 3064636010574232086, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: m_LocalPosition.x

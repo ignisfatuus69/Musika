@@ -29,7 +29,7 @@ public class InputManager : MonoBehaviour
         touchControls.Touch.TouchPress.canceled += ctx => EndTouch(ctx);
     }
 
-    private void StartTouch(InputAction.CallbackContext context)
+    protected virtual void StartTouch(InputAction.CallbackContext context)
     {
 
         Vector2 touchPosition = touchControls.Touch.TouchPosition.ReadValue<Vector2>();
@@ -47,6 +47,7 @@ public class InputManager : MonoBehaviour
             interactableObj.Interact();
 
         }
+        if (gabbangObj == null) return;
         gabbangObj.DetectBeats(worldCoordinates);
 
         

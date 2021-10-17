@@ -13,7 +13,7 @@ public class OnInteracted : UnityEvent<Beat> { };
 public class OnBeatTimedOut : UnityEvent<Beat> { };
 [System.Serializable]
 public class OnDeactivate : UnityEvent<GameObject> { };
-public class Beat : MonoBehaviour
+public class Beat : MonoBehaviour,IInteractable
 {
 
     public OnInteracted EVT_OnInteracted;
@@ -54,14 +54,6 @@ public class Beat : MonoBehaviour
         this.beatState = BeatState.Miss;
         beatCollider.enabled = false;
     }
-
-
-    //TEMPORARY CODE
-    private void OnMouseDown()
-    {
-
-       // GameObject.FindObjectOfType<BeatInteractor>().EvaluateBeatState(this);
-    }
     public void BeatInteraction()
     {
         EVT_OnInteracted.Invoke(this);
@@ -96,4 +88,8 @@ public class Beat : MonoBehaviour
 
     }
 
+    public void Interact()
+    {
+    
+    }
 }

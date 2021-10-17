@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &30831212738868513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 30831212738868514}
+  - component: {fileID: 30831212738868515}
+  - component: {fileID: 30831212738868512}
+  m_Layer: 0
+  m_Name: Tropical Morning Director
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &30831212738868514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30831212738868513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &30831212738868515
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30831212738868513}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: e9e8f91fd7c7e8643b504cce85566c85, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -6089896449034594121, guid: e9e8f91fd7c7e8643b504cce85566c85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 405398831117884883, guid: e9e8f91fd7c7e8643b504cce85566c85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3882104692697360395, guid: e9e8f91fd7c7e8643b504cce85566c85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1606563790148618741, guid: e9e8f91fd7c7e8643b504cce85566c85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4614029832892353865, guid: e9e8f91fd7c7e8643b504cce85566c85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -5119994870305058545, guid: e9e8f91fd7c7e8643b504cce85566c85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 7296954673092611610, guid: e9e8f91fd7c7e8643b504cce85566c85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1261589397779882119, guid: e9e8f91fd7c7e8643b504cce85566c85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6543299036287881454, guid: e9e8f91fd7c7e8643b504cce85566c85, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6579962889899860469, guid: e9e8f91fd7c7e8643b504cce85566c85, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
+--- !u!95 &30831212738868512
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30831212738868513}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
