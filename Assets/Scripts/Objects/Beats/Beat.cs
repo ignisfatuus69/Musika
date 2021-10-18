@@ -88,7 +88,7 @@ public class Beat : MonoBehaviour,IInteractable
 
     }
 
-    public void Interact()
+    public void MoveTongatong()
     {
     
     }

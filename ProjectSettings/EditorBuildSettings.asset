@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Notebook Scene.unity
     guid: 8c252d1fd03793240863facba33c8dae
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/PalmBreeze Level.unity
     guid: 6944faedbe6f3be4199cb79f324167cf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LuminousSands.unity
     guid: bad941cf6ec7c34449d693d9b3bfbd9b
   m_configObjects:

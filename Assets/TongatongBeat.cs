@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TongatongBeat : Beat,IInteractable
 {
-    public void Interact()
+    public void MoveTongatong()
     {
         ActivateTongatong();
         Debug.Log("beat tapped");
@@ -19,7 +19,7 @@ public class TongatongBeat : Beat,IInteractable
         if (Physics.Raycast(ray.origin, ray.direction, out hit, 25))
         {
             Tongatong tongatongHit = hit.transform.gameObject.GetComponent<Tongatong>();
-            tongatongHit.Interact();
+            tongatongHit.MoveTongatong();
         }
     }
 }

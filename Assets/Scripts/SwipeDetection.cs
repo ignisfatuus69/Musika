@@ -1,9 +1,21 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
+[System.Serializable]
+public class OnSwipeUp : UnityEvent { };
+[System.Serializable]
+public class OnSwipeDown : UnityEvent { };
+[System.Serializable]
+public class OnSwipeRight : UnityEvent { };
+[System.Serializable]
+public class OnSwipeLeft : UnityEvent { };
 public class SwipeDetection : MonoBehaviour
 {
-
+    public OnSwipeUp EVT_OnSwipeUp;
+    public OnSwipeDown EVT_OnSwipeDown;
+    public OnSwipeLeft EVT_OnSwipeLeft;
+    public OnSwipeRight EVT_OnSwipeRight;
     [SerializeField] private InputController inputControllerObj;
     [SerializeField] private float minimumSwipeDistance = 0.2f;
     [SerializeField] private float maximumSwipeTime = 1f;
@@ -59,21 +71,25 @@ public class SwipeDetection : MonoBehaviour
         if(Vector2.Dot(Vector2.up,direction)>directionThreshold)
         {
             Debug.Log("SwipeUp");
+            EVT_OnSwipeUp.Invoke();
         }
         //Dot Product
         else if (Vector2.Dot(Vector2.down, direction) > directionThreshold)
         {
             Debug.Log("SwipeDown");
+            EVT_OnSwipeDown.Invoke();
         }
         //Dot Product
         else if (Vector2.Dot(Vector2.left, direction) > directionThreshold)
         {
             Debug.Log("SwipeLeft");
+            EVT_OnSwipeLeft.Invoke();
         }
         //Dot Product
        else if (Vector2.Dot(Vector2.right, direction) > directionThreshold)
         {
             Debug.Log("SwipeRight");
+            EVT_OnSwipeRight.Invoke();
         }
     }
 

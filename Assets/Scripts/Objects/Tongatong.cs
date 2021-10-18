@@ -57,9 +57,11 @@ public class Tongatong : BeatInteractor,IInteractable
         }
     }
 
-    public void Interact()
+    public void MoveTongatong()
     {
         MoveDown();
         DetectBeats();
     }
+
+
 }
