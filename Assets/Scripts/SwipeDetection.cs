@@ -43,7 +43,7 @@ public class SwipeDetection : MonoBehaviour
         startTime = time;
         trailObj.SetActive(true);
         trailObj.transform.position = position;
-        StartCoroutine(trackTrail());
+     //   StartCoroutine(trackTrail());
     }
     private void SwipeEnd(Vector2 position, float time)
     {
@@ -51,7 +51,7 @@ public class SwipeDetection : MonoBehaviour
         endTime = time;
         DetectSwipe();
         trailObj.SetActive(false);
-        StopCoroutine(trackTrail());
+      //  StopCoroutine(trackTrail());
     }
 
     void DetectSwipe()
@@ -93,12 +93,12 @@ public class SwipeDetection : MonoBehaviour
         }
     }
 
-    private IEnumerator trackTrail()
-    {
-        while(true)
-        {
-            trailObj.transform.position = inputControllerObj.PrimaryPosition();
-            yield return null;
-        }
-    }
+    //private IEnumerator trackTrail()
+    //{
+    //    while(true)
+    //    {
+    //        trailObj.transform.position = inputControllerObj.PrimaryPosition();
+    //        yield return null;
+    //    }
+    //}
 }
