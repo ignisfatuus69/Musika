@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
+using TMPro;
+
 [DefaultExecutionOrder(-1)]
 public class InputController : MonoBehaviour
 {
@@ -51,21 +53,6 @@ public class InputController : MonoBehaviour
     private void FingerRelease(Finger finger)
     {
         if (OnEndTouch != null) OnEndTouch(finger.screenPosition, Time.time);
-        Debug.Log(UnityEngine.InputSystem.EnhancedTouch.Touch.activeTouches);
     }
 
-    //private void StartPrimaryTouch(InputAction.CallbackContext context)
-    //{
-    //    if (OnStartTouch != null) OnStartTouch(Utilities.ScreenToWorld(mainCamera,playerControls.Touch.PrimaryPosition.ReadValue<Vector2>()),(float)context.startTime);
-    //}
-
-    //private void EndPrimaryTouch(InputAction.CallbackContext context)
-    //{
-    //    if (OnEndTouch != null) OnEndTouch(Utilities.ScreenToWorld(mainCamera, playerControls.Touch.PrimaryPosition.ReadValue<Vector2>()), (float)context.time);
-    //}
-
-    //public Vector2 PrimaryPosition()
-    //{
-    //    return UnityEngine.InputSystem.EnhancedTouch.Touch.fingers[0].screenPosition;
-    //}
 }
