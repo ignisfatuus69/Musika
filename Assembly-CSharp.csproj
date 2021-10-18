@@ -72,6 +72,7 @@
     <Compile Include="Assets\ScoreEffect.cs" />
     <Compile Include="Assets\Scripts\Combo.cs" />
     <Compile Include="Assets\Scripts\IInteractable.cs" />
+    <Compile Include="Assets\Scripts\InputController.cs" />
     <Compile Include="Assets\Scripts\LessonGradeCalculator.cs" />
     <Compile Include="Assets\Scripts\Life.cs" />
     <Compile Include="Assets\Scripts\Objects\BeatFeedbackText.cs" />
@@ -85,11 +86,13 @@
     <Compile Include="Assets\Scripts\Objects\SpawnPositionSetter.cs" />
     <Compile Include="Assets\Scripts\Objects\Tongatong.cs" />
     <Compile Include="Assets\Scripts\Objects\TongatongSpawnSetter.cs" />
+    <Compile Include="Assets\Scripts\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\Resource.cs" />
     <Compile Include="Assets\Scripts\ResourceText.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\SongData.cs" />
+    <Compile Include="Assets\Scripts\SwipeDetection.cs" />
     <Compile Include="Assets\Scripts\Systems\Singleton\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\Systems\Singleton\SingletonManager.cs" />
     <Compile Include="Assets\Scripts\Systems\Singleton\Test.cs" />
@@ -99,6 +102,7 @@
     <Compile Include="Assets\Scripts\Systems\Spawners\BeatSpawner.cs" />
     <Compile Include="Assets\Scripts\Systems\Spawners\ObjectPooler.cs" />
     <Compile Include="Assets\Scripts\Systems\Spawners\TongatongBeatSpawner.cs" />
+    <Compile Include="Assets\Scripts\Utilities.cs" />
     <Compile Include="Assets\TongatongBeat.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
