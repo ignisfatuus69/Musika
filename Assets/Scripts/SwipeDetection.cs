@@ -27,14 +27,14 @@ public class SwipeDetection : MonoBehaviour
     private float endTime;
     private void OnEnable()
     {
-        inputControllerObj.OnStartTouch += SwipeStart;
-        inputControllerObj.OnEndTouch += SwipeEnd;
+        inputControllerObj.EVT_OnStartTouch.AddListener(SwipeStart);
+        inputControllerObj.EVT_OnEndTouch.AddListener(SwipeEnd);
     }
 
     private void OnDisable()
     {
-        inputControllerObj.OnStartTouch -= SwipeStart;
-        inputControllerObj.OnEndTouch -= SwipeEnd;
+        inputControllerObj.EVT_OnStartTouch.RemoveListener(SwipeStart);
+        inputControllerObj.EVT_OnEndTouch.RemoveListener(SwipeEnd);
     }
     private void SwipeStart(Vector2 position,float time)
     {
