@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Gabbang : BeatInteractor
 {
 
@@ -15,6 +16,7 @@ public class Gabbang : BeatInteractor
         {
             Debug.Log("hit something");
             Beat beatHit = hit.transform.gameObject.GetComponent<Beat>();
+
             EvaluateBeatState(beatHit);
 
         }

@@ -939,6 +939,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3064636009979220271}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &765194390 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2027735596313925018, guid: cb280f3307dd38a48ae1633d42095509,
+    type: 3}
+  m_PrefabInstance: {fileID: 4967681928263723067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efb5ee32e706aa429f8f21a02ccdd4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &766627128
 GameObject:
   m_ObjectHideFlags: 0
@@ -2464,6 +2476,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Input Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 2912009012255680570, guid: 53165bb802f174d44b9153b976d23819,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2912009012255680568, guid: 53165bb802f174d44b9153b976d23819,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2806,6 +2823,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 8faf54afd347c6a4f84e618f1fb721ad,
         type: 2}
+    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: swipeDetector
+      value: 
+      objectReference: {fileID: 765194390}
     - target: {fileID: 2027735596313925020, guid: cb280f3307dd38a48ae1633d42095509,
         type: 3}
       propertyPath: m_IsActive
@@ -2840,6 +2862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: EVT_OnSwipeRight.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: DetectSwipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 2027735596313925018, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: minimumSwipeDistance
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb280f3307dd38a48ae1633d42095509, type: 3}

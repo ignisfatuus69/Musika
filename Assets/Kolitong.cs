@@ -1,17 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Kolitong : BeatInteractor
 {
     [SerializeField] Camera cameraMain;
     [SerializeField] private InputController inputcontrollerObj;
-    [SerializeField] Gabbang gabbangObj;
     private KolitongBeat currentBeat;
     private List<Vector2> positionsToCast = new List<Vector2>();
     [SerializeField] private SwipeDetection swipeDetector;
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         inputcontrollerObj.EVT_OnStartTouch.AddListener(StartTouch);
         inputcontrollerObj.EVT_OnHoldTouch.AddListener(OnTouchHold);
@@ -30,9 +28,8 @@ public class Kolitong : BeatInteractor
     }
     protected virtual void OnEndTouch(Vector2 position,float time)
     {
+        positionsToCast.Add(position);
         positionsToCast.Clear();
-
-
     }
 
     public override void EvaluateBeatState(Beat beatToEvaluate)
@@ -40,8 +37,6 @@ public class Kolitong : BeatInteractor
         if (swipeDetector.currentDirection != currentBeat.beatDirection) return;
         base.EvaluateBeatState(beatToEvaluate);
     }
-
-
     public void DetectSwipe()
     {
         
@@ -53,13 +48,12 @@ public class Kolitong : BeatInteractor
             //Fire 
             Ray ray = new Ray(worldCoordinates, Vector3.forward);
             RaycastHit hit;
-            Debug.DrawRay(ray.origin, ray.direction * 10, Color.green);
+            Debug.DrawRay(ray.origin, ray.direction * 55, Color.green);
             if (Physics.Raycast(ray.origin, ray.direction, out hit, 25))
             {
                 KolitongBeat detectedKolitongBeat = hit.transform.gameObject.GetComponent<KolitongBeat>();
                 currentBeat = detectedKolitongBeat;
                 Debug.Log("Natamaan kolitong");
-               // if (swipeDetector.currentDirection != currentBeat.beatDirection) return;
                 this.EvaluateBeatState(currentBeat);
 
             }
