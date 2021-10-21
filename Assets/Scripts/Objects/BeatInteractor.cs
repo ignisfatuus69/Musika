@@ -13,7 +13,7 @@ public class BeatInteractor : MonoBehaviour
     [SerializeField] private SongData songDataToPlay;
     [SerializeField] private PlayableDirector songDirectorObj;
 
-    public void EvaluateBeatState(Beat beatToEvaluate)
+    public virtual void EvaluateBeatState(Beat beatToEvaluate)
     {
         EVT_OnBeatInteraction.Invoke(beatToEvaluate);
         // Early State

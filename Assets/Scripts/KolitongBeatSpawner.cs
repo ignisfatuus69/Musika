@@ -18,7 +18,8 @@ public class KolitongBeatSpawner : BeatSpawner
         int randomNumber = Random.Range(0,2);
         if (randomNumber == 0) kolitongBeat.beatDirection = Direction.Left;
         if (randomNumber == 1) kolitongBeat.beatDirection = Direction.Right;
-        Debug.Log(kolitongBeat.beatDirection);
+        kolitongBeat.SetOrderLayer();
+        kolitongBeat.FlipArrow();
     }
 
     

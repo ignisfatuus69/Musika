@@ -27,7 +27,7 @@ public class SwipeDetection : MonoBehaviour
     private float startTime;
     private Vector2 endPosition;
     private float endTime;
-    private Direction currentDirection;
+    public Direction currentDirection { get; private set; }
     private void OnEnable()
     {
         inputControllerObj.EVT_OnStartTouch.AddListener(SwipeStart);
@@ -67,26 +67,27 @@ public class SwipeDetection : MonoBehaviour
         //Dot Product
         if(Vector2.Dot(Vector2.up,direction)>directionThreshold)
         {
-            EVT_OnSwipeUp.Invoke();
             currentDirection = Direction.Up;
+            EVT_OnSwipeUp.Invoke();
+
         }
         //Dot Product
         else if (Vector2.Dot(Vector2.down, direction) > directionThreshold)
         {
-            EVT_OnSwipeDown.Invoke();
             currentDirection = Direction.Down;
+            EVT_OnSwipeDown.Invoke();
         }
         //Dot Product
         else if (Vector2.Dot(Vector2.left, direction) > directionThreshold)
         {
-            EVT_OnSwipeLeft.Invoke();
             currentDirection = Direction.Left;
+            EVT_OnSwipeLeft.Invoke();
         }
         //Dot Product
        else if (Vector2.Dot(Vector2.right, direction) > directionThreshold)
         {
-            EVT_OnSwipeRight.Invoke();
             currentDirection = Direction.Right;
+            EVT_OnSwipeRight.Invoke();
         }
     }
 }

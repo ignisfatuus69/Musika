@@ -17,19 +17,18 @@ public class KolitongBeat : Beat,IInteractable
     }
     void ActivateTongatong()
     {
-
         Debug.Log("swiper no swiping pare");
     }
 
-    private void SetOrderLayer()
+    public void SetOrderLayer()
     {
         kolitongBeatSprite.sortingOrder = beatSpawnerObj.totalSpawnsCount;
         kolitongOuterCircleSprite.sortingOrder = beatSpawnerObj.totalSpawnsCount;
         kolitongArrowSprite.sortingOrder = beatSpawnerObj.totalSpawnsCount + 1;
     }
-    private void FlipArrow()
+    public void FlipArrow()
     {
-        if (this.beatDirection == Direction.Left) arrowDirection.localScale = new Vector2(arrowDirection.localScale.x, -0.6f);
-        if (this.beatDirection == Direction.Right) arrowDirection.localScale = new Vector2(arrowDirection.localScale.x, 0.6f);
+        if (this.beatDirection == Direction.Left) arrowDirection.localScale = new Vector2(arrowDirection.localScale.x, 0.6f);
+        if (this.beatDirection == Direction.Right) arrowDirection.localScale = new Vector2(arrowDirection.localScale.x, -0.6f);
     }
 }
