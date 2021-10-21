@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
 using TMPro;
 using UnityEngine.Events;
@@ -12,13 +11,9 @@ public class OnEndTouch : UnityEvent<Vector2, float> { };
 [DefaultExecutionOrder(-1)]
 public class InputController : MonoBehaviour
 {
+    [SerializeField] Camera mainCamera;
     public OnStartTouch EVT_OnStartTouch;
     public OnEndTouch EVT_OnEndTouch;
-
-    //public delegate void StartTouch(Vector2 position, float time);
-    //public event StartTouch OnStartTouch;
-    //public delegate void EndTouch(Vector2 position, float time);
-    //public event EndTouch OnEndTouch;
     private void Awake()
     {
         EnhancedTouchSupport.Enable();
@@ -47,6 +42,13 @@ public class InputController : MonoBehaviour
     private void FingerRelease(Finger finger)
     {
         if (EVT_OnEndTouch != null) EVT_OnEndTouch.Invoke(finger.screenPosition, Time.time);
+    }
+
+    public Vector2 PrimaryPosition()
+    {
+        if (UnityEngine.InputSystem.EnhancedTouch.Touch.activeFingers.Count <= 0) return Vector2.zero;
+        return Utilities.ScreenToWorld(mainCamera,UnityEngine.InputSystem.EnhancedTouch.Touch.activeFingers[UnityEngine.InputSystem.EnhancedTouch.Touch.activeFingers.Count-1].screenPosition);
+ 
     }
 
 }

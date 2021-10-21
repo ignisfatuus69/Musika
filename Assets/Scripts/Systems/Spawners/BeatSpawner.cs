@@ -15,7 +15,7 @@ public class BeatSpawner : ObjectPooler
     [SerializeField] private SongData songDataScriptableObject;
     [SerializeField] Transform[] spawnPoints;
 
-    private void Start()
+    protected virtual void Start()
     {
         EVT_OnObjectSpawned.AddListener(InvokeOnBeatSpawned);
         EVT_OnBeatSpawned.AddListener(SetBeatIndex);
@@ -35,7 +35,7 @@ public class BeatSpawner : ObjectPooler
         beatObj.gameObject.SetActive(true);
         EVT_OnBeatSpawned.Invoke(beatObj);
     }
-    private void SetSpawnPosition()
+    public void SetSpawnPosition()
     {
         SpawnPosition = spawnPoints[songDataScriptableObject.beatNoteIndexes[this.totalSpawnsCount]].position;
     }

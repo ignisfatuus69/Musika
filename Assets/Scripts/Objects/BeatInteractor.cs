@@ -12,7 +12,6 @@ public class BeatInteractor : MonoBehaviour
     public OnBeatInteraction EVT_OnBeatInteraction;
     [SerializeField] private SongData songDataToPlay;
     [SerializeField] private PlayableDirector songDirectorObj;
-    [SerializeField] private BeatSpawner beatSpawnerObj;
 
     public void EvaluateBeatState(Beat beatToEvaluate)
     {

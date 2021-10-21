@@ -26,7 +26,6 @@ public class Beat : MonoBehaviour,IInteractable
     [SerializeField] private float finalOuterCircleScale;
     [SerializeField] private Transform outerCircle;
     [SerializeField] private Collider beatCollider;
-
     public float Timer = 0;
     private Vector3 originalOuterCircleScale = new Vector3(1, 1, 1);
 
@@ -38,11 +37,12 @@ public class Beat : MonoBehaviour,IInteractable
     }
 
 
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         //Reset values
         beatCollider.enabled = false;
         this.beatState = BeatState.Miss;
+
         outerCircle.localScale = originalOuterCircleScale;
 
         StartCoroutine(StartBeatTimer());
