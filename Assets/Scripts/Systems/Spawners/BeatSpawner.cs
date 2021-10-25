@@ -24,7 +24,6 @@ public class BeatSpawner : ObjectPooler
     public override void Spawn()
     {
         base.Spawn();
-        
     }
 
     private void InvokeOnBeatSpawned(GameObject obj)

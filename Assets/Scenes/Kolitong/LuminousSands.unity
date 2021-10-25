@@ -1730,6 +1730,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1747481903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619177622986987000, guid: df4c51d8775e20c499254f2b4a79486d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1394459112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1819792754
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,17 +2147,17 @@ PrefabInstance:
     - target: {fileID: 2027735596313925018, guid: cb280f3307dd38a48ae1633d42095509,
         type: 3}
       propertyPath: EVT_OnSwipeDown.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2027735596313925018, guid: cb280f3307dd38a48ae1633d42095509,
         type: 3}
       propertyPath: EVT_OnSwipeLeft.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2027735596313925018, guid: cb280f3307dd38a48ae1633d42095509,
         type: 3}
       propertyPath: EVT_OnSwipeRight.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2027735596313925018, guid: cb280f3307dd38a48ae1633d42095509,
         type: 3}
@@ -2578,6 +2584,16 @@ PrefabInstance:
       propertyPath: LifeCounterObj
       value: 
       objectReference: {fileID: 1228755456}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: beatSpawnerObj
+      value: 
+      objectReference: {fileID: 1656564490}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: beatDirector
+      value: 
+      objectReference: {fileID: 1747481903}
     - target: {fileID: 8149026187321016931, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}
       propertyPath: m_LocalPosition.x

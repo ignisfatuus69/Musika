@@ -53,7 +53,6 @@ public class Kolitong : BeatInteractor
             {
                 KolitongBeat detectedKolitongBeat = hit.transform.gameObject.GetComponent<KolitongBeat>();
                 currentBeat = detectedKolitongBeat;
-                Debug.Log("Natamaan kolitong");
                 this.EvaluateBeatState(currentBeat);
 
             }
