@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SingletonManager : MonoBehaviour
 {
+
     public static SingletonManager instance;
     public Dictionary<System.Type, MonoBehaviour> instances { get; private set; } = new Dictionary<System.Type, MonoBehaviour>();
     public List<GameObject> singletonInstances = new List<GameObject>();
