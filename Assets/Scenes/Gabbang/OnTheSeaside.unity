@@ -1324,7 +1324,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1346,7 +1346,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 601af931873c3d3469d1af954ddcd7aa, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.09019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1989,6 +1989,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2100362493, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_Intensity
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
 --- !u!1001 &8237161557819016398
@@ -2063,11 +2067,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8359485405019573893, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 8237161557819016400, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
         type: 3}
       propertyPath: songDirectorObj
@@ -2078,6 +2077,11 @@ PrefabInstance:
       propertyPath: beatSpawnerObj
       value: 
       objectReference: {fileID: 747318072}
+    - target: {fileID: 8359485405019573893, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f, type: 3}
 --- !u!1 &8237161557819016399 stripped
@@ -2105,4 +2109,3 @@ MonoBehaviour:
       PublicKeyToken=null
   songDataToPlay: {fileID: 11400000, guid: 7232472e54dc8ad4eb9254f95f046c75, type: 2}
   songDirectorObj: {fileID: 950486600}
-  beatSpawnerObj: {fileID: 747318072}
