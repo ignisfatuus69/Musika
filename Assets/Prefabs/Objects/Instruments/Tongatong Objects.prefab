@@ -1239,6 +1239,21 @@ PrefabInstance:
       propertyPath: minimumSwipeDistance
       value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
+        type: 3}
+      propertyPath: EVT_OnSwipeDown.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTapAction
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
+        type: 3}
+      propertyPath: EVT_OnSwipeLeft.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTapAction
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
+        type: 3}
+      propertyPath: EVT_OnSwipeRight.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTapAction
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e9e981f7e69cb345bf2953a11e59cd8, type: 3}
 --- !u!4 &69570734064590818 stripped

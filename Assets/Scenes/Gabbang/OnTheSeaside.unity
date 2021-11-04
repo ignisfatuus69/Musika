@@ -138,6 +138,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c8db7f1427bf54fa534f2876b497ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &136464680 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5236368523325279941, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1004886930678010036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &326644727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,6 +1940,21 @@ PrefabInstance:
       propertyPath: LifeCounterObj
       value: 
       objectReference: {fileID: 1228755456}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: UIAnimator
+      value: 
+      objectReference: {fileID: 136464680}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: beatSpawnerObj
+      value: 
+      objectReference: {fileID: 747318072}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: beatDirector
+      value: 
+      objectReference: {fileID: 950486600}
     - target: {fileID: 8149026187321016931, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}
       propertyPath: m_LocalPosition.x

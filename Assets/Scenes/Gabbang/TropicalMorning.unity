@@ -838,6 +838,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8149026186331439791}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1188587859 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5236368523325279941, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1004886930678010036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1205207815
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,6 +1864,21 @@ PrefabInstance:
       propertyPath: LifeCounterObj
       value: 
       objectReference: {fileID: 1228755456}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: UIAnimator
+      value: 
+      objectReference: {fileID: 1188587859}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: beatSpawnerObj
+      value: 
+      objectReference: {fileID: 747318072}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: beatDirector
+      value: 
+      objectReference: {fileID: 1864104109}
     - target: {fileID: 8149026187321016931, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1987,11 +2008,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8359485405019573893, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 8237161557819016400, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
         type: 3}
       propertyPath: songDirectorObj
@@ -2002,6 +2018,11 @@ PrefabInstance:
       propertyPath: beatSpawnerObj
       value: 
       objectReference: {fileID: 747318072}
+    - target: {fileID: 8359485405019573893, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f, type: 3}
 --- !u!1 &8237161557819016399 stripped
@@ -2029,4 +2050,3 @@ MonoBehaviour:
       PublicKeyToken=null
   songDataToPlay: {fileID: 11400000, guid: b3f6b9de085719543a67edbbbe18f649, type: 2}
   songDirectorObj: {fileID: 1864104109}
-  beatSpawnerObj: {fileID: 747318072}

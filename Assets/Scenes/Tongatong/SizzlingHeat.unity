@@ -687,6 +687,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 242ae0a9747cd6b40a9517e8b2f15f24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1240568575 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5236368523325279941, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1004886930678010036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1297855509 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8199370302107142109, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
@@ -1494,25 +1500,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4399936069484833752, guid: 98e8ad6415ba3d64495507068f85f2ce,
+    - target: {fileID: 2837173359422801479, guid: 98e8ad6415ba3d64495507068f85f2ce,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.007
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399936069913526159, guid: 98e8ad6415ba3d64495507068f85f2ce,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.46
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3798513441312804198, guid: 98e8ad6415ba3d64495507068f85f2ce,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 2837173359422801479, guid: 98e8ad6415ba3d64495507068f85f2ce,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1970560969116741340, guid: 98e8ad6415ba3d64495507068f85f2ce,
         type: 3}
@@ -1543,6 +1539,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399936069484833752, guid: 98e8ad6415ba3d64495507068f85f2ce,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.007
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399936069913526159, guid: 98e8ad6415ba3d64495507068f85f2ce,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.46
       objectReference: {fileID: 0}
     - target: {fileID: 2315897951912163610, guid: 98e8ad6415ba3d64495507068f85f2ce,
         type: 3}
@@ -1860,6 +1866,21 @@ PrefabInstance:
       propertyPath: LifeCounterObj
       value: 
       objectReference: {fileID: 1228755456}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: UIAnimator
+      value: 
+      objectReference: {fileID: 1240568575}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: beatDirector
+      value: 
+      objectReference: {fileID: 1218034523}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: beatSpawnerObj
+      value: 
+      objectReference: {fileID: 747318072}
     - target: {fileID: 8149026187321016931, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}
       propertyPath: m_LocalPosition.x

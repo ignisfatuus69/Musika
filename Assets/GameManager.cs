@@ -43,8 +43,8 @@ public class GameManager : MonoBehaviour
     private IEnumerator DisableSpawner()
     {
         if (isPaused) yield return null;
-        yield return new WaitForSeconds(2f);
         beatDirector.Stop();
+        yield return new WaitForSeconds(0.1f);
         isPaused = true;
         UIAnimator.SetBool("isGameOver", true);
     }
