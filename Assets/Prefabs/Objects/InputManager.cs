@@ -55,5 +55,6 @@ public class InputManager : MonoBehaviour
     }
     private void EndTouch(InputAction.CallbackContext context)
     {
+
     }
 }

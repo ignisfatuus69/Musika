@@ -1,5 +1,5 @@
 {
-    "name": "Touch Controls",
+    "name": "TouchControls",
     "maps": [
         {
             "name": "Touch",
@@ -28,6 +28,14 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "mouseclick",
+                    "type": "Button",
+                    "id": "798e3404-f102-4f1a-bc80-d4e4b5cacb99",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
                 }
             ],
             "bindings": [
@@ -61,6 +69,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Touch Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8c710041-5e26-49f3-8bea-8b8be8b16f1c",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "mouseclick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

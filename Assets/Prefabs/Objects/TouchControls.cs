@@ -41,6 +41,14 @@ public class @TouchControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""mouseclick"",
+                    ""type"": ""Button"",
+                    ""id"": ""798e3404-f102-4f1a-bc80-d4e4b5cacb99"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -76,6 +84,17 @@ public class @TouchControls : IInputActionCollection, IDisposable
                     ""action"": ""Touch Position"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8c710041-5e26-49f3-8bea-8b8be8b16f1c"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""mouseclick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -87,6 +106,7 @@ public class @TouchControls : IInputActionCollection, IDisposable
         m_Touch_TouchInput = m_Touch.FindAction("TouchInput", throwIfNotFound: true);
         m_Touch_TouchPress = m_Touch.FindAction("Touch Press", throwIfNotFound: true);
         m_Touch_TouchPosition = m_Touch.FindAction("Touch Position", throwIfNotFound: true);
+        m_Touch_mouseclick = m_Touch.FindAction("mouseclick", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -139,6 +159,7 @@ public class @TouchControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Touch_TouchInput;
     private readonly InputAction m_Touch_TouchPress;
     private readonly InputAction m_Touch_TouchPosition;
+    private readonly InputAction m_Touch_mouseclick;
     public struct TouchActions
     {
         private @TouchControls m_Wrapper;
@@ -146,6 +167,7 @@ public class @TouchControls : IInputActionCollection, IDisposable
         public InputAction @TouchInput => m_Wrapper.m_Touch_TouchInput;
         public InputAction @TouchPress => m_Wrapper.m_Touch_TouchPress;
         public InputAction @TouchPosition => m_Wrapper.m_Touch_TouchPosition;
+        public InputAction @mouseclick => m_Wrapper.m_Touch_mouseclick;
         public InputActionMap Get() { return m_Wrapper.m_Touch; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -164,6 +186,9 @@ public class @TouchControls : IInputActionCollection, IDisposable
                 @TouchPosition.started -= m_Wrapper.m_TouchActionsCallbackInterface.OnTouchPosition;
                 @TouchPosition.performed -= m_Wrapper.m_TouchActionsCallbackInterface.OnTouchPosition;
                 @TouchPosition.canceled -= m_Wrapper.m_TouchActionsCallbackInterface.OnTouchPosition;
+                @mouseclick.started -= m_Wrapper.m_TouchActionsCallbackInterface.OnMouseclick;
+                @mouseclick.performed -= m_Wrapper.m_TouchActionsCallbackInterface.OnMouseclick;
+                @mouseclick.canceled -= m_Wrapper.m_TouchActionsCallbackInterface.OnMouseclick;
             }
             m_Wrapper.m_TouchActionsCallbackInterface = instance;
             if (instance != null)
@@ -177,6 +202,9 @@ public class @TouchControls : IInputActionCollection, IDisposable
                 @TouchPosition.started += instance.OnTouchPosition;
                 @TouchPosition.performed += instance.OnTouchPosition;
                 @TouchPosition.canceled += instance.OnTouchPosition;
+                @mouseclick.started += instance.OnMouseclick;
+                @mouseclick.performed += instance.OnMouseclick;
+                @mouseclick.canceled += instance.OnMouseclick;
             }
         }
     }
@@ -186,5 +214,6 @@ public class @TouchControls : IInputActionCollection, IDisposable
         void OnTouchInput(InputAction.CallbackContext context);
         void OnTouchPress(InputAction.CallbackContext context);
         void OnTouchPosition(InputAction.CallbackContext context);
+        void OnMouseclick(InputAction.CallbackContext context);
     }
 }
