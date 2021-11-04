@@ -174,7 +174,6 @@ MonoBehaviour:
       PublicKeyToken=null
   songDataToPlay: {fileID: 11400000, guid: 7ac890e55e09d3345af982cad0569c54, type: 2}
   songDirectorObj: {fileID: 1218034523}
-  beatSpawnerObj: {fileID: 747318072}
 --- !u!4 &179664802
 Transform:
   m_ObjectHideFlags: 0
@@ -1046,7 +1045,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1068,7 +1067,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 57f845130b4ba904d81291e8b4752ca5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.09019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1614,6 +1613,11 @@ MonoBehaviour:
   beatCollider: {fileID: 0}
   Timer: 0
   beatSpawnerObj: {fileID: 0}
+  beatDirection: 0
+  arrowDirection: {fileID: 0}
+  kolitongArrowSprite: {fileID: 0}
+  kolitongBeatSprite: {fileID: 0}
+  kolitongOuterCircleSprite: {fileID: 0}
 --- !u!114 &3798513440832664122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1648,6 +1652,11 @@ MonoBehaviour:
   beatCollider: {fileID: 0}
   Timer: 0
   beatSpawnerObj: {fileID: 0}
+  beatDirection: 0
+  arrowDirection: {fileID: 0}
+  kolitongArrowSprite: {fileID: 0}
+  kolitongBeatSprite: {fileID: 0}
+  kolitongOuterCircleSprite: {fileID: 0}
 --- !u!114 &3798513440832664123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1682,6 +1691,11 @@ MonoBehaviour:
   beatCollider: {fileID: 0}
   Timer: 0
   beatSpawnerObj: {fileID: 0}
+  beatDirection: 0
+  arrowDirection: {fileID: 0}
+  kolitongArrowSprite: {fileID: 0}
+  kolitongBeatSprite: {fileID: 0}
+  kolitongOuterCircleSprite: {fileID: 0}
 --- !u!212 &3798513440832664130
 SpriteRenderer:
   m_ObjectHideFlags: 0

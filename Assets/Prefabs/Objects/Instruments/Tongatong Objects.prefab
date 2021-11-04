@@ -169,7 +169,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -187,8 +187,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -491988659
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: bc7fbf26ace396047a1fe64fbc83b28b, type: 3}
   m_Color: {r: 0.18867922, g: 0.123157024, b: 0.011569957, a: 1}
@@ -641,7 +641,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -659,8 +659,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -491988659
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: bc7fbf26ace396047a1fe64fbc83b28b, type: 3}
   m_Color: {r: 0.18867922, g: 0.123157024, b: 0.011569957, a: 1}
@@ -721,7 +721,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -739,8 +739,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -491988659
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: bc7fbf26ace396047a1fe64fbc83b28b, type: 3}
   m_Color: {r: 0.18867922, g: 0.123157024, b: 0.011569957, a: 1}
@@ -768,7 +768,7 @@ PrefabInstance:
     - target: {fileID: 700504707992899235, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.5306
+      value: 3.007
       objectReference: {fileID: 0}
     - target: {fileID: 700504707992899235, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
@@ -837,10 +837,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -491988659
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0ef713cb92cab764f9b057f281434873,
         type: 3}
+    - target: {fileID: 2184113984080986028, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: songDataToPlay
+      value: 
+      objectReference: {fileID: 11400000, guid: 25b9aea4d8529214e9556b204545c7a5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f949376c47a79374ea3865981042edc3, type: 3}
 --- !u!114 &3096382805750946519 stripped
@@ -882,7 +903,7 @@ PrefabInstance:
     - target: {fileID: 700504707992899235, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.9868
+      value: -3.46
       objectReference: {fileID: 0}
     - target: {fileID: 700504707992899235, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
@@ -949,6 +970,27 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1624
       objectReference: {fileID: 0}
+    - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -491988659
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184113984080986028, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: songDataToPlay
+      value: 
+      objectReference: {fileID: 11400000, guid: 25b9aea4d8529214e9556b204545c7a5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f949376c47a79374ea3865981042edc3, type: 3}
 --- !u!1 &3096382805071122078 stripped
@@ -1059,10 +1101,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -491988659
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: f96f2999208dd204f95ba86dee4c6d32,
         type: 3}
+    - target: {fileID: 2184113984080986028, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: songDataToPlay
+      value: 
+      objectReference: {fileID: 11400000, guid: 25b9aea4d8529214e9556b204545c7a5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f949376c47a79374ea3865981042edc3, type: 3}
 --- !u!1 &3096382806466246091 stripped
@@ -1171,6 +1234,11 @@ PrefabInstance:
       propertyPath: EVT_OnSwipeRight.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3096382805750946519}
+    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
+        type: 3}
+      propertyPath: minimumSwipeDistance
+      value: 0.15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e9e981f7e69cb345bf2953a11e59cd8, type: 3}
 --- !u!4 &69570734064590818 stripped

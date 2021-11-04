@@ -1028,7 +1028,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1050,7 +1050,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 4477b1fe5aff41947b94d58bdf74ec82, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.09019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1442,6 +1442,12 @@ PrefabInstance:
       propertyPath: beatSpawnerObj
       value: 
       objectReference: {fileID: 747318072}
+    - target: {fileID: 3096382806466246101, guid: 98e8ad6415ba3d64495507068f85f2ce,
+        type: 3}
+      propertyPath: songDataToPlay
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de3cf535a1666243be42ed3018db6ec,
+        type: 2}
     - target: {fileID: 3096382805071122048, guid: 98e8ad6415ba3d64495507068f85f2ce,
         type: 3}
       propertyPath: songDirectorObj
@@ -1452,6 +1458,12 @@ PrefabInstance:
       propertyPath: beatSpawnerObj
       value: 
       objectReference: {fileID: 747318072}
+    - target: {fileID: 3096382805071122048, guid: 98e8ad6415ba3d64495507068f85f2ce,
+        type: 3}
+      propertyPath: songDataToPlay
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de3cf535a1666243be42ed3018db6ec,
+        type: 2}
     - target: {fileID: 3096382805750946519, guid: 98e8ad6415ba3d64495507068f85f2ce,
         type: 3}
       propertyPath: songDirectorObj
@@ -1462,6 +1474,12 @@ PrefabInstance:
       propertyPath: beatSpawnerObj
       value: 
       objectReference: {fileID: 747318072}
+    - target: {fileID: 3096382805750946519, guid: 98e8ad6415ba3d64495507068f85f2ce,
+        type: 3}
+      propertyPath: songDataToPlay
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de3cf535a1666243be42ed3018db6ec,
+        type: 2}
     - target: {fileID: 8836590589368222121, guid: 98e8ad6415ba3d64495507068f85f2ce,
         type: 3}
       propertyPath: m_LocalPosition.x
