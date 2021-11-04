@@ -5,8 +5,10 @@ using DG.Tweening;
 using UnityEngine.Experimental.Rendering.LWRP;
 public class LightManager : MonoBehaviour
 {
+    [SerializeField] private float startingGlobalLighting;
+    [SerializeField] private float startingGabbingLighting;
     [SerializeField] private Light2D globalLighting;
-    [SerializeField]private Light2D gabbangLighting;
+    [SerializeField] private Light2D gabbangLighting;
     [SerializeField] private Light2D[] lightingEffects; 
     // Start is called before the first frame update
     void Start()
@@ -14,10 +16,11 @@ public class LightManager : MonoBehaviour
         StartCoroutine(SetStartingSceneLighting());
     }
 
+
     IEnumerator SetStartingSceneLighting()
     {
-        DOTween.To(() => globalLighting.intensity, x => globalLighting.intensity = x, 0.25f, 3);
+        DOTween.To(() => globalLighting.intensity, x => globalLighting.intensity = x, startingGlobalLighting, 3);
         yield return new WaitForSeconds(4);
-        DOTween.To(() => gabbangLighting.intensity, x => gabbangLighting.intensity = x, 0.8f, 2);
+        DOTween.To(() => gabbangLighting.intensity, x => gabbangLighting.intensity = x, startingGabbingLighting, 2);
     }
 }
