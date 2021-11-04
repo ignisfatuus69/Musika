@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.Playables;
 public enum SongDifficulty
 {
     Easy = 0,
@@ -13,9 +14,12 @@ public enum SongDifficulty
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private BeatSpawner beatSpawnerObj;
-    [SerializeField] private GameObject beatDirector;
+    [SerializeField] private PlayableDirector beatDirector;
     [SerializeField] Life LifeCounterObj;
     [SerializeField] private SongDifficulty songDifficulty;
+    [SerializeField] private LightManager lightManagerObj;
+    [SerializeField] private GameObject[] gameOverUI;
+    [SerializeField] private Animator UIAnimator;
     private bool isPaused = false;
 
 
@@ -30,18 +34,19 @@ public class GameManager : MonoBehaviour
     private void SetGameOver()
     {
         if (LifeCounterObj.currentValue > LifeCounterObj.GetMinimumValue) return;
-        FallBeats();
         StartCoroutine(DisableSpawner());
-        
+        FallBeats();
+        lightManagerObj.PutLightsOut();
+      
     }
     
     private IEnumerator DisableSpawner()
     {
         if (isPaused) yield return null;
         yield return new WaitForSeconds(2f);
-        beatDirector.SetActive(false);
+        beatDirector.Stop();
         isPaused = true;
-        Debug.Log("hey");
+        UIAnimator.SetBool("isGameOver", true);
     }
 
     private void FallBeats()

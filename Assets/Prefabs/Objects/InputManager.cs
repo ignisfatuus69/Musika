@@ -45,7 +45,7 @@ public class InputManager : MonoBehaviour
         {
             var interactableObj = hit.transform.gameObject.GetComponent<IInteractable>();
             if (interactableObj == null) return;
-            interactableObj.MoveTongatong();
+            interactableObj.OnTapAction();
 
         }
         if (gabbangObj == null) return;

@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ButtonObject.cs" />
     <Compile Include="Assets\ComboEffect.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Kolitong.cs" />

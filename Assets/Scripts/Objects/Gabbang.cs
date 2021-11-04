@@ -14,6 +14,7 @@ public class Gabbang : BeatInteractor
         Debug.DrawRay(ray.origin, ray.direction * 55, Color.blue);
         if (Physics.Raycast(ray.origin, ray.direction, out hit, 25))
         {
+            if (hit.transform.gameObject.GetComponent<Beat>() == null) return;
             Beat beatHit = hit.transform.gameObject.GetComponent<Beat>();
 
             EvaluateBeatState(beatHit);

@@ -522,3 +522,5 @@ MonoBehaviour:
   beatDirector: {fileID: 0}
   LifeCounterObj: {fileID: 0}
   songDifficulty: 0
+  lightManagerObj: {fileID: 1765613998}
+  gameOverUI: {fileID: 0}

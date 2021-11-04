@@ -878,18 +878,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &747318072 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
-    type: 3}
-  m_PrefabInstance: {fileID: 3064636009979220271}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc3b5decc9b7bf6439150f5b42ff47f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &747318074 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3064636010574232086, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
@@ -2225,7 +2213,7 @@ PrefabInstance:
         type: 3}
       propertyPath: beatSpawnerObj
       value: 
-      objectReference: {fileID: 747318072}
+      objectReference: {fileID: 1656564490}
     - target: {fileID: 1004886929482941108, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
         type: 3}
       propertyPath: gameManagerObj
@@ -2855,6 +2843,16 @@ PrefabInstance:
       propertyPath: LifeCounterObj
       value: 
       objectReference: {fileID: 1228755456}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: beatDirector
+      value: 
+      objectReference: {fileID: 1656564487}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: beatSpawnerObj
+      value: 
+      objectReference: {fileID: 1656564490}
     - target: {fileID: 8149026187321016931, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}
       propertyPath: m_LocalPosition.x

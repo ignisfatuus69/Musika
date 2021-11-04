@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KolitongBeat : Beat,IInteractable
+public class KolitongBeat : Beat
 {
     public Direction beatDirection;
     [SerializeField] private Transform arrowDirection;
@@ -14,10 +14,6 @@ public class KolitongBeat : Beat,IInteractable
         base.OnEnable();
         SetOrderLayer();
         FlipArrow();
-    }
-    void ActivateTongatong()
-    {
-        Debug.Log("swiper no swiping pare");
     }
 
     public void SetOrderLayer()

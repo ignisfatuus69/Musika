@@ -23,4 +23,15 @@ public class LightManager : MonoBehaviour
         yield return new WaitForSeconds(4);
         DOTween.To(() => gabbangLighting.intensity, x => gabbangLighting.intensity = x, startingGabbingLighting, 2);
     }
+
+    public void PutLightsOut()
+    {
+        StartCoroutine(LightsOut());
+    }
+    IEnumerator LightsOut()
+    {
+        DOTween.To(() => gabbangLighting.intensity, x => gabbangLighting.intensity = x, 0.05f, 1);
+        yield return new WaitForSeconds(1);
+        DOTween.To(() => globalLighting.intensity, x => globalLighting.intensity = x, 0.05f, 1);
+    }
 }

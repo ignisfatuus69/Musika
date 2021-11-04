@@ -1,5 +1,5 @@
 ﻿
 public interface IInteractable 
 {
-    void MoveTongatong();
+    void OnTapAction();
 }

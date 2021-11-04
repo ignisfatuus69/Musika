@@ -57,7 +57,7 @@ public class Tongatong : BeatInteractor,IInteractable
         }
     }
 
-    public void MoveTongatong()
+    public void OnTapAction()
     {
         MoveDown();
         DetectBeats();

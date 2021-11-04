@@ -64,6 +64,5 @@ public class Kolitong : BeatInteractor
     void AddMorePositions(Vector2 position)
     {
         positionsToCast.Add(position);
-
     }
 }
