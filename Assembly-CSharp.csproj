@@ -72,6 +72,7 @@
     <Compile Include="Assets\KolitongManager.cs" />
     <Compile Include="Assets\Lifebar.cs" />
     <Compile Include="Assets\LightManager.cs" />
+    <Compile Include="Assets\NotebookButtons.cs" />
     <Compile Include="Assets\Prefabs\Objects\InputManager.cs" />
     <Compile Include="Assets\Prefabs\Objects\TouchControls.cs" />
     <Compile Include="Assets\ScoreEffect.cs" />
@@ -283,11 +284,17 @@
     <Reference Include="UnityEngine.UnityTestProtocolModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.VFXModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
