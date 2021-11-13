@@ -20,6 +20,11 @@ public class Score : Resource
     [SerializeField] private Combo comboCounterObj;
     [SerializeField] private int perfectScoreValue;
     [SerializeField] private int okayScoreValue;
+    [SerializeField] public Resource missCounter;
+    [SerializeField] public Resource goodCounter;
+    [SerializeField] public Resource perfectCounter;
+
+    private SongGrade songGrade;
 
     public int GetPerfectScoreValue => perfectScoreValue;
     public int GetOkayScoreValue => okayScoreValue;
@@ -27,15 +32,40 @@ public class Score : Resource
     void Start()
     {
         beatSpawnerObj.EVT_OnBeatPooled.AddListener(AddScore);
+        
     }
 
     void AddScore(Beat beatObj)
     {
-        if (beatObj.beatState == BeatState.Miss) return;
-        if (beatObj.beatState == BeatState.Okay) this.currentValue += (int) (okayScoreValue +  (okayScoreValue * ((comboCounterObj.currentValue-1) * 0.1) / 10));
-        else if (beatObj.beatState == BeatState.Perfect) this.currentValue += (int)(perfectScoreValue + ((perfectScoreValue * (comboCounterObj.currentValue-1) * 0.1) / 10));
+        if (beatObj.beatState == BeatState.Miss)
+        {
+            if (beatObj.beatState == BeatState.Miss) missCounter.currentValue += 1;
+            missCounter.EVT_OnValueModified.Invoke();
+            return;
+        }
 
+        if (beatObj.beatState == BeatState.Okay)
+        {
+            goodCounter.currentValue += 1;
+            goodCounter.EVT_OnValueModified.Invoke();
+            this.currentValue += (int)(okayScoreValue + (okayScoreValue * ((comboCounterObj.currentValue - 1) * 0.1) / 10));
+
+        }
+        else if (beatObj.beatState == BeatState.Perfect)
+        {
+            perfectCounter.currentValue += 1;
+            perfectCounter.EVT_OnValueModified.Invoke();
+            this.currentValue += (int)(perfectScoreValue + ((perfectScoreValue * (comboCounterObj.currentValue - 1) * 0.1) / 10));
+        }
         OnValueModified();
         EVT_OnValueAdded.Invoke();
     }
+
+
+    void DetermineSongGrade()
+    {
+
+    }
+
+
 }

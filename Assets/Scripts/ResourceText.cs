@@ -6,19 +6,20 @@ using TMPro;
 using DG.Tweening;
 public class ResourceText : MonoBehaviour
 {
-    [SerializeField] private Resource resourceObj;
-    [SerializeField] private TextMeshProUGUI textComponent;
-    [SerializeField] private string textBeforeValue;
-    [SerializeField] private string textAfterValue;
+    public TextMeshProUGUI TextObj;
+    public Resource ResourceObj;
+    public string FirstHeaderText;
+    public string SecondHeaderText;
     // Start is called before the first frame update
     void Start()
     {
-        resourceObj.EVT_OnValueModified.AddListener(UpdateText);
-        UpdateText();
+        ResourceObj.EVT_OnValueInitialized.AddListener(UpdateText);
+        ResourceObj.EVT_OnValueModified.AddListener(UpdateText);
+
     }
 
     void UpdateText()
     {
-        textComponent.text = textBeforeValue + resourceObj.currentValue + textAfterValue;
+        TextObj.text = FirstHeaderText + ResourceObj.currentValue + SecondHeaderText;
     }
 }

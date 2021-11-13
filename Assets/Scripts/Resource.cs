@@ -11,13 +11,15 @@ public class OnValueAdded : UnityEvent { };
 public class OnValueDeducted : UnityEvent { };
 [System.Serializable]
 public class OnValueModified : UnityEvent { };
-public abstract class Resource : MonoBehaviour
+[System.Serializable]
+public class OnValueInitialized : UnityEvent { };
+public class Resource : MonoBehaviour
 {
     public OnValueAdded EVT_OnValueAdded;
     public OnValueDeducted EVT_OnValueDeducted;
     public OnValueReset EVT_OnValueReset;
     public OnValueModified EVT_OnValueModified;
-
+    public OnValueInitialized EVT_OnValueInitialized;
     [SerializeField] protected float minimumValue=0;
     [SerializeField] protected float maximumValue=0;
 
@@ -29,6 +31,7 @@ public abstract class Resource : MonoBehaviour
     private void Start()
     {
         currentValue = minimumValue;
+        EVT_OnValueInitialized.Invoke();
     }
 
     private void CapValue()
