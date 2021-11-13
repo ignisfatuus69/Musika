@@ -18,8 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Life LifeCounterObj;
     [SerializeField] private SongDifficulty songDifficulty;
     [SerializeField] private LightManager lightManagerObj;
-    [SerializeField] private GameObject[] gameOverUI;
-    [SerializeField] private Animator UIAnimator;
+    [SerializeField] private GameObject gameOverUI;
     private bool isPaused = false;
 
 
@@ -46,7 +45,7 @@ public class GameManager : MonoBehaviour
         beatDirector.Stop();
         yield return new WaitForSeconds(0.1f);
         isPaused = true;
-        UIAnimator.SetBool("isGameOver", true);
+        gameOverUI.SetActive(true);
     }
 
     private void FallBeats()

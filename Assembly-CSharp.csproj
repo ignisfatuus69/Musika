@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\KolitongBeatSpawner.cs" />
     <Compile Include="Assets\Scripts\LessonGradeCalculator.cs" />
     <Compile Include="Assets\Scripts\Life.cs" />
+    <Compile Include="Assets\Scripts\MouseCursor.cs" />
     <Compile Include="Assets\Scripts\Objects\BeatFeedbackText.cs" />
     <Compile Include="Assets\Scripts\Objects\BeatFeedbackTextSpawner.cs" />
     <Compile Include="Assets\Scripts\Objects\BeatIndexer.cs" />

@@ -21,4 +21,9 @@ public class NotebookButtons : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
     }
+
+    public void UnloadScene(int sceneIndex)
+    {
+        SceneManager.UnloadSceneAsync(sceneIndex);
+    }
 }
