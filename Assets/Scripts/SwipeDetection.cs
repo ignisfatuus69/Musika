@@ -28,6 +28,7 @@ public class SwipeDetection : MonoBehaviour
     private Vector2 endPosition;
     private float endTime;
     public Direction currentDirection { get; private set; }
+    [SerializeField] private GameObject trailObject;
     private void OnEnable()
     {
         inputControllerObj.EVT_OnStartTouch.AddListener(SwipeStart);
@@ -43,12 +44,16 @@ public class SwipeDetection : MonoBehaviour
     {
         startPosition = position;
         startTime = time;
+        trailObject.SetActive(true);
+        StartCoroutine(Trail());
     }
     private void SwipeEnd(Vector2 position, float time)
     {
+        trailObject.SetActive(false);
         endPosition = position;
         endTime = time;
         DetectSwipe();
+        StopCoroutine(Trail());
     }
 
     void DetectSwipe()
@@ -88,6 +93,15 @@ public class SwipeDetection : MonoBehaviour
         {
             currentDirection = Direction.Right;
             EVT_OnSwipeRight.Invoke();
+        }
+    }
+
+    private IEnumerator Trail()
+    {
+        while(true)
+        {
+            trailObject.transform.position = inputControllerObj.PrimaryPosition();
+            yield return null;
         }
     }
 }
