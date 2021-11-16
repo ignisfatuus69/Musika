@@ -29,14 +29,13 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         LifeCounterObj.EVT_OnValueDeducted.AddListener(SetGameOver);
-        beatSpawnerObj.EVT_OnBeatSpawned.AddListener(FinishGame);
+        beatSpawnerObj.EVT_OnBeatPooled.AddListener(FinishGame);
     }
 
     private void FinishGame(Beat beat)
     {
-        Debug.Log(songData.beatNoteIndexes.Count);
-        Debug.Log(beatSpawnerObj.totalSpawnsCount);
-        if (beatSpawnerObj.totalSpawnsCount>=5)
+
+        if (beatSpawnerObj.totalPooledCount >= songData.beatNoteIndexes.Count) 
         {
             Debug.Log("finish na bro");
             summaryUIAnimator.SetBool("isDone", true);
