@@ -48,6 +48,8 @@ public class Resource : MonoBehaviour
 
 
     }
+
+
     protected virtual void OnValueModified()
     {
         CapValue();

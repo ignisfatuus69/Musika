@@ -2139,6 +2139,122 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kolitong
       objectReference: {fileID: 0}
+    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: gabbangObj
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: inputcontrollerObj
+      value: 
+      objectReference: {fileID: 181133020}
+    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: cameraMain
+      value: 
+      objectReference: {fileID: 618998563}
+    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: songDirectorObj
+      value: 
+      objectReference: {fileID: 420522685}
+    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: songDataToPlay
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b2b99a018012444c98f45aef5808bd1,
+        type: 2}
+    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: swipeDetector
+      value: 
+      objectReference: {fileID: 479146608}
+    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: textBox
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3114381
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6392976
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3114381
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886778587996554025, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886778587996554025, guid: cb280f3307dd38a48ae1633d42095509,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2027735596313925019, guid: cb280f3307dd38a48ae1633d42095509,
         type: 3}
       propertyPath: mainCamera
@@ -2278,122 +2394,6 @@ PrefabInstance:
         type: 3}
       propertyPath: EVT_OnSwipeLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: gabbangObj
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: inputcontrollerObj
-      value: 
-      objectReference: {fileID: 181133020}
-    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: cameraMain
-      value: 
-      objectReference: {fileID: 618998563}
-    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: songDirectorObj
-      value: 
-      objectReference: {fileID: 420522685}
-    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: songDataToPlay
-      value: 
-      objectReference: {fileID: 11400000, guid: 4b2b99a018012444c98f45aef5808bd1,
-        type: 2}
-    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: swipeDetector
-      value: 
-      objectReference: {fileID: 479146608}
-    - target: {fileID: 613306062613205541, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: textBox
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.3114381
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.6392976
-      objectReference: {fileID: 0}
-    - target: {fileID: 5470754887805571062, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.3114381
-      objectReference: {fileID: 0}
-    - target: {fileID: 8886778587996554025, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8886778587996554025, guid: cb280f3307dd38a48ae1633d42095509,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb280f3307dd38a48ae1633d42095509, type: 3}
@@ -2604,6 +2604,12 @@ PrefabInstance:
       propertyPath: gameOverUI
       value: 
       objectReference: {fileID: 1004886930678010037}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: songData
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b2b99a018012444c98f45aef5808bd1,
+        type: 2}
     - target: {fileID: 8149026187321016931, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}
       propertyPath: m_LocalPosition.x

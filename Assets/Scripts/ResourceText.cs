@@ -10,6 +10,7 @@ public class ResourceText : MonoBehaviour
     public Resource ResourceObj;
     public string FirstHeaderText;
     public string SecondHeaderText;
+     
     // Start is called before the first frame update
     void Start()
     {

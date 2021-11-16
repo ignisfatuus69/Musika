@@ -13,12 +13,14 @@ public enum SongDifficulty
 }
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private SongData songData;
     [SerializeField] private BeatSpawner beatSpawnerObj;
     [SerializeField] private PlayableDirector beatDirector;
     [SerializeField] Life LifeCounterObj;
     [SerializeField] private SongDifficulty songDifficulty;
     [SerializeField] private LightManager lightManagerObj;
     [SerializeField] private GameObject gameOverUI;
+    [SerializeField] private Animator summaryUIAnimator;
     private bool isPaused = false;
 
 
@@ -27,9 +29,19 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         LifeCounterObj.EVT_OnValueDeducted.AddListener(SetGameOver);
+        beatSpawnerObj.EVT_OnBeatSpawned.AddListener(FinishGame);
     }
 
-
+    private void FinishGame(Beat beat)
+    {
+        Debug.Log(songData.beatNoteIndexes.Count);
+        Debug.Log(beatSpawnerObj.totalSpawnsCount);
+        if (beatSpawnerObj.totalSpawnsCount>=5)
+        {
+            Debug.Log("finish na bro");
+            summaryUIAnimator.SetBool("isDone", true);
+        }
+    }
     private void SetGameOver()
     {
         if (LifeCounterObj.currentValue > LifeCounterObj.GetMinimumValue) return;

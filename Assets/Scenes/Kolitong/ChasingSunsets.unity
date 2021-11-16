@@ -1557,6 +1557,12 @@ PrefabInstance:
       objectReference: {fileID: 3064636009979220272}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04e3dcc109248bf4ca36263bbfb100e5, type: 3}
+--- !u!320 &1560201437 stripped
+PlayableDirector:
+  m_CorrespondingSourceObject: {fileID: 6003665968159870817, guid: 04e3dcc109248bf4ca36263bbfb100e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1560201436}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1560775680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2641,6 +2647,22 @@ PrefabInstance:
       propertyPath: gameOverUI
       value: 
       objectReference: {fileID: 1004886930678010037}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: songData
+      value: 
+      objectReference: {fileID: 11400000, guid: 8faf54afd347c6a4f84e618f1fb721ad,
+        type: 2}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: beatSpawnerObj
+      value: 
+      objectReference: {fileID: 747318072}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: beatDirector
+      value: 
+      objectReference: {fileID: 1560201437}
     - target: {fileID: 8149026187321016931, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}
       propertyPath: m_LocalPosition.x
