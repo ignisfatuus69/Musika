@@ -330,6 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeSystemObj: {fileID: 1228755456}
   barImage: {fileID: 345789302}
+  colors: []
 --- !u!1 &461623049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2663,6 +2664,11 @@ PrefabInstance:
       propertyPath: beatDirector
       value: 
       objectReference: {fileID: 1560201437}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: songDifficulty
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8149026187321016931, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}
       propertyPath: m_LocalPosition.x

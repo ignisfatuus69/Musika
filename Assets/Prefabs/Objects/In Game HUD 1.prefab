@@ -203,6 +203,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: OnValueModified, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  EVT_OnValueInitialized:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: OnValueInitialized, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   minimumValue: 0
   maximumValue: 1000
   hasCap: 1
@@ -962,6 +967,38 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4336437603977200042, guid: 2ab5aff94a1e4c54fb43d4028b4f668b,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336437603977200042, guid: 2ab5aff94a1e4c54fb43d4028b4f668b,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336437603977200042, guid: 2ab5aff94a1e4c54fb43d4028b4f668b,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336437603977200042, guid: 2ab5aff94a1e4c54fb43d4028b4f668b,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336437603977200042, guid: 2ab5aff94a1e4c54fb43d4028b4f668b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 328fe25f29fb7404ea8a6233075e4376,
+        type: 2}
+    - target: {fileID: 4336437603977200042, guid: 2ab5aff94a1e4c54fb43d4028b4f668b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7219598047228270179, guid: 328fe25f29fb7404ea8a6233075e4376,
+        type: 2}
     - target: {fileID: 1549057272211212415, guid: 2ab5aff94a1e4c54fb43d4028b4f668b,
         type: 3}
       propertyPath: resourceObj

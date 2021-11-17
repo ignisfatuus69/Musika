@@ -68,8 +68,9 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Score:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 328fe25f29fb7404ea8a6233075e4376, type: 2}
+  m_sharedMaterial: {fileID: 7219598047228270179, guid: 328fe25f29fb7404ea8a6233075e4376,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -170,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db39d501253f1fc46a64b9ed5803e198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceObj: {fileID: 0}
-  textComponent: {fileID: 4336437603977200042}
-  textBeforeValue: 'Score:'
-  textAfterValue: 
+  TextObj: {fileID: 0}
+  ResourceObj: {fileID: 0}
+  FirstHeaderText: 
+  SecondHeaderText: 

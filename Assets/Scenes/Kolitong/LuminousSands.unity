@@ -369,6 +369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeSystemObj: {fileID: 1228755456}
   barImage: {fileID: 345789302}
+  colors: []
 --- !u!320 &420522685 stripped
 PlayableDirector:
   m_CorrespondingSourceObject: {fileID: 1619177622986985990, guid: df4c51d8775e20c499254f2b4a79486d,
@@ -2610,6 +2611,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 4b2b99a018012444c98f45aef5808bd1,
         type: 2}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: songDifficulty
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8149026187321016931, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}
       propertyPath: m_LocalPosition.x
