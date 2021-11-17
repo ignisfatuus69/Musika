@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BeatEffect.cs" />
+    <Compile Include="Assets\BeatEffectSpawner.cs" />
     <Compile Include="Assets\ButtonObject.cs" />
     <Compile Include="Assets\ButtonTab.cs" />
     <Compile Include="Assets\ComboEffect.cs" />

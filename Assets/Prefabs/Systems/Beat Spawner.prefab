@@ -28,7 +28,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.030625332, y: 0.042271588, z: -0.18035087}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 9146663776487426045}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -57,7 +58,17 @@ MonoBehaviour:
   ObjectToSpawn: {fileID: 6149645738580966737, guid: 30f4c5f21a4d5fb43930163822954c77,
     type: 3}
   SpawnCount: 1
+  poolTimer: 0
   SpawnPosition: {x: 0, y: 0, z: 0}
+  EVT_OnBeatSpawned:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: OnBeatSpawned, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  EVT_OnBeatPooled:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: OnBeatPooled, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   songDataScriptableObject: {fileID: 11400000, guid: 4de3cf535a1666243be42ed3018db6ec,
     type: 2}
   spawnPoints:
@@ -111,3 +122,62 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &9055904730074506420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9146663776487426045}
+  - component: {fileID: 2725682330966873796}
+  m_Layer: 0
+  m_Name: Beat Effect Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9146663776487426045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9055904730074506420}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3064636010574232086}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2725682330966873796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9055904730074506420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee10e5685a854c46b78223a66ac8df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EVT_OnObjectSpawned:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: OnObjectSpawned, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  EVT_OnObjectPooled:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: OnObjectPooled, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  ObjectToSpawn: {fileID: 8890248118309104224, guid: ce2cb6a8f31510745bcbcbdb71130316,
+    type: 3}
+  SpawnCount: 1
+  poolTimer: 0
+  SpawnPosition: {x: 0, y: 0, z: 0}
+  beatSpawnerObj: {fileID: 3064636010574232087}
