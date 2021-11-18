@@ -7,9 +7,9 @@ public class LightManager : MonoBehaviour
 {
     [SerializeField] private float startingGlobalLighting;
     [SerializeField] private float startingGabbingLighting;
-    [SerializeField] private Light2D globalLighting;
-    [SerializeField] private Light2D gabbangLighting;
-    [SerializeField] private Light2D[] lightingEffects; 
+    [SerializeField] private UnityEngine.Experimental.Rendering.Universal.Light2D globalLighting;
+    [SerializeField] private UnityEngine.Experimental.Rendering.Universal.Light2D gabbangLighting;
+    [SerializeField] private UnityEngine.Experimental.Rendering.Universal.Light2D[] lightingEffects; 
     // Start is called before the first frame update
     void Start()
     {
