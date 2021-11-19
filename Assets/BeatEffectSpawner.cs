@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class BeatEffectSpawner : ObjectPooler
 {
-    [SerializeField] private BeatSpawner beatSpawnerObj;
-
+    [SerializeField] public BeatSpawner beatSpawnerObj;
+    public BeatState currentBeatState { get; private set; }
 
     private void Start()
     {
+        beatSpawnerObj.EVT_OnBeatPooled.AddListener(SetCurrentBeatState);
         beatSpawnerObj.EVT_OnBeatPooled.AddListener(SpawnBeatEffect);
-    }
-   
-    protected override void SetPoolingInitializations(GameObject obj)
-    {
-        BeatEffect beatEffect = obj.GetComponent<BeatEffect>();
-        beatEffect.EVT_OnDeactivate.AddListener(Pool);
     }
 
     private void SpawnBeatEffect(Beat beatObj)
@@ -23,6 +18,17 @@ public class BeatEffectSpawner : ObjectPooler
         if (beatObj.beatState == BeatState.Miss) return;
         CopyBeatPosition(beatObj);
         Spawn();
+    }
+    protected override void SetPoolingInitializations(GameObject obj)
+    {
+        BeatEffect beatEffect = obj.GetComponent<BeatEffect>();
+        beatEffect.beatEffectSpawnerReference = this;
+        beatEffect.EVT_OnDeactivate.AddListener(Pool);
+    }
+
+    private void SetCurrentBeatState(Beat beatObj)
+    {
+        currentBeatState = beatObj.beatState;
     }
 
     private void CopyBeatPosition(Beat beatObj)

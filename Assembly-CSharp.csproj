@@ -63,7 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BeatEffect.cs" />
     <Compile Include="Assets\BeatEffectSpawner.cs" />
     <Compile Include="Assets\ButtonObject.cs" />
     <Compile Include="Assets\ButtonTab.cs" />
@@ -78,6 +77,7 @@
     <Compile Include="Assets\Prefabs\Objects\InputManager.cs" />
     <Compile Include="Assets\Prefabs\Objects\TouchControls.cs" />
     <Compile Include="Assets\ScoreEffect.cs" />
+    <Compile Include="Assets\Scripts\BeatEffect.cs" />
     <Compile Include="Assets\Scripts\Combo.cs" />
     <Compile Include="Assets\Scripts\IInteractable.cs" />
     <Compile Include="Assets\Scripts\InputController.cs" />
