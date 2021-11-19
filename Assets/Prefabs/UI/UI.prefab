@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 7f6a7342582c5944aa7a830011e40196, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
@@ -241,9 +241,9 @@ MonoBehaviour:
   lifeSystemObj: {fileID: 1004886929482941108}
   barImage: {fileID: 1431166195957673880}
   colors:
-  - {r: 0.7889283, g: 1, b: 0.7216981, a: 1}
-  - {r: 0.980491, g: 0.990566, b: 0.6681648, a: 1}
-  - {r: 1, g: 0.3820755, b: 0.3820755, a: 1}
+  - {r: 0.37558725, g: 0.9716981, b: 0.18792273, a: 1}
+  - {r: 0.9732325, g: 1, b: 0.25943398, a: 1}
+  - {r: 1, g: 0.2688679, b: 0.2688679, a: 1}
 --- !u!1 &1531642267779854430
 GameObject:
   m_ObjectHideFlags: 0
