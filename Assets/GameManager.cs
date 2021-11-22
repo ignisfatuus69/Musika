@@ -34,7 +34,6 @@ public class GameManager : MonoBehaviour
 
     private void FinishGame(Beat beat)
     {
-
         if (beatSpawnerObj.totalPooledCount >= songData.beatNoteIndexes.Count) 
         {
             Debug.Log("finish na bro");

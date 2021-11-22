@@ -49,7 +49,7 @@ public class InputManager : MonoBehaviour
 
         }
         if (gabbangObj == null) return;
-        gabbangObj.DetectBeats(worldCoordinates);
+        //gabbangObj.DetectBeats(worldCoordinates);
 
         
     }

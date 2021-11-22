@@ -12,7 +12,6 @@ public class Test : MonoBehaviour
 
     private void Start()
     {
-        SingletonManager.RegisterSingleton<Test>(this);
     }
     // Start is called before the first frame update
     public void PrintPare()

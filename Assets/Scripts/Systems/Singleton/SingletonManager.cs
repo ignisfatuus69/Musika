@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SingletonManager : MonoBehaviour
 {
-
     public static SingletonManager instance;
+
+   
     public Dictionary<System.Type, MonoBehaviour> instances { get; private set; } = new Dictionary<System.Type, MonoBehaviour>();
-    public List<GameObject> singletonInstances = new List<GameObject>();
 
     private void Awake()
     {
@@ -16,7 +16,7 @@ public class SingletonManager : MonoBehaviour
         SceneManager.sceneUnloaded += ClearInactiveInstances;
     }
 
-    public static void RegisterSingleton<T>(T ComponentClass) where T: MonoBehaviour
+    public void RegisterSingleton<T>(T ComponentClass) where T: MonoBehaviour
     {
         //Check and delete first if instance already exists
         if(instance.instances.ContainsValue(ComponentClass))
@@ -28,7 +28,7 @@ public class SingletonManager : MonoBehaviour
      
     }
 
-    public static void UnregisterSingleton<T>(T ComponentClass) where T:MonoBehaviour
+    public void UnregisterSingleton<T>(T ComponentClass) where T:MonoBehaviour
     {
         if (instance.instances.ContainsValue(ComponentClass))
         {
@@ -36,7 +36,7 @@ public class SingletonManager : MonoBehaviour
         }
     }
 
-    public static T GetSingleton<T>() where T:MonoBehaviour
+    public T GetSingleton<T>() where T:MonoBehaviour
     {
         if (instance.instances.ContainsKey(typeof(T)))
         {
@@ -48,6 +48,11 @@ public class SingletonManager : MonoBehaviour
             return null;
         }
         else return null;
+    }
+
+    public int GetInstancesCount()
+    {
+        return instances.Count;
     }
 
     private void ClearInactiveInstances(Scene scene)

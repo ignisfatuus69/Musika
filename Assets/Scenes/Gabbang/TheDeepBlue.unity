@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1568,6 +1568,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b8c08f5b9a711e4b8d46114b8e3b461, type: 3}
+--- !u!1001 &1694574568
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4460351290316621901, guid: 6bb57f7fef0d5c54184e7cf4e3d20300,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460351290316621901, guid: 6bb57f7fef0d5c54184e7cf4e3d20300,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460351290316621901, guid: 6bb57f7fef0d5c54184e7cf4e3d20300,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460351290316621901, guid: 6bb57f7fef0d5c54184e7cf4e3d20300,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460351290316621901, guid: 6bb57f7fef0d5c54184e7cf4e3d20300,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460351290316621901, guid: 6bb57f7fef0d5c54184e7cf4e3d20300,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460351290316621901, guid: 6bb57f7fef0d5c54184e7cf4e3d20300,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460351290316621901, guid: 6bb57f7fef0d5c54184e7cf4e3d20300,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460351290316621901, guid: 6bb57f7fef0d5c54184e7cf4e3d20300,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460351290316621901, guid: 6bb57f7fef0d5c54184e7cf4e3d20300,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460351290316621901, guid: 6bb57f7fef0d5c54184e7cf4e3d20300,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460351290316621903, guid: 6bb57f7fef0d5c54184e7cf4e3d20300,
+        type: 3}
+      propertyPath: m_Name
+      value: mouse cursor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6bb57f7fef0d5c54184e7cf4e3d20300, type: 3}
 --- !u!1 &1928738169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,6 +1903,16 @@ PrefabInstance:
       propertyPath: gameManagerObj
       value: 
       objectReference: {fileID: 1157906635}
+    - target: {fileID: 1004886930142824903, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 618998563}
+    - target: {fileID: 1004886930142824903, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -729833869
+      objectReference: {fileID: 0}
     - target: {fileID: 1004886930859683359, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
         type: 3}
       propertyPath: beatSpawnerObj
@@ -1924,6 +2003,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8199370302107142099, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: m_text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8199370302107142099, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ed263f1f3854f143933b6d1cdf7d6bc, type: 3}
 --- !u!1001 &2912009012218470170
@@ -1993,6 +2082,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Input Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 2912009012255680570, guid: 53165bb802f174d44b9153b976d23819,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2912009012255680571, guid: 53165bb802f174d44b9153b976d23819,
         type: 3}
       propertyPath: cameraMain
@@ -2003,6 +2097,11 @@ PrefabInstance:
       propertyPath: gabbangObj
       value: 
       objectReference: {fileID: 8237161557819016400}
+    - target: {fileID: 2912009012255680571, guid: 53165bb802f174d44b9153b976d23819,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53165bb802f174d44b9153b976d23819, type: 3}
 --- !u!1001 &3064636009979220271
@@ -2012,6 +2111,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 326644728}
     m_Modifications:
+    - target: {fileID: 2725682330966873796, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: ObjectToSpawn
+      value: 
+      objectReference: {fileID: 8890248118309104224, guid: 3330dfe0d0ab87d41a8d300207284dd4,
+        type: 3}
     - target: {fileID: 3064636010574232086, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2274,15 +2379,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 669788117, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 618998563}
     - target: {fileID: 3110690569141945249, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
         type: 3}
       propertyPath: m_Name
       value: Gabbang
-      objectReference: {fileID: 0}
-    - target: {fileID: 3110690569141945249, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5808535941815273595, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
         type: 3}
@@ -2344,31 +2448,6 @@ PrefabInstance:
       propertyPath: songDirectorObj
       value: 
       objectReference: {fileID: 578862495}
-    - target: {fileID: 8237161557819016400, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
-        type: 3}
-      propertyPath: beatSpawnerObj
-      value: 
-      objectReference: {fileID: 747318072}
-    - target: {fileID: 8359485405019573893, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-    - target: {fileID: 8359485405019573893, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8359485405019573893, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -491988659
-      objectReference: {fileID: 0}
-    - target: {fileID: 8359485405019573893, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d6ba1b0c41b8d4a9a8aa46d885645f, type: 3}
 --- !u!114 &8237161557819016400 stripped

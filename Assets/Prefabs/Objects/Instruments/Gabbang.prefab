@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5808535941815273595}
   - component: {fileID: 8359485405019573893}
   - component: {fileID: 8237161557819016400}
+  - component: {fileID: 669788117}
   m_Layer: 0
   m_Name: Gabbang
   m_TagString: Untagged
@@ -46,6 +47,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -96,7 +98,28 @@ MonoBehaviour:
   EVT_OnBeatInteraction:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: OnBeatInteraction, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   songDataToPlay: {fileID: 11400000, guid: 238198404b29ab04f9548094cabce67b, type: 2}
   songDirectorObj: {fileID: 0}
+  inputControllerObj: {fileID: 669788117}
+--- !u!114 &669788117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110690569141945249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1070d6f41a9cbb947b98a427d93b23ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  EVT_OnStartTouch:
+    m_PersistentCalls:
+      m_Calls: []
+  EVT_OnEndTouch:
+    m_PersistentCalls:
+      m_Calls: []
+  EVT_OnHoldTouch:
+    m_PersistentCalls:
+      m_Calls: []

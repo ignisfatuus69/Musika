@@ -18,6 +18,5 @@ public class TimeManagerTester : MonoBehaviour
 
     void OnMinigameComplete()
     {
-        SingletonManager.GetSingleton<TimerManager>().StopTimer();
     }
 }

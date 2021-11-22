@@ -7,7 +7,6 @@ public class TimerManager : MonoBehaviour
     public float CurTimer;
     private void Start()
     {
-        SingletonManager.RegisterSingleton<TimerManager>(this);
     }
 
     // Start is called before the first frame update

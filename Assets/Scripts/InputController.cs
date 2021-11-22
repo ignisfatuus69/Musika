@@ -41,6 +41,7 @@ public class InputController : MonoBehaviour
     private void FingerDown(Finger finger)
     {
         if (EVT_OnStartTouch!=null) EVT_OnStartTouch.Invoke(finger.screenPosition, Time.time);
+
     }
 
     private void FingerHold(Finger finger)
