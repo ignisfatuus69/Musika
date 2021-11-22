@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1292,6 +1292,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 10.4800005
       objectReference: {fileID: 0}
+    - target: {fileID: 8199370302107142099, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: m_text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8199370302107142099, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8221789318039585274, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
         type: 3}
       propertyPath: m_IsActive
@@ -1302,6 +1312,12 @@ PrefabInstance:
 --- !u!1 &1004886930678010037 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7103234975530953864, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1004886930678010036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1004886930678010038 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7009768142170317006, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
     type: 3}
   m_PrefabInstance: {fileID: 1004886930678010036}
   m_PrefabAsset: {fileID: 0}
@@ -1593,6 +1609,11 @@ PrefabInstance:
       propertyPath: songDifficulty
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: summaryUIAnimator
+      value: 
+      objectReference: {fileID: 1004886930678010038}
     - target: {fileID: 8149026187321016933, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}
       propertyPath: m_Name

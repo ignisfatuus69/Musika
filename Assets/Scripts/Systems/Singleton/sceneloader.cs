@@ -17,4 +17,12 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(sceneIndex);
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.N))
+        {
+            SceneManager.LoadScene(2);
+        }
+    }
 }
