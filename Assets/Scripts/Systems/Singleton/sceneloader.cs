@@ -30,6 +30,13 @@ public class SceneLoader : MonoBehaviour
         currentSceneIndex = sceneIndex;
     }
 
+    public void RestartScene()
+    {
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex,LoadSceneMode.Additive);
+        StartCoroutine(SetActiveScene(SceneManager.GetActiveScene().buildIndex));
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))

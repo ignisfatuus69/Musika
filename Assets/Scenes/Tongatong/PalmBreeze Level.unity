@@ -1424,6 +1424,11 @@ PrefabInstance:
       propertyPath: songInfoTrackers.Array.data[3]
       value: 
       objectReference: {fileID: 1004886930678010037}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: scoreTracker
+      value: 
+      objectReference: {fileID: 1004886930678010037}
     - target: {fileID: 8149026187321016933, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}
       propertyPath: m_Name

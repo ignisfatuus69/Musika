@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private LightManager lightManagerObj;
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private Animator summaryUIAnimator;
-    [SerializeField] private Resource[] songInfoTrackers;
+    [SerializeField] private Score scoreTracker;
 
     private SongScore currentSongScoreData = new SongScore();
 
@@ -47,15 +47,18 @@ public class GameManager : MonoBehaviour
 
     private void StoreSongScoreData()
     {
-        currentSongScoreData.missAmount = (int)songInfoTrackers[0].currentValue;
-        currentSongScoreData.goodAmount = (int)songInfoTrackers[1].currentValue;
-        currentSongScoreData.perfectAmount = (int)songInfoTrackers[2].currentValue;
-        currentSongScoreData.totalScore = (int)songInfoTrackers[3].currentValue;
+        currentSongScoreData.missAmount = (int)scoreTracker.missCounter.currentValue;
+        currentSongScoreData.goodAmount = (int)scoreTracker.goodCounter.currentValue;
+        currentSongScoreData.perfectAmount = (int)scoreTracker.perfectCounter.currentValue;
+        currentSongScoreData.totalScore = (int)scoreTracker.currentValue;
+        currentSongScoreData.songRanking = scoreTracker.songGrade;
 
         // if song score data does not exist
         if (!SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary.ContainsKey(this.songData.name))
         {
             SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary.Add(this.songData.name, this.currentSongScoreData);
+            SingletonManager.instance.GetSingleton<PlayerData>().songScoreListTest.Add(this.currentSongScoreData);
+
         }
 
         //replace song score data if the score is currently higher than the previous
@@ -102,10 +105,12 @@ public class GameManager : MonoBehaviour
         summaryUIAnimator.SetBool("isDone", true);
         StoreSongScoreData();
         isDone = true;
+
         Debug.Log(SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary[this.songData.name].missAmount);
         Debug.Log(SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary[this.songData.name].goodAmount);
         Debug.Log(SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary[this.songData.name].perfectAmount);
         Debug.Log(SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary[this.songData.name].totalScore);
+
         Time.timeScale = 0;
     }
 

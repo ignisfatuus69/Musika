@@ -24,7 +24,7 @@ public class Score : Resource
     [SerializeField] public Resource goodCounter;
     [SerializeField] public Resource perfectCounter;
 
-    private SongGrade songGrade;
+    public SongGrade songGrade { get; private set; }
 
     public int GetPerfectScoreValue => perfectScoreValue;
     public int GetOkayScoreValue => okayScoreValue;

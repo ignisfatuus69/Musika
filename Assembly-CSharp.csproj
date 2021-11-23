@@ -68,6 +68,7 @@
     <Compile Include="Assets\ButtonTab.cs" />
     <Compile Include="Assets\ComboEffect.cs" />
     <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\GameOverButtons.cs" />
     <Compile Include="Assets\Kolitong.cs" />
     <Compile Include="Assets\KolitongBeat.cs" />
     <Compile Include="Assets\KolitongManager.cs" />
