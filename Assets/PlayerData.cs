@@ -2,25 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+public class SongScore
+{
+    public int missAmount;
+    public int goodAmount;
+    public int perfectAmount;
+    public int totalScore;
+}
 public class PlayerData : MonoBehaviour
 {
     public int index = 0;
     public int randomNumber = 69999;
+    public Dictionary<string,SongScore> songScoreDictionary = new Dictionary<string, SongScore>();
+
     // Start is called before the first frame update
     void Start()
     {
         SingletonManager.instance.RegisterSingleton<PlayerData>(this);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            index += 1;
-            Debug.Log(" i like poop");
-            Debug.Log(SingletonManager.instance.GetInstancesCount());
-            SceneManager.LoadSceneAsync(index,LoadSceneMode.Additive);
-        }
-    }
 }

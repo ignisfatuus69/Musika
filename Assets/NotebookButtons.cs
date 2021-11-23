@@ -19,16 +19,16 @@ public class NotebookButtons : MonoBehaviour
 
     public void LoadNextScene(int sceneIndex)
     {
-        SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
+     //   SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
     }
 
     public void UnloadScene(int sceneIndex)
     {
-        SceneManager.UnloadSceneAsync(sceneIndex);
+        //SceneManager.UnloadSceneAsync(sceneIndex);
     }
 
     public void LoadSceneSingle(int sceneIndex)
     {
-        SceneManager.LoadScene(sceneIndex);
+        SingletonManager.instance.GetSingleton<SceneLoader>().LoadSceneEntirely(sceneIndex);
     }
 }

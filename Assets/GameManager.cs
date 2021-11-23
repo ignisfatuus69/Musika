@@ -21,8 +21,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private LightManager lightManagerObj;
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private Animator summaryUIAnimator;
-    private bool isPaused = false;
+    [SerializeField] private Resource[] songInfoTrackers;
 
+    private SongScore currentSongScoreData = new SongScore();
+
+    private bool isPaused = false;
+    private bool isDone = false;
 
     public SongDifficulty GetSongDifficulty => this.songDifficulty;
     // Start is called before the first frame update
@@ -34,10 +38,34 @@ public class GameManager : MonoBehaviour
 
     private void FinishGame(Beat beat)
     {
+        if (isDone) return;
         if (beatSpawnerObj.totalPooledCount >= 5) 
         {
-            Debug.Log("finish na bro");
-            summaryUIAnimator.SetBool("isDone", true);
+            StartCoroutine(FinalizePlayerScore());
+        }
+    }
+
+    private void StoreSongScoreData()
+    {
+        currentSongScoreData.missAmount = (int)songInfoTrackers[0].currentValue;
+        currentSongScoreData.goodAmount = (int)songInfoTrackers[1].currentValue;
+        currentSongScoreData.perfectAmount = (int)songInfoTrackers[2].currentValue;
+        currentSongScoreData.totalScore = (int)songInfoTrackers[3].currentValue;
+
+        // if song score data does not exist
+        if (!SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary.ContainsKey(this.songData.name))
+        {
+            SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary.Add(this.songData.name, this.currentSongScoreData);
+        }
+
+        //replace song score data if the score is currently higher than the previous
+        else if (SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary.ContainsKey(this.songData.name))
+        {
+            if (currentSongScoreData.totalScore> SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary[this.songData.name].totalScore)
+            {
+                SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary.Remove(this.songData.name);
+                SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary.Add(this.songData.name, this.currentSongScoreData);
+            }
         }
     }
     private void SetGameOver()
@@ -46,7 +74,6 @@ public class GameManager : MonoBehaviour
         StartCoroutine(DisableSpawner());
         FallBeats();
         lightManagerObj.PutLightsOut();
-      
     }
     
     private IEnumerator DisableSpawner()
@@ -67,6 +94,19 @@ public class GameManager : MonoBehaviour
         {
             spawnedBeats[i].transform.DOMoveY(-15, 30);
         }
+    }
+
+    IEnumerator FinalizePlayerScore()
+    {
+        yield return new WaitForEndOfFrame();
+        summaryUIAnimator.SetBool("isDone", true);
+        StoreSongScoreData();
+        isDone = true;
+        Debug.Log(SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary[this.songData.name].missAmount);
+        Debug.Log(SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary[this.songData.name].goodAmount);
+        Debug.Log(SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary[this.songData.name].perfectAmount);
+        Debug.Log(SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary[this.songData.name].totalScore);
+        Time.timeScale = 0;
     }
 
 
