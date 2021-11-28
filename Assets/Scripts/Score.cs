@@ -16,6 +16,7 @@ public enum SongGrade
 
 public class Score : Resource
 {
+    [SerializeField] private SongData songData;
     [SerializeField] private BeatSpawner beatSpawnerObj;
     [SerializeField] private Combo comboCounterObj;
     [SerializeField] private int perfectScoreValue;
@@ -32,7 +33,7 @@ public class Score : Resource
     void Start()
     {
         beatSpawnerObj.EVT_OnBeatPooled.AddListener(AddScore);
-        
+        beatSpawnerObj.EVT_OnBeatPooled.AddListener(DetermineSongGrade);
     }
 
     void AddScore(Beat beatObj)
@@ -62,8 +63,36 @@ public class Score : Resource
     }
 
 
-    void DetermineSongGrade()
+    void DetermineSongGrade(Beat beatObj)
     {
+        if (perfectCounter.currentValue >= songData.beatNoteIndexes.Count)
+        {
+            this.songGrade = SongGrade.SS;
+            return;
+        }
+
+        if (perfectCounter.currentValue >= (songData.beatNoteIndexes.Count*0.9))
+        {
+            this.songGrade = SongGrade.SS;
+            return;
+        }
+
+        if (perfectCounter.currentValue >= (songData.beatNoteIndexes.Count * 0.85))
+        {
+            this.songGrade = SongGrade.A;
+            return;
+        }
+        if (perfectCounter.currentValue >= (songData.beatNoteIndexes.Count * 75))
+        {
+            this.songGrade = SongGrade.B;
+            return;
+        }
+        else
+        {
+            this.songGrade = SongGrade.F;
+            return;
+        }
+
 
     }
 

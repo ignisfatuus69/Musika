@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 72711882}
   - component: {fileID: 72711881}
   m_Layer: 0
-  m_Name: test
+  m_Name: player data
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,6 +152,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   randomNumber: 69999
+  songScoreListTest: []
+  notebookData:
+    enabledSection: {fileID: 0}
+    enlargedTab: {fileID: 0}
 --- !u!4 &72711882
 Transform:
   m_ObjectHideFlags: 0
@@ -195,6 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688f088da68a5a4459f89d3402a3bce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isReadyToLoadScene: 1
 --- !u!4 &744021601
 Transform:
   m_ObjectHideFlags: 0

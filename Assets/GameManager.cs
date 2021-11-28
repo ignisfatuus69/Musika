@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     private void FinishGame(Beat beat)
     {
         if (isDone) return;
-        if (beatSpawnerObj.totalPooledCount >= 5) 
+        if (beatSpawnerObj.totalPooledCount >= songData.beatNoteIndexes.Count) 
         {
             StartCoroutine(FinalizePlayerScore());
         }
