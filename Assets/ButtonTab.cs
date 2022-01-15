@@ -34,4 +34,9 @@ public class ButtonTab : MonoBehaviour
         previousTab = notebookTabs[tabIndex];
         SingletonManager.instance.GetSingleton<PlayerData>().notebookData.enlargedTabIndex = tabIndex;
     }
+
+    public void UnlockSongButton()
+    {
+
+    }
 }

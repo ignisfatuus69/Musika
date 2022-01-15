@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2182,6 +2182,11 @@ PrefabInstance:
       propertyPath: m_FillMethod
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1431166195957673880, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 18308703034107d43a07a197294faeaa, type: 2}
     - target: {fileID: 2492536500186406802, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
         type: 3}
       propertyPath: beatSpawnerObj
