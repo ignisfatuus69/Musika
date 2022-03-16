@@ -145,11 +145,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2185328720576351207}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.23, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.23000008, z: 0}
   m_LocalScale: {x: 0.7837974, y: 0.3906778, z: 0.3906778}
   m_Children: []
-  m_Father: {fileID: 4399936069484833752}
+  m_Father: {fileID: 1366531100711829427}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!212 &6777158263087350557
@@ -166,6 +166,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -363,6 +364,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -444,6 +446,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -558,6 +561,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -617,11 +621,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6197033872802491546}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.02, y: 0.23000002, z: 0}
-  m_LocalScale: {x: 0.78380096, y: 0.39068046, z: 0.39068}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.019999962, y: 0.23000008, z: 0}
+  m_LocalScale: {x: 0.783801, y: 0.3906805, z: 0.39068}
   m_Children: []
-  m_Father: {fileID: 4399936069913526159}
+  m_Father: {fileID: 1366531101408783332}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &8770261781162121551
@@ -638,6 +642,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -698,10 +703,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9009273743135703735}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 0.5400001, z: 0}
+  m_LocalPosition: {x: 0.030000005, y: 0.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4399936070783321306}
+  m_Father: {fileID: 1366531100655358129}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2989729023998314263
@@ -718,6 +723,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -760,11 +766,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3798513439893615704}
     m_Modifications:
-    - target: {fileID: 2184113984080986034, guid: f949376c47a79374ea3865981042edc3,
-        type: 3}
-      propertyPath: m_Name
-      value: Right Tongatong
-      objectReference: {fileID: 0}
     - target: {fileID: 700504707992899235, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -835,6 +836,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1624
       objectReference: {fileID: 0}
+    - target: {fileID: 2184113984080986028, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: songDataToPlay
+      value: 
+      objectReference: {fileID: 11400000, guid: 25b9aea4d8529214e9556b204545c7a5,
+        type: 2}
+    - target: {fileID: 2184113984080986034, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: m_Name
+      value: Right Tongatong
+      objectReference: {fileID: 0}
     - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -856,14 +868,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 0ef713cb92cab764f9b057f281434873,
         type: 3}
-    - target: {fileID: 2184113984080986028, guid: f949376c47a79374ea3865981042edc3,
+    - target: {fileID: 2756734116916763336, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
-      propertyPath: songDataToPlay
-      value: 
-      objectReference: {fileID: 11400000, guid: 25b9aea4d8529214e9556b204545c7a5,
-        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f949376c47a79374ea3865981042edc3, type: 3}
+--- !u!4 &4399936069484833752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 700504707992899235, guid: f949376c47a79374ea3865981042edc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3798513439626077563}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3096382805750946519 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2184113984080986028, guid: f949376c47a79374ea3865981042edc3,
@@ -882,9 +899,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3798513439626077563}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &4399936069484833752 stripped
+--- !u!4 &1366531100711829427 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 700504707992899235, guid: f949376c47a79374ea3865981042edc3,
+  m_CorrespondingSourceObject: {fileID: 2756734116916763336, guid: f949376c47a79374ea3865981042edc3,
     type: 3}
   m_PrefabInstance: {fileID: 3798513439626077563}
   m_PrefabAsset: {fileID: 0}
@@ -895,11 +912,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3798513439893615704}
     m_Modifications:
-    - target: {fileID: 2184113984080986034, guid: f949376c47a79374ea3865981042edc3,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Tongatong
-      objectReference: {fileID: 0}
     - target: {fileID: 700504707992899235, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -970,6 +982,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1624
       objectReference: {fileID: 0}
+    - target: {fileID: 2184113984080986028, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: songDataToPlay
+      value: 
+      objectReference: {fileID: 11400000, guid: 25b9aea4d8529214e9556b204545c7a5,
+        type: 2}
+    - target: {fileID: 2184113984080986034, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: m_Name
+      value: Left Tongatong
+      objectReference: {fileID: 0}
     - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -985,20 +1008,13 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2184113984080986028, guid: f949376c47a79374ea3865981042edc3,
+    - target: {fileID: 2756734116916763336, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
-      propertyPath: songDataToPlay
-      value: 
-      objectReference: {fileID: 11400000, guid: 25b9aea4d8529214e9556b204545c7a5,
-        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f949376c47a79374ea3865981042edc3, type: 3}
---- !u!1 &3096382805071122078 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2184113984080986034, guid: f949376c47a79374ea3865981042edc3,
-    type: 3}
-  m_PrefabInstance: {fileID: 3798513440288960812}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4399936069913526159 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 700504707992899235, guid: f949376c47a79374ea3865981042edc3,
@@ -1017,6 +1033,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af54d660e9ee4b499594f9a16a6239e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &3096382805071122078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2184113984080986034, guid: f949376c47a79374ea3865981042edc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3798513440288960812}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1366531101408783332 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2756734116916763336, guid: f949376c47a79374ea3865981042edc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3798513440288960812}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3798513441146145401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1024,11 +1052,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3798513439893615704}
     m_Modifications:
-    - target: {fileID: 2184113984080986034, guid: f949376c47a79374ea3865981042edc3,
-        type: 3}
-      propertyPath: m_Name
-      value: Middle Tongatong
-      objectReference: {fileID: 0}
     - target: {fileID: 700504707992899235, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1099,6 +1122,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1624
       objectReference: {fileID: 0}
+    - target: {fileID: 2184113984080986028, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: songDataToPlay
+      value: 
+      objectReference: {fileID: 11400000, guid: 25b9aea4d8529214e9556b204545c7a5,
+        type: 2}
+    - target: {fileID: 2184113984080986034, guid: f949376c47a79374ea3865981042edc3,
+        type: 3}
+      propertyPath: m_Name
+      value: Middle Tongatong
+      objectReference: {fileID: 0}
     - target: {fileID: 2687826397445926402, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1120,20 +1154,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: f96f2999208dd204f95ba86dee4c6d32,
         type: 3}
-    - target: {fileID: 2184113984080986028, guid: f949376c47a79374ea3865981042edc3,
+    - target: {fileID: 2756734116916763336, guid: f949376c47a79374ea3865981042edc3,
         type: 3}
-      propertyPath: songDataToPlay
-      value: 
-      objectReference: {fileID: 11400000, guid: 25b9aea4d8529214e9556b204545c7a5,
-        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f949376c47a79374ea3865981042edc3, type: 3}
---- !u!1 &3096382806466246091 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2184113984080986034, guid: f949376c47a79374ea3865981042edc3,
-    type: 3}
-  m_PrefabInstance: {fileID: 3798513441146145401}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4399936070783321306 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 700504707992899235, guid: f949376c47a79374ea3865981042edc3,
@@ -1152,6 +1179,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af54d660e9ee4b499594f9a16a6239e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1366531100655358129 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2756734116916763336, guid: f949376c47a79374ea3865981042edc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3798513441146145401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3096382806466246091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2184113984080986034, guid: f949376c47a79374ea3865981042edc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3798513441146145401}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6351232822273990965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1163,6 +1202,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: swipe detector
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
+        type: 3}
+      propertyPath: EVT_OnSwipeDown.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3096382806466246101}
+    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
+        type: 3}
+      propertyPath: EVT_OnSwipeLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3096382805071122048}
+    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
+        type: 3}
+      propertyPath: EVT_OnSwipeRight.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3096382805750946519}
+    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
+        type: 3}
+      propertyPath: minimumSwipeDistance
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
+        type: 3}
+      propertyPath: EVT_OnSwipeDown.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTapAction
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
+        type: 3}
+      propertyPath: EVT_OnSwipeLeft.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTapAction
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
+        type: 3}
+      propertyPath: EVT_OnSwipeRight.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTapAction
       objectReference: {fileID: 0}
     - target: {fileID: 6400519611206319831, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
         type: 3}
@@ -1218,41 +1292,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
-        type: 3}
-      propertyPath: EVT_OnSwipeDown.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 3096382806466246101}
-    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
-        type: 3}
-      propertyPath: EVT_OnSwipeLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 3096382805071122048}
-    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
-        type: 3}
-      propertyPath: EVT_OnSwipeRight.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 3096382805750946519}
-    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
-        type: 3}
-      propertyPath: minimumSwipeDistance
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
-        type: 3}
-      propertyPath: EVT_OnSwipeDown.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnTapAction
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
-        type: 3}
-      propertyPath: EVT_OnSwipeLeft.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnTapAction
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400519611206319828, guid: 9e9e981f7e69cb345bf2953a11e59cd8,
-        type: 3}
-      propertyPath: EVT_OnSwipeRight.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnTapAction
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e9e981f7e69cb345bf2953a11e59cd8, type: 3}

@@ -7,7 +7,7 @@ public class Tongatong : BeatInteractor,IInteractable
     public float speed = 5;
     public float displacement = 20;
     private Vector2 InitialPosition;
-
+    [SerializeField] private Animator tongatongAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,11 +34,13 @@ public class Tongatong : BeatInteractor,IInteractable
             yield return null;
         }
 
-        transform.position = targetPosition;
 
         //object snaps back up
         if (displacementOverTime > 0)
         {
+            tongatongAnimator.SetTrigger("Triggered");
+            targetPosition = InitialPosition;
+            Vector2.MoveTowards(transform.position, InitialPosition, speed * Time.deltaTime);
             StartCoroutine(MoveToDisplacement(0));
         }
     }
