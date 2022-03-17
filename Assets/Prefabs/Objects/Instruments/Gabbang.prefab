@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8083918516937942412}
   - component: {fileID: 2339289128136633716}
   - component: {fileID: 6194173189076818770}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: gabbang_key_6 transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.4941176, y: 6.9764705, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.9}
 --- !u!95 &6194173189076818770
 Animator:
   serializedVersion: 3
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 2124860167962237496}
   - component: {fileID: 3432666356465167791}
   - component: {fileID: 7311183349999012611}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: gabbang_key_3 transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.4941176, y: 8.376471, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.9}
 --- !u!95 &7311183349999012611
 Animator:
   serializedVersion: 3
@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 3004630911554313869}
   - component: {fileID: 6070024006284117523}
   - component: {fileID: 4161382112446007322}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: gabbang_key_7 transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.6235294, y: 6.5058823, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.9}
 --- !u!95 &4161382112446007322
 Animator:
   serializedVersion: 3
@@ -464,6 +464,12 @@ MonoBehaviour:
       m_Calls: []
   songDataToPlay: {fileID: 11400000, guid: 238198404b29ab04f9548094cabce67b, type: 2}
   songDirectorObj: {fileID: 0}
+  beatLayerMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  gabbangLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
   inputControllerObj: {fileID: 669788117}
 --- !u!114 &669788117
 MonoBehaviour:
@@ -660,7 +666,7 @@ GameObject:
   - component: {fileID: 4591357980102017424}
   - component: {fileID: 3185359797216988416}
   - component: {fileID: 485128919285937934}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: gabbang_key_2 transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -694,7 +700,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.6235294, y: 8.788236, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.9}
 --- !u!95 &485128919285937934
 Animator:
   serializedVersion: 3
@@ -806,7 +812,7 @@ GameObject:
   - component: {fileID: 8471758961414337424}
   - component: {fileID: 3598410253088975755}
   - component: {fileID: 6246173473334085315}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: gabbang_key_5 transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -840,7 +846,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.4941176, y: 7.4117646, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.9}
 --- !u!95 &6246173473334085315
 Animator:
   serializedVersion: 3
@@ -871,7 +877,7 @@ GameObject:
   - component: {fileID: 8123595175718084864}
   - component: {fileID: 3488446062213475830}
   - component: {fileID: 6730408290868980864}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: gabbang_key_4 transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,7 +911,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.6470588, y: 7.8705883, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.9}
 --- !u!95 &6730408290868980864
 Animator:
   serializedVersion: 3
@@ -1017,7 +1023,7 @@ GameObject:
   - component: {fileID: 3820046320500033548}
   - component: {fileID: 5447816181235677262}
   - component: {fileID: 2929103931268698573}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Key 1 Transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1051,7 +1057,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.46, y: 9.160012, z: 1}
-  m_Center: {x: 0.024142027, y: -0.024141788, z: 0}
+  m_Center: {x: 0.024142027, y: -0.024141788, z: 0.9}
 --- !u!95 &2929103931268698573
 Animator:
   serializedVersion: 3

@@ -422,7 +422,7 @@ GameObject:
   - component: {fileID: 5751058979929643094}
   - component: {fileID: 408367830}
   - component: {fileID: 7703053971504063716}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BasePrefab Beat
   m_TagString: Untagged
   m_Icon: {fileID: 0}

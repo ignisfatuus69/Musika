@@ -38,10 +38,11 @@ public class Tongatong : BeatInteractor,IInteractable
         //object snaps back up
         if (displacementOverTime > 0)
         {
-            tongatongAnimator.SetTrigger("Triggered");
+           
             targetPosition = InitialPosition;
             Vector2.MoveTowards(transform.position, InitialPosition, speed * Time.deltaTime);
             StartCoroutine(MoveToDisplacement(0));
+            tongatongAnimator.SetTrigger("Triggered");
         }
     }
 
