@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -240,16 +241,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7263105546621331515, guid: b1bf89af7fdffc94eb2b0e83326e05f6,
-        type: 3}
-      propertyPath: m_Name
-      value: Palm Breeze Indexers
-      objectReference: {fileID: 0}
-    - target: {fileID: 7263105546621331515, guid: b1bf89af7fdffc94eb2b0e83326e05f6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7263105546621331514, guid: b1bf89af7fdffc94eb2b0e83326e05f6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -303,6 +294,16 @@ PrefabInstance:
     - target: {fileID: 7263105546621331514, guid: b1bf89af7fdffc94eb2b0e83326e05f6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263105546621331515, guid: b1bf89af7fdffc94eb2b0e83326e05f6,
+        type: 3}
+      propertyPath: m_Name
+      value: Palm Breeze Indexers
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263105546621331515, guid: b1bf89af7fdffc94eb2b0e83326e05f6,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -439,11 +440,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 181929490005141613, guid: cdbf98534c85aee4eb60af130c998178,
-        type: 3}
-      propertyPath: m_Name
-      value: Song Data Generator
-      objectReference: {fileID: 0}
     - target: {fileID: 181929490005141612, guid: cdbf98534c85aee4eb60af130c998178,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -499,6 +495,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 181929490005141613, guid: cdbf98534c85aee4eb60af130c998178,
+        type: 3}
+      propertyPath: m_Name
+      value: Song Data Generator
+      objectReference: {fileID: 0}
     - target: {fileID: 181929490005141615, guid: cdbf98534c85aee4eb60af130c998178,
         type: 3}
       propertyPath: songDirectorObj
@@ -519,16 +520,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1619177622986987000, guid: df4c51d8775e20c499254f2b4a79486d,
-        type: 3}
-      propertyPath: m_Name
-      value: Luminous Sands Director
-      objectReference: {fileID: 0}
-    - target: {fileID: 1619177622986987000, guid: df4c51d8775e20c499254f2b4a79486d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1619177622986985989, guid: df4c51d8775e20c499254f2b4a79486d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -624,6 +615,16 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[7].value
       value: 
       objectReference: {fileID: 15562592}
+    - target: {fileID: 1619177622986987000, guid: df4c51d8775e20c499254f2b4a79486d,
+        type: 3}
+      propertyPath: m_Name
+      value: Luminous Sands Director
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619177622986987000, guid: df4c51d8775e20c499254f2b4a79486d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df4c51d8775e20c499254f2b4a79486d, type: 3}
 --- !u!1001 &6011469690991697291
@@ -633,16 +634,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6011469689743490099, guid: fdb3d22cf18f01d4caa0dc8a469b7088,
-        type: 3}
-      propertyPath: m_Name
-      value: Luminous Sands Indexer
-      objectReference: {fileID: 0}
-    - target: {fileID: 6011469689743490099, guid: fdb3d22cf18f01d4caa0dc8a469b7088,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6011469689743490098, guid: fdb3d22cf18f01d4caa0dc8a469b7088,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -697,6 +688,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011469689743490099, guid: fdb3d22cf18f01d4caa0dc8a469b7088,
+        type: 3}
+      propertyPath: m_Name
+      value: Luminous Sands Indexer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011469689743490099, guid: fdb3d22cf18f01d4caa0dc8a469b7088,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb3d22cf18f01d4caa0dc8a469b7088, type: 3}

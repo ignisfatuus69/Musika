@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Kolitong : BeatInteractor
 {
+    [SerializeField] private LayerMask beatLayerMask;
+    [SerializeField] private LayerMask objectLayerMask;
     [SerializeField] Camera cameraMain;
     [SerializeField] private InputController inputcontrollerObj;
     private KolitongBeat currentBeat;
@@ -49,13 +51,23 @@ public class Kolitong : BeatInteractor
             Ray ray = new Ray(worldCoordinates, Vector3.forward);
             RaycastHit hit;
             Debug.DrawRay(ray.origin, ray.direction * 55, Color.green);
-            if (Physics.Raycast(ray.origin, ray.direction, out hit, 25))
+            if (Physics.Raycast(ray.origin, ray.direction, out hit, 25, objectLayerMask))
+            {
+                hit.transform.GetComponent<Animator>().SetTrigger("Trigger");
+                //KolitongBeat detectedKolitongBeat = hit.transform.gameObject.GetComponent<KolitongBeat>();
+                //currentBeat = detectedKolitongBeat;
+               // this.EvaluateBeatState(currentBeat);
+
+            }
+            if (Physics.Raycast(ray.origin, ray.direction, out hit, 25,beatLayerMask))
             {
                 KolitongBeat detectedKolitongBeat = hit.transform.gameObject.GetComponent<KolitongBeat>();
                 currentBeat = detectedKolitongBeat;
                 this.EvaluateBeatState(currentBeat);
 
             }
+
+
         }
 
 

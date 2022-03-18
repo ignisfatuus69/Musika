@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7375112530743381720}
   - component: {fileID: 1866991315367022946}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: arrow_kolitong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 1533339395390985813}
   - component: {fileID: 3489981177577335527}
   - component: {fileID: 3430606761541425783}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 'Kolitong Beat '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3328455483483493406}
   - component: {fileID: 3367112196143996269}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Gabbang Lighting (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6523562628928472325}
   - component: {fileID: 6523562628928472324}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Beat Outer Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6523562629547738216}
   - component: {fileID: 6523562629547738223}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 'Beat Core '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 5250507071497536457}
   - component: {fileID: 195642806276187800}
   - component: {fileID: 5179089993368084083}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -510,7 +510,7 @@ GameObject:
   - component: {fileID: 7067702664347769845}
   - component: {fileID: 5073422186395715044}
   - component: {fileID: 67155602081179219}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
