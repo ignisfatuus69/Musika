@@ -20,7 +20,7 @@ public class SwipeDetection : MonoBehaviour
 
     [SerializeField] private InputController inputControllerObj;
     [SerializeField] private float minimumSwipeDistance = 0.2f;
-    [SerializeField] private float maximumSwipeTime = 1f;
+    [SerializeField] private float maximumSwipeTime = 0.25f;
     [SerializeField,Range(0,1)] private float directionThreshold =0.9f;
 
     private Vector2 startPosition;

@@ -16,6 +16,8 @@ public class OnDeactivate : UnityEvent<GameObject> { };
 public class Beat : MonoBehaviour,IInteractable
 {
 
+    public SpriteRenderer beatSpriteRenderer;
+    public SpriteRenderer beatRingSpriteRenderer;
     public OnInteracted EVT_OnInteracted;
     public OnBeatTimedOut EVT_OnTimedOut;
     public OnDeactivate EVT_OnDeactivate;
@@ -65,7 +67,6 @@ public class Beat : MonoBehaviour,IInteractable
     {
         EnableCollider();
     }
-
 
     private void EnableCollider()
     {

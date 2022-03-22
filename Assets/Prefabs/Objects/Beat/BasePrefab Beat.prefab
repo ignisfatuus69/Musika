@@ -459,6 +459,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7657cfe7de1630438e1b86fbaaa8612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  beatSpriteRenderer: {fileID: 1465272940}
+  beatRingSpriteRenderer: {fileID: 1814629127}
   EVT_OnInteracted:
     m_PersistentCalls:
       m_Calls: []

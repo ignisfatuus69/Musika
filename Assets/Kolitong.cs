@@ -10,12 +10,15 @@ public class Kolitong : BeatInteractor
     private KolitongBeat currentBeat;
     private List<Vector2> positionsToCast = new List<Vector2>();
     [SerializeField] private SwipeDetection swipeDetector;
+    private bool canPlayStrings = false;
     // Start is called before the first frame update
     void Start()
     {
         inputcontrollerObj.EVT_OnStartTouch.AddListener(StartTouch);
         inputcontrollerObj.EVT_OnHoldTouch.AddListener(OnTouchHold);
         inputcontrollerObj.EVT_OnEndTouch.AddListener(OnEndTouch);
+
+        StartCoroutine(EnableStringAnimation());
     }
 
 
@@ -53,6 +56,7 @@ public class Kolitong : BeatInteractor
             Debug.DrawRay(ray.origin, ray.direction * 55, Color.green);
             if (Physics.Raycast(ray.origin, ray.direction, out hit, 25, objectLayerMask))
             {
+                if (!canPlayStrings) return;
                 hit.transform.GetComponent<Animator>().SetTrigger("Trigger");
                 //KolitongBeat detectedKolitongBeat = hit.transform.gameObject.GetComponent<KolitongBeat>();
                 //currentBeat = detectedKolitongBeat;
@@ -73,6 +77,11 @@ public class Kolitong : BeatInteractor
 
     }
 
+    IEnumerator EnableStringAnimation()
+    {
+        yield return new WaitForSeconds(1.5f);
+        canPlayStrings = true;
+    }
     void AddMorePositions(Vector2 position)
     {
         positionsToCast.Add(position);
