@@ -892,7 +892,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &159032815
 RectTransform:
   m_ObjectHideFlags: 0
@@ -955,7 +955,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1216095820}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadSceneSingle
         m_Mode: 3
         m_Arguments:
@@ -1357,7 +1357,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50.69995, y: -225.59937}
+  m_AnchoredPosition: {x: -50.69995, y: -249.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &255980048
@@ -1890,12 +1890,12 @@ GameObject:
   - component: {fileID: 386614699}
   - component: {fileID: 386614698}
   m_Layer: 5
-  m_Name: SIZZLING HEAT Button
+  m_Name: ON THE SEASIDE Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &386614697
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2197,7 +2197,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50.700012, y: -186.09937}
+  m_AnchoredPosition: {x: -50.700012, y: -210}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &396633007
@@ -2564,12 +2564,12 @@ GameObject:
   - component: {fileID: 439981714}
   - component: {fileID: 439981713}
   m_Layer: 5
-  m_Name: SIZZLING HEAT Button
+  m_Name: CHASING SUNSETS Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &439981712
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3233,7 +3233,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1216095820}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadNextScene
         m_Mode: 3
         m_Arguments:
@@ -3299,7 +3299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &814499824
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3362,7 +3362,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1216095820}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadSceneSingle
         m_Mode: 3
         m_Arguments:
@@ -3903,12 +3903,12 @@ GameObject:
   - component: {fileID: 943445720}
   - component: {fileID: 943445719}
   m_Layer: 5
-  m_Name: SIZZLING HEAT LOCKED
+  m_Name: CHASING SUNSETS LOCKED
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &943445718
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3971,7 +3971,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1216095820}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadSceneSingle
         m_Mode: 3
         m_Arguments:
@@ -4270,7 +4270,7 @@ GameObject:
   - component: {fileID: 1045469400}
   - component: {fileID: 1045469399}
   m_Layer: 5
-  m_Name: PALM BREEZE Button
+  m_Name: THE DEEP BLUE Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5165,12 +5165,12 @@ GameObject:
   - component: {fileID: 1211291710}
   - component: {fileID: 1211291709}
   m_Layer: 5
-  m_Name: AQUATIC VIEW LOCKED
+  m_Name: TROPICAL MORNING LOCKED
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1211291708
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5233,7 +5233,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1216095820}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadSceneSingle
         m_Mode: 3
         m_Arguments:
@@ -5352,7 +5352,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1216095817}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e0539dee33c2914e9db948253135b73, type: 3}
+  m_Script: {fileID: 11500000, guid: 84fafdce2d7ac024089ec5bfefbac073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1228333149
@@ -5599,9 +5599,9 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
+          m_IntArgument: 5
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PalmBreeze
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1268606950
@@ -5659,7 +5659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1338663261
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5721,7 +5721,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1338663263}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1216095820}
+        m_MethodName: LoadSceneSingle
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: AquaticView
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1338663263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6613,7 +6624,7 @@ GameObject:
   - component: {fileID: 1599497761}
   - component: {fileID: 1599497760}
   m_Layer: 5
-  m_Name: PALM BREEZE Button
+  m_Name: LUMINOUS SANDS Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6742,12 +6753,12 @@ GameObject:
   - component: {fileID: 1602053065}
   - component: {fileID: 1602053064}
   m_Layer: 5
-  m_Name: SIZZLING HEAT LOCKED
+  m_Name: ON THE SEASIDE LOCKED
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1602053063
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6810,7 +6821,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1216095820}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadSceneSingle
         m_Mode: 3
         m_Arguments:
@@ -6945,12 +6956,12 @@ GameObject:
   - component: {fileID: 1678043048}
   - component: {fileID: 1678043047}
   m_Layer: 5
-  m_Name: AQUATIC VIEW Button
+  m_Name: TROPICAL MORNING Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1678043046
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7095,7 +7106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50.69995, y: -581.5}
+  m_AnchoredPosition: {x: -50.69995, y: -561}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1783024721
@@ -7335,7 +7346,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1216095820}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadNextScene
         m_Mode: 3
         m_Arguments:
@@ -7560,7 +7571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1863468534
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7622,7 +7633,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1863468536}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1216095820}
+        m_MethodName: LoadSceneSingle
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: SizzlingHeat
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1863468536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8267,7 +8289,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1216095820}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadNextScene
         m_Mode: 3
         m_Arguments:
@@ -8349,7 +8371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50.69995, y: -621}
+  m_AnchoredPosition: {x: -50.69995, y: -600.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2122553082

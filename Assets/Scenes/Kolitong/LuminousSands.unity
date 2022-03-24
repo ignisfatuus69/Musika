@@ -2665,12 +2665,12 @@ PrefabInstance:
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.size
-      value: 5
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatColorPerMelody.Array.size
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
@@ -2771,7 +2771,7 @@ PrefabInstance:
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[0]
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
@@ -2781,7 +2781,7 @@ PrefabInstance:
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[2]
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
@@ -2791,37 +2791,37 @@ PrefabInstance:
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[4]
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatColorPerMelody.Array.data[0].r
-      value: 0.8679245
+      value: 0.5471698
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatColorPerMelody.Array.data[0].g
-      value: 0.20060521
+      value: 0.012904947
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatColorPerMelody.Array.data[0].b
-      value: 0.20060521
+      value: 0.012904947
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatColorPerMelody.Array.data[1].r
-      value: 0.5816185
+      value: 0.41116187
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatColorPerMelody.Array.data[1].g
-      value: 0.7924528
+      value: 0.6132076
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatColorPerMelody.Array.data[1].b
-      value: 0.16820934
+      value: 0.020247431
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
@@ -2856,17 +2856,17 @@ PrefabInstance:
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatColorPerMelody.Array.data[4].r
-      value: 1
+      value: 0.2004717
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatColorPerMelody.Array.data[4].g
-      value: 1
+      value: 0.8018868
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
       propertyPath: beatColorPerMelody.Array.data[4].b
-      value: 1
+      value: 0.24771377
       objectReference: {fileID: 0}
     - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
         type: 3}
@@ -2892,6 +2892,601 @@ PrefabInstance:
         type: 3}
       propertyPath: beatColorPerMelody.Array.data[4].a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[5]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[6]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[7]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[8]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[9]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[10]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[11]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[12]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[13]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[14]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[15]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[16]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[17]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[18]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[19]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[5].r
+      value: 0.3722501
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[5].g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[5].b
+      value: 0.1462264
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[5].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[6].r
+      value: 0.6829344
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[6].g
+      value: 0.6886792
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[6].b
+      value: 0.1786668
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[6].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[7].r
+      value: 0.34442863
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[7].g
+      value: 0.55473197
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[7].b
+      value: 0.5660378
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[7].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[8].r
+      value: 0.29925025
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[8].g
+      value: 0.4339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[8].b
+      value: 0.16171236
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[8].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[9].r
+      value: 0.7058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[9].g
+      value: 0.2901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[9].b
+      value: 0.6350737
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[9].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[10].r
+      value: 0.21176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[10].g
+      value: 0.4221322
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[10].b
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[10].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[11].r
+      value: 0.8301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[11].g
+      value: 0.30153078
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[11].b
+      value: 0.30153078
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[11].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[12].r
+      value: 0.55826306
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[12].g
+      value: 0.735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[12].b
+      value: 0.30891773
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[12].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[13].r
+      value: 0.6981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[13].g
+      value: 0.59462947
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[13].b
+      value: 0.1284265
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[13].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[14].r
+      value: 0.20358667
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[14].g
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[14].b
+      value: 0.245102
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[14].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[15].r
+      value: 0.28435388
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[15].g
+      value: 0.8247005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[15].b
+      value: 0.8490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[15].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[16].r
+      value: 0.522185
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[16].g
+      value: 0.26962438
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[16].b
+      value: 0.6886792
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[16].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[17].r
+      value: 0.27821818
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[17].g
+      value: 0.764151
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[17].b
+      value: 0.24870951
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[17].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[18].r
+      value: 0.6320754
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[18].g
+      value: 0.49167636
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[18].b
+      value: 0.28324133
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[18].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[19].r
+      value: 0.35715815
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[19].g
+      value: 0.6981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[19].b
+      value: 0.2799039
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[19].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[20]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[21]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[22]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[23]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[24]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[25]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[26]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[27]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[28]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[29]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[30]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[31]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[32]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[33]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[34]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[35]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[36]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[37]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[38]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[39]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[40]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[41]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[42]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[43]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[44]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[45]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[46]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[47]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[48]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[49]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[50]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[51]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[52]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[53]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[54]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[55]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[56]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[57]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[58]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[59]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[60]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[61]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[62]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473041315199763178, guid: a26a8a24fe995514a86c142928b3c057,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[63]
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a26a8a24fe995514a86c142928b3c057, type: 3}

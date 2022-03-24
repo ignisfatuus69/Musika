@@ -9,21 +9,24 @@ using UnityEngine.UI;
 public class SceneLoader : MonoBehaviour
 {
     public bool isReadyToLoadScene = true;
-
+    int currentActiveSceneIndex = 0;
     int currentSceneIndex = 0;
     private void Start()
     {
         SceneManager.sceneLoaded += enableSceneLoading;
         SceneManager.sceneUnloaded += disableSceneLoading;
         SingletonManager.instance.RegisterSingleton<SceneLoader>(this);
+        SceneManager.sceneLoaded += SetNewActiveScene;
     }
 
     public void enableSceneLoading(Scene scene,LoadSceneMode mode)
     {
+        Debug.Log("pee");
         isReadyToLoadScene = true;
     }
     public void disableSceneLoading(Scene scene)
     {
+        Debug.Log("poo");
         isReadyToLoadScene = false;
     }
     public void LoadSceneAdditive(int sceneIndex)
@@ -31,7 +34,7 @@ public class SceneLoader : MonoBehaviour
         if (!isReadyToLoadScene)return;
         if (sceneIndex == currentSceneIndex) return;
         SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
-        StartCoroutine(SetActiveScene(sceneIndex));
+        currentActiveSceneIndex = sceneIndex;
         currentSceneIndex = sceneIndex;
     }
 
@@ -39,19 +42,22 @@ public class SceneLoader : MonoBehaviour
     {
         if (!isReadyToLoadScene) return;
         if (sceneIndex == currentSceneIndex) return;
-        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
-        StartCoroutine(SetActiveScene(sceneIndex));
-        currentSceneIndex = sceneIndex;
-    }
 
+        // You unload the current active scene
+        Debug.Log("not working?");
+        currentActiveSceneIndex = sceneIndex;
+        currentSceneIndex = sceneIndex;
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        // and then u load the new scene
+        SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
+    }
     public void RestartScene()
     {
         if (!isReadyToLoadScene) return;
         SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex,LoadSceneMode.Additive);
-        StartCoroutine(SetActiveScene(SceneManager.GetActiveScene().buildIndex));
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
     }
     private void Update()
     {
@@ -68,10 +74,14 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-
+    private void SetNewActiveScene(Scene scene,LoadSceneMode mode)
+    {
+        Debug.Log(currentActiveSceneIndex);
+        StartCoroutine(SetActiveScene(currentActiveSceneIndex));
+    }
     IEnumerator SetActiveScene(int sceneIndex)
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForEndOfFrame();
         SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(sceneIndex));
     }
 }

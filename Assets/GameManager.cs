@@ -39,8 +39,9 @@ public class GameManager : MonoBehaviour
     private void FinishGame(Beat beat)
     {
         if (isDone) return;
-        if (beatSpawnerObj.totalPooledCount >= songData.beatNoteIndexes.Count) 
+        if (beatSpawnerObj.totalPooledCount >= 5) 
         {
+            Debug.Log("tapos na");
             StartCoroutine(FinalizePlayerScore());
         }
     }
@@ -73,6 +74,7 @@ public class GameManager : MonoBehaviour
     }
     private void SetGameOver()
     {
+        return;
         if (LifeCounterObj.currentValue > LifeCounterObj.GetMinimumValue) return;
         StartCoroutine(DisableSpawner());
         FallBeats();
@@ -110,8 +112,6 @@ public class GameManager : MonoBehaviour
         Debug.Log(SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary[this.songData.name].goodAmount);
         Debug.Log(SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary[this.songData.name].perfectAmount);
         Debug.Log(SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary[this.songData.name].totalScore);
-
-        Time.timeScale = 0;
     }
 
 

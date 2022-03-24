@@ -86,7 +86,8 @@ public class BeatSpawner : ObjectPooler
         Debug.Log(beatMelodyCount[beatMelodyIndex]);
         if (beatMelodyCounter>= beatMelodyCount[beatMelodyIndex])
         {
-            currentColor = beatColorPerMelody[beatMelodyIndex];
+            // currentColor = beatColorPerMelody[beatMelodyIndex];
+            currentColor = new Color(Random.Range(0, 0.5f), Random.Range(0, 0.5f), Random.Range(0, 0.5f));
             beatMelodyIndex += 1;
             beatMelodyCounter = 0;
         }
