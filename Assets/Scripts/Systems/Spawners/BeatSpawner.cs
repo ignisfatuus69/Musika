@@ -80,6 +80,8 @@ public class BeatSpawner : ObjectPooler
     }
     private void SetBeatColor(Beat beatObj)
     {
+        //if it's empty dont change color
+        if (beatColorPerMelody.Length <= 0) return;
         beatObj.beatSpriteRenderer.color = currentColor;
         beatObj.beatRingSpriteRenderer.color = currentColor;
         beatMelodyCounter += 1;

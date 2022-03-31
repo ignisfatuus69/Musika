@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
 
     private void FinishGame(Beat beat)
     {
+        return;
         if (isDone) return;
         if (beatSpawnerObj.totalPooledCount >= 5) 
         {

@@ -1154,6 +1154,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
+      propertyPath: beatCountsPerMelody.Array.size
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
       propertyPath: spawnPoints.Array.data[0]
       value: 
       objectReference: {fileID: 252720075}
@@ -1178,6 +1188,371 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2841420640117982307, guid: 9ea3f16f66a6424439a8d20d756d11aa,
         type: 3}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[0]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[1]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[2]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[0].r
+      value: 0.9716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[0].g
+      value: 0.2062567
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[0].b
+      value: 0.2062567
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[1].r
+      value: 0.5427447
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[1].g
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[1].b
+      value: 0.27687788
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[2].r
+      value: 0.9150943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[2].g
+      value: 0.8979334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatColorPerMelody.Array.data[2].b
+      value: 0.22014059
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[3]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[4]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[5]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[6]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[7]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[8]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[9]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[10]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[11]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[12]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[13]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[14]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[15]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[16]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[17]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[18]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[19]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[20]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[21]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[22]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[23]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[24]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[25]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[26]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[27]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[28]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[29]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[30]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[31]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[32]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[33]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[34]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[35]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[36]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[37]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[38]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[39]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[40]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[41]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[42]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[43]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[44]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[45]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[46]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[47]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[48]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[49]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[50]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[51]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[52]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[53]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[54]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[55]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[56]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[57]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[58]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[59]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[60]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[61]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[62]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[63]
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232088, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: m_Name
