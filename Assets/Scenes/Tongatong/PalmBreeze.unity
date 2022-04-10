@@ -1155,7 +1155,7 @@ PrefabInstance:
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.size
-      value: 64
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
@@ -1301,17 +1301,17 @@ PrefabInstance:
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[13]
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[14]
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[15]
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
@@ -1356,42 +1356,42 @@ PrefabInstance:
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[24]
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[25]
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[26]
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
-        type: 3}
-      propertyPath: beatCountsPerMelody.Array.data[27]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
-        type: 3}
-      propertyPath: beatCountsPerMelody.Array.data[28]
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[27]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[28]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
       propertyPath: beatCountsPerMelody.Array.data[29]
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[30]
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[31]
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
@@ -1401,17 +1401,17 @@ PrefabInstance:
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[33]
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[34]
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[35]
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
@@ -1421,22 +1421,22 @@ PrefabInstance:
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[37]
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[38]
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[39]
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[40]
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
@@ -1446,52 +1446,52 @@ PrefabInstance:
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[42]
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[43]
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[44]
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[45]
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[46]
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[47]
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[48]
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[49]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
-        type: 3}
-      propertyPath: beatCountsPerMelody.Array.data[50]
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
-      propertyPath: beatCountsPerMelody.Array.data[51]
+      propertyPath: beatCountsPerMelody.Array.data[50]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
+        type: 3}
+      propertyPath: beatCountsPerMelody.Array.data[51]
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
@@ -1501,22 +1501,22 @@ PrefabInstance:
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[53]
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[54]
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[55]
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[56]
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
@@ -1526,7 +1526,7 @@ PrefabInstance:
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[58]
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
@@ -1536,22 +1536,22 @@ PrefabInstance:
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[60]
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[61]
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[62]
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232087, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}
       propertyPath: beatCountsPerMelody.Array.data[63]
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3064636010574232088, guid: d72d2bfefc0a19f4788aa22e2e1a42c2,
         type: 3}

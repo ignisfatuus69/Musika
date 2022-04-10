@@ -38,7 +38,6 @@ public class Gabbang : BeatInteractor
         if (Physics.Raycast(ray.origin, ray.direction, out hit, 50,gabbangLayerMask))
         {
             if (hit.transform.gameObject.GetComponent<Animator>() == null) return;
-            Debug.Log("Play Animation");
             hit.transform.gameObject.GetComponent<Animator>().SetTrigger("Trigger");
         }
     }

@@ -24,7 +24,7 @@ public class BeatSpawner : ObjectPooler
     {
         EVT_OnObjectSpawned.AddListener(InvokeOnBeatSpawned);
         EVT_OnBeatSpawned.AddListener(SetBeatIndex);
-        EVT_OnBeatSpawned.AddListener(SetBeatColor);
+    //    EVT_OnBeatSpawned.AddListener(SetBeatColor);
         InitializeBeatMelodyCount();
     }
 
@@ -81,17 +81,19 @@ public class BeatSpawner : ObjectPooler
     private void SetBeatColor(Beat beatObj)
     {
         //if it's empty dont change color
-        if (beatColorPerMelody.Length <= 0) return;
+      //  if (beatColorPerMelody.Length <= 0) return;
+
         beatObj.beatSpriteRenderer.color = currentColor;
         beatObj.beatRingSpriteRenderer.color = currentColor;
         beatMelodyCounter += 1;
-        Debug.Log(beatMelodyCount[beatMelodyIndex]);
         if (beatMelodyCounter>= beatMelodyCount[beatMelodyIndex])
         {
             // currentColor = beatColorPerMelody[beatMelodyIndex];
             currentColor = new Color(Random.Range(0, 0.5f), Random.Range(0, 0.5f), Random.Range(0, 0.5f));
             beatMelodyIndex += 1;
             beatMelodyCounter = 0;
+          //  Debug.Log($"The index is {beatMelodyIndex}");
         }
+        
     }
 }

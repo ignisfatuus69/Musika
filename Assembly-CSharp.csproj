@@ -68,6 +68,7 @@
     <Compile Include="Assets\ButtonTab.cs" />
     <Compile Include="Assets\ComboEffect.cs" />
     <Compile Include="Assets\ComboLightingEffect.cs" />
+    <Compile Include="Assets\ComboLightingEffectObject.cs" />
     <Compile Include="Assets\GabbangAnimator.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\GameOverButtons.cs" />
