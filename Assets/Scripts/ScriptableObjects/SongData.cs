@@ -3,6 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using Klak.Timeline.Midi;
 using System.IO;
+
+[System.Serializable]
+public enum Instrument {Tongatong,Gabbang,Kolitong };
+
+[System.Serializable]
+public struct SongScore
+{
+    public int missAmount;
+    public int goodAmount;
+    public int perfectAmount;
+    public int totalScore;
+    public SongGrade songRanking;
+    public Instrument instrumentType;
+}
+
 [CreateAssetMenu(fileName = "SongData", menuName = "ScriptableObjects/SongData", order = 1)]
 public class SongData : ScriptableObject
 {

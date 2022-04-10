@@ -1789,6 +1789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea5023bac524bb34c81f9955fc7026a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  beatSpriteRenderer: {fileID: 0}
+  beatRingSpriteRenderer: {fileID: 0}
   EVT_OnInteracted:
     m_PersistentCalls:
       m_Calls: []
@@ -1824,6 +1826,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea5023bac524bb34c81f9955fc7026a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  beatSpriteRenderer: {fileID: 0}
+  beatRingSpriteRenderer: {fileID: 0}
   EVT_OnInteracted:
     m_PersistentCalls:
       m_Calls: []
@@ -1859,6 +1863,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea5023bac524bb34c81f9955fc7026a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  beatSpriteRenderer: {fileID: 0}
+  beatRingSpriteRenderer: {fileID: 0}
   EVT_OnInteracted:
     m_PersistentCalls:
       m_Calls: []
@@ -2135,6 +2141,11 @@ PrefabInstance:
       propertyPath: songDifficulty
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8149026187321016932, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: scoreTracker
+      value: 
+      objectReference: {fileID: 65042024}
     - target: {fileID: 8149026187321016933, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}
       propertyPath: m_Name

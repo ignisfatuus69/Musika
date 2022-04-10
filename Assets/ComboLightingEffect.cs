@@ -35,7 +35,6 @@ public class ComboLightingEffect : MonoBehaviour
         if (comboEffectCounter==comboNumbersToActivateEffect[currentIndex])
         {
             comboLightingObjects[currentIndex].gameObject.SetActive(true);
-            Debug.Log("natawag ka pre");
             comboEffectCounter = 0;
             currentIndex += 1;
         }

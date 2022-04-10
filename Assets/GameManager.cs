@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private Animator summaryUIAnimator;
     [SerializeField] private Score scoreTracker;
-
+    [SerializeField] private Instrument instrumentType;
     private SongScore currentSongScoreData = new SongScore();
 
     private bool isPaused = false;
@@ -38,7 +38,6 @@ public class GameManager : MonoBehaviour
 
     private void FinishGame(Beat beat)
     {
-        return;
         if (isDone) return;
         if (beatSpawnerObj.totalPooledCount >= 5) 
         {
@@ -54,12 +53,13 @@ public class GameManager : MonoBehaviour
         currentSongScoreData.perfectAmount = (int)scoreTracker.perfectCounter.currentValue;
         currentSongScoreData.totalScore = (int)scoreTracker.currentValue;
         currentSongScoreData.songRanking = scoreTracker.songGrade;
+        currentSongScoreData.instrumentType = this.instrumentType;
 
         // if song score data does not exist
         if (!SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary.ContainsKey(this.songData.name))
         {
             SingletonManager.instance.GetSingleton<PlayerData>().songScoreDictionary.Add(this.songData.name, this.currentSongScoreData);
-            SingletonManager.instance.GetSingleton<PlayerData>().songScoreListTest.Add(this.currentSongScoreData);
+            SingletonManager.instance.GetSingleton<PlayerData>().songScoresList.Add(this.currentSongScoreData);
 
         }
 

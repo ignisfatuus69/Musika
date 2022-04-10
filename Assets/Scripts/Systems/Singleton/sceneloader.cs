@@ -21,12 +21,10 @@ public class SceneLoader : MonoBehaviour
 
     public void enableSceneLoading(Scene scene,LoadSceneMode mode)
     {
-        Debug.Log("pee");
         isReadyToLoadScene = true;
     }
     public void disableSceneLoading(Scene scene)
     {
-        Debug.Log("poo");
         isReadyToLoadScene = false;
     }
     public void LoadSceneAdditive(int sceneIndex)
