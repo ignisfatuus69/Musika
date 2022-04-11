@@ -18,15 +18,13 @@ public class ComboLightingEffectObject : MonoBehaviour
 
     public void DeactivateLightingEffect()
     {
-        
-            StopCoroutine(lightingEffectCoroutine);
-            StartCoroutine(DimOffLightingEffect(light2DComponent));
-        
+       StopCoroutine(lightingEffectCoroutine);
+       StartCoroutine(DimOffLightingEffect(light2DComponent));
     }
 
     IEnumerator DimOffLightingEffect(Light2D lightToDeactivate)
     {
-        DOTween.To(() => lightToDeactivate.intensity, x => lightToDeactivate.intensity = x, 0, 3);
+        DOTween.To(() => lightToDeactivate.intensity, x => lightToDeactivate.intensity = x, 0, 1);
         yield return new WaitForSeconds(3);
         lightToDeactivate.gameObject.SetActive(false);
     }

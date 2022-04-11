@@ -6,13 +6,9 @@ using DG.Tweening;
 
 public class ComboLightingEffect : MonoBehaviour
 {
-    [SerializeField] private BeatInteractor beatInteractorObj = null;
     [SerializeField] private int[] comboNumbersToActivateEffect;
     [SerializeField] private Light2D[] comboLightingObjects;
     [SerializeField] private BeatSpawner beatSpawnerObj;
-    [SerializeField] private Vector2 intensityMinMaxValues;
-    [SerializeField] private Vector2 innerRadiusMinMaxValues;
-    [SerializeField] private Vector2 outerRadiusMinMaxValues;
 
     private List<Coroutine> lightingEffectCoroutines = new List<Coroutine>();
     private int comboEffectCounter = 0;

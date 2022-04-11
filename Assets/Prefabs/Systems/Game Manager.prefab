@@ -158,9 +158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light2DComponent: {fileID: 271208978}
-  intensityMinMaxValues: {x: 5, y: 0.9}
-  innerRadiusMinMaxValues: {x: 0, y: 12.82}
-  outerRadiusMinMaxValues: {x: 0.1, y: 25}
+  intensityMinMaxValues: {x: 5, y: 3.3}
+  innerRadiusMinMaxValues: {x: 0, y: 5.82}
+  outerRadiusMinMaxValues: {x: 0.1, y: 22.44}
 --- !u!1 &370091532
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,9 +247,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light2DComponent: {fileID: 370091533}
-  intensityMinMaxValues: {x: 5, y: 0.9}
-  innerRadiusMinMaxValues: {x: 0, y: 12.82}
-  outerRadiusMinMaxValues: {x: 0.1, y: 25}
+  intensityMinMaxValues: {x: 5, y: 3.3}
+  innerRadiusMinMaxValues: {x: 0, y: 5.82}
+  outerRadiusMinMaxValues: {x: 0.1, y: 22.4}
 --- !u!1 &1004091515
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,9 +336,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light2DComponent: {fileID: 1004091516}
-  intensityMinMaxValues: {x: 5, y: 0.9}
-  innerRadiusMinMaxValues: {x: 0, y: 12.82}
-  outerRadiusMinMaxValues: {x: 0.1, y: 25}
+  intensityMinMaxValues: {x: 0, y: 3.3}
+  innerRadiusMinMaxValues: {x: 0, y: 5.82}
+  outerRadiusMinMaxValues: {x: 0.1, y: 22.4}
 --- !u!1 &1765613996
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,9 +479,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light2DComponent: {fileID: 1830376182}
-  intensityMinMaxValues: {x: 5, y: 0.9}
-  innerRadiusMinMaxValues: {x: 0, y: 12.82}
-  outerRadiusMinMaxValues: {x: 0.1, y: 25}
+  intensityMinMaxValues: {x: 0.9, y: 3.3}
+  innerRadiusMinMaxValues: {x: 0, y: 5.82}
+  outerRadiusMinMaxValues: {x: 0.1, y: 22.4}
 --- !u!1 &2100362492
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,3 +607,4 @@ MonoBehaviour:
   gameOverUI: {fileID: 0}
   summaryUIAnimator: {fileID: 0}
   scoreTracker: {fileID: 0}
+  instrumentType: 0
