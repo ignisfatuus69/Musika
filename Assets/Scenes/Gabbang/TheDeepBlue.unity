@@ -1988,22 +1988,22 @@ PrefabInstance:
     - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
         type: 3}
       propertyPath: comboNumbersToActivateEffect.Array.data[0]
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
         type: 3}
       propertyPath: comboNumbersToActivateEffect.Array.data[1]
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
         type: 3}
       propertyPath: comboNumbersToActivateEffect.Array.data[2]
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
         type: 3}
       propertyPath: comboNumbersToActivateEffect.Array.data[3]
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
         type: 3}
@@ -2528,6 +2528,10 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 271208978, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_UseNormalMap
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 370091532, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2536,6 +2540,18 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 370091533, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_LightVolumeOpacity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 370091533, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_ShadowIntensity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 370091533, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_UseNormalMap
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1004091515, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2543,6 +2559,10 @@ PrefabInstance:
     - target: {fileID: 1004091516, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
       propertyPath: m_Intensity
       value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004091516, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_UseNormalMap
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1830376181, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
       propertyPath: m_IsActive
@@ -2567,6 +2587,10 @@ PrefabInstance:
     - target: {fileID: 1830376182, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
       propertyPath: m_Intensity
       value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830376182, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_UseNormalMap
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8149026187321016931, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}

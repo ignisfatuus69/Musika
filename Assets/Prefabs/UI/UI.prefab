@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad72d4cfbdca4294d8a61ad5c6839ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  comboNumbersToActivateEffect: 140000000f0000001400000019000000
+  comboNumbersToActivateEffect: 07000000050000000600000007000000
   comboLightingObjects: []
   beatSpawnerObj: {fileID: 0}
 --- !u!1 &1004886931071836179

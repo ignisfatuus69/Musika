@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -137,6 +137,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63c8db7f1427bf54fa534f2876b497ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &149384370 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 271208978, guid: 16bbb27be3e4e564e805d5607da999b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 8149026186331439791}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &228952224 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1004091516, guid: 16bbb27be3e4e564e805d5607da999b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 8149026186331439791}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &326644727
@@ -239,6 +263,18 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1004886930678010036}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &487647726 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1830376182, guid: 16bbb27be3e4e564e805d5607da999b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 8149026186331439791}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &515388845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -318,6 +354,18 @@ PrefabInstance:
       objectReference: {fileID: 3064636009979220272}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c78eeec5a09fb946adf32a2a8b4dcbd, type: 3}
+--- !u!114 &574690021 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 370091533, guid: 16bbb27be3e4e564e805d5607da999b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 8149026186331439791}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &618998561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,7 +1313,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1486,6 +1534,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: comboLightingObjects.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: beatSpawnerObj
+      value: 
+      objectReference: {fileID: 747318072}
+    - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: comboLightingObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 487647726}
+    - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: comboLightingObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 228952224}
+    - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: comboLightingObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 149384370}
+    - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: comboLightingObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 574690021}
+    - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: comboNumbersToActivateEffect.Array.data[0]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: comboNumbersToActivateEffect.Array.data[1]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: comboNumbersToActivateEffect.Array.data[2]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 735163173861196947, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
+        type: 3}
+      propertyPath: comboNumbersToActivateEffect.Array.data[3]
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1004886929482941108, guid: 3ed263f1f3854f143933b6d1cdf7d6bc,
         type: 3}
       propertyPath: beatSpawnerObj
@@ -1899,6 +1997,101 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 326644728}
     m_Modifications:
+    - target: {fileID: 271208977, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 271208978, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_LightVolumeOpacity
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 271208978, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 271208978, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.58770657
+      objectReference: {fileID: 0}
+    - target: {fileID: 271208978, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 370091532, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 370091533, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_LightVolumeOpacity
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 370091533, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 370091533, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9509735
+      objectReference: {fileID: 0}
+    - target: {fileID: 370091533, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004091515, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004091516, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_LightVolumeOpacity
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004091516, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004091516, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6867937
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004091516, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.2028302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830376181, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830376182, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_LightVolumeOpacity
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830376182, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4117647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830376182, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.83137256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830376182, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5486156
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012530466675892000, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: outerRadiusMinMaxValues.y
+      value: 17.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759970750288075549, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: outerRadiusMinMaxValues.y
+      value: 17.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434684476228964454, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: outerRadiusMinMaxValues.y
+      value: 17.98
+      objectReference: {fileID: 0}
     - target: {fileID: 8149026187321016931, guid: 16bbb27be3e4e564e805d5607da999b2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2009,6 +2202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Game Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232897303216569948, guid: 16bbb27be3e4e564e805d5607da999b2,
+        type: 3}
+      propertyPath: outerRadiusMinMaxValues.y
+      value: 17.98
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16bbb27be3e4e564e805d5607da999b2, type: 3}

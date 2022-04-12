@@ -41,7 +41,6 @@ public class GameManager : MonoBehaviour
         if (isDone) return;
         if (beatSpawnerObj.totalPooledCount >= songData.beatNoteIndexes.Count) 
         {
-            Debug.Log("tapos na");
             StartCoroutine(FinalizePlayerScore());
         }
     }
@@ -75,6 +74,7 @@ public class GameManager : MonoBehaviour
     }
     private void SetGameOver()
     {
+        return;
         if (LifeCounterObj.currentValue > LifeCounterObj.GetMinimumValue) return;
         StartCoroutine(DisableSpawner());
         FallBeats();
