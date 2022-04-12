@@ -10,6 +10,7 @@ public class ComboLightingEffectObject : MonoBehaviour
     [SerializeField] private Vector2 innerRadiusMinMaxValues;
     [SerializeField] private Vector2 outerRadiusMinMaxValues;
     private Coroutine lightingEffectCoroutine;
+    private Coroutine dimOffLightingEffectCoroutine;
 
     private void OnEnable()
     {
@@ -19,7 +20,7 @@ public class ComboLightingEffectObject : MonoBehaviour
     public void DeactivateLightingEffect()
     {
        StopCoroutine(lightingEffectCoroutine);
-       StartCoroutine(DimOffLightingEffect(light2DComponent));
+        dimOffLightingEffectCoroutine = StartCoroutine(DimOffLightingEffect(light2DComponent));
     }
 
     IEnumerator DimOffLightingEffect(Light2D lightToDeactivate)
@@ -31,6 +32,7 @@ public class ComboLightingEffectObject : MonoBehaviour
 
     IEnumerator ActivateLightingEffects(Light2D lightingToActivate, float lerpInSeconds)
     {
+        if (dimOffLightingEffectCoroutine!=null) StopCoroutine(dimOffLightingEffectCoroutine);
         // Polish it later
         while (true)
         {
