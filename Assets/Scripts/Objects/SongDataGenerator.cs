@@ -41,6 +41,7 @@ public class SongDataGenerator : MonoBehaviour
     {
         Debug.Log("Added Timestamp");
         songDataScriptableObject.beatTimeStamps.Add(songDirectorObj.time);
+        //songDataScriptableObject.beatNoteIndexes.Add(songDirectorObj.)
     }
 
     
