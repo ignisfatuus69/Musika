@@ -28,14 +28,16 @@ public class Beat : MonoBehaviour,IInteractable
     [SerializeField] private float finalOuterCircleScale;
     [SerializeField] private Transform outerCircle;
     [SerializeField] private Collider beatCollider;
+    [SerializeField] private SpriteRenderer beatOuterCircleSpriteRenderer;
     public float Timer = 0;
     private Vector3 originalOuterCircleScale = new Vector3(1, 1, 1);
-
+    private Color originalOuterCircleColor;
     //TEMPORARY
     public BeatSpawner beatSpawnerObj;
     private void Awake()
     {
         originalOuterCircleScale = outerCircle.localScale;
+        originalOuterCircleColor = new Color(beatOuterCircleSpriteRenderer.color.r, beatOuterCircleSpriteRenderer.color.g, beatOuterCircleSpriteRenderer.color.b, 0);
     }
 
 
@@ -44,11 +46,13 @@ public class Beat : MonoBehaviour,IInteractable
         //Reset values
         beatCollider.enabled = false;
         this.beatState = BeatState.Miss;
-
         outerCircle.localScale = originalOuterCircleScale;
-
+        beatOuterCircleSpriteRenderer.color = originalOuterCircleColor;
+        //Scale back values
         StartCoroutine(StartBeatTimer());
         outerCircle.DOScale(finalOuterCircleScale, beatTimer);
+        beatOuterCircleSpriteRenderer.DOColor(new Color(beatOuterCircleSpriteRenderer.color.r, beatOuterCircleSpriteRenderer.color.g, beatOuterCircleSpriteRenderer.color.b, 1), beatTimer);
+
     }
 
     private void OnDisable()

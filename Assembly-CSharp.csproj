@@ -77,6 +77,7 @@
     <Compile Include="Assets\KolitongManager.cs" />
     <Compile Include="Assets\Lifebar.cs" />
     <Compile Include="Assets\LightManager.cs" />
+    <Compile Include="Assets\PersistentSceneOpener.cs" />
     <Compile Include="Assets\PlayerData.cs" />
     <Compile Include="Assets\Prefabs\Objects\InputManager.cs" />
     <Compile Include="Assets\Prefabs\Objects\TouchControls.cs" />
