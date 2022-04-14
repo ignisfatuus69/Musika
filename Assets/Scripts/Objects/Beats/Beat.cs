@@ -51,7 +51,7 @@ public class Beat : MonoBehaviour,IInteractable
         //Scale back values
         StartCoroutine(StartBeatTimer());
         outerCircle.DOScale(finalOuterCircleScale, beatTimer);
-        beatOuterCircleSpriteRenderer.DOColor(new Color(beatOuterCircleSpriteRenderer.color.r, beatOuterCircleSpriteRenderer.color.g, beatOuterCircleSpriteRenderer.color.b, 1), beatTimer);
+        beatOuterCircleSpriteRenderer.DOColor(new Color(beatOuterCircleSpriteRenderer.color.r, beatOuterCircleSpriteRenderer.color.g, beatOuterCircleSpriteRenderer.color.b, 1), beatTimer*1.5f);
 
     }
 
